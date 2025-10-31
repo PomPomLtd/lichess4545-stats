@@ -21,6 +21,7 @@ const { calculateCenterStage } = require('./center-stage');
 const { calculateDarkLord } = require('./dark-lord');
 const { calculateChickenAward } = require('./chicken-award');
 const { filterGamesWithMoves } = require('../helpers');
+const { analyzeAllGames } = require('../../time-analyzer');
 
 /**
  * Calculate all fun statistics
@@ -30,6 +31,9 @@ const { filterGamesWithMoves } = require('../helpers');
  */
 function calculateFunStats(games, tacticalPatterns = null) {
   const gamesWithMoves = filterGamesWithMoves(games);
+
+  // Calculate time-based awards (requires clock annotations from Lichess PGN)
+  const timeAwards = analyzeAllGames(gamesWithMoves, 45); // 45+45 time control
 
   const queenTrades = calculateQueenTrades(gamesWithMoves);
   const pieceLoyalty = calculatePieceLoyalty(gamesWithMoves);
@@ -129,6 +133,35 @@ function calculateFunStats(games, tacticalPatterns = null) {
       };
     }
 
+  }
+
+  // Add time-based awards if clock data is available
+  if (timeAwards) {
+    if (timeAwards.sniper) {
+      funStats.sniper = timeAwards.sniper;
+    }
+    if (timeAwards.openingBlitzer) {
+      funStats.openingBlitzer = timeAwards.openingBlitzer;
+    }
+    if (timeAwards.sadTimes) {
+      funStats.sadTimes = timeAwards.sadTimes;
+    }
+    // Include other time awards as well (already implemented)
+    if (timeAwards.mostPremoves) {
+      funStats.mostPremoves = timeAwards.mostPremoves;
+    }
+    if (timeAwards.longestThink) {
+      funStats.longestThink = timeAwards.longestThink;
+    }
+    if (timeAwards.zeitnotAddict) {
+      funStats.zeitnotAddict = timeAwards.zeitnotAddict;
+    }
+    if (timeAwards.timeScrambleSurvivor) {
+      funStats.timeScrambleSurvivor = timeAwards.timeScrambleSurvivor;
+    }
+    if (timeAwards.bulletSpeed) {
+      funStats.bulletSpeed = timeAwards.bulletSpeed;
+    }
   }
 
   return funStats;

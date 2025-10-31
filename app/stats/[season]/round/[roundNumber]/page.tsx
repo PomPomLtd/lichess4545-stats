@@ -327,6 +327,90 @@ interface StatsData {
       white: string
       black: string
     } | null
+    // Time-based awards
+    sniper?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      timeSpent: number
+      moveNumber: number
+      move: string
+    }
+    openingBlitzer?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      avgTime: number
+      moveCount: number
+    }
+    sadTimes?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      timeSpent: number
+      moveNumber: number
+      move: string
+      eval: number
+    }
+    mostPremoves?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      count: number
+    }
+    longestThink?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      timeSpent: number
+      moveNumber: number
+      move: string
+    }
+    zeitnotAddict?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      count: number
+    }
+    timeScrambleSurvivor?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      winner: string
+      color: string
+      minClock: number
+      criticalMoves: number
+      result: string
+    }
+    bulletSpeed?: {
+      white: string
+      black: string
+      gameIndex: number
+      gameId: string | null
+      player: string
+      color: string
+      avgTime: number
+      moveCount: number
+    }
     homebody?: {
       white: string
       black: string

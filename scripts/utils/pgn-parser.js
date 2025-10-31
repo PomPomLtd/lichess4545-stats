@@ -73,7 +73,10 @@ function parseSingleGame(pgnString, gameIndex = 0) {
       positions,
 
       // Normalized PGN for reference (properly formatted for python-chess)
-      pgn: normalizedPGN
+      pgn: normalizedPGN,
+
+      // Raw PGN with annotations (clock times, evals, etc.) for time analysis
+      rawPgn: pgnString
     };
 
   } catch (error) {
@@ -336,9 +339,11 @@ function splitPGN(pgnData) {
   // Games are separated by double newlines followed by any PGN header
   // Look for patterns like \n\n[Event, \n\n[White, \n\n[Site, etc.
   // Most games start with [Event, but some may start with other headers
+  // NOTE: Don't normalize here - we need to preserve clock/eval annotations
+  // Normalization happens later in parseMultipleGames after saving original
   const games = pgnData
     .split(/\n\n(?=\[(?:Event|White|Site|Date|Round)\s)/)
-    .map(g => normalizePGN(g.trim())) // Normalize each game
+    .map(g => g.trim()) // Just trim, don't normalize yet
     .filter(g => g.length > 0);
 
   return games;
@@ -346,7 +351,7 @@ function splitPGN(pgnData) {
 
 /**
  * Parse multiple games from a PGN file/string
- * 
+ *
  * @param {string} pgnData - Multi-game PGN string
  * @returns {Object} Parsing results with valid games and errors
  */
@@ -359,11 +364,17 @@ function parseMultipleGames(pgnData) {
     validCount: 0,
     errorCount: 0
   };
-  
+
   gameStrings.forEach((gameString, index) => {
-    const parsed = parseSingleGame(gameString, index);
-    
+    // Keep original PGN before normalization for time analysis
+    const originalPgn = gameString;
+    const normalizedPgn = normalizePGN(gameString);
+
+    const parsed = parseSingleGame(normalizedPgn, index);
+
     if (parsed) {
+      // Override rawPgn with original (includes clock/eval annotations)
+      parsed.rawPgn = originalPgn;
       results.valid.push(parsed);
       results.validCount++;
     } else {
@@ -374,7 +385,7 @@ function parseMultipleGames(pgnData) {
       results.errorCount++;
     }
   });
-  
+
   return results;
 }
 
