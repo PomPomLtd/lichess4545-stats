@@ -26,7 +26,7 @@ export function OverviewStats({ overview }: OverviewStatsProps) {
         <div className="text-blue-100 mt-1">Games Played</div>
       </div>
       <div className="bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg shadow p-6 text-white">
-        <div className="text-3xl font-bold">{overview.totalMoves}</div>
+        <div className="text-3xl font-bold">{overview.totalMoves.toLocaleString()}</div>
         <div className="text-purple-100 mt-1">Total Moves</div>
       </div>
       <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg shadow p-6 text-white">
