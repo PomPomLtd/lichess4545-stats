@@ -1,11 +1,11 @@
 {
   "roundNumber": 2,
   "seasonNumber": 46,
-  "generatedAt": "2025-10-31T18:17:06.395Z",
+  "generatedAt": "2025-10-31T20:21:07.391Z",
   "overview": {
-    "totalGames": 78,
-    "totalMoves": 6437,
-    "averageGameLength": 41.26282051282051,
+    "totalGames": 82,
+    "totalMoves": 6781,
+    "averageGameLength": 41.34756097560975,
     "longestGame": {
       "moves": 98,
       "white": "chatakkuma",
@@ -14,17 +14,17 @@
       "gameId": "3ixj2ar2"
     },
     "shortestGame": {
-      "moves": 13,
-      "white": "jdannan",
-      "black": "KirkD",
-      "result": "1-0",
-      "gameId": "lKsxil4Q"
+      "moves": 9,
+      "white": "VicPez",
+      "black": "Grizzzly1000",
+      "result": "*",
+      "gameId": "V39UZiH9"
     }
   },
   "gamePhases": {
-    "averageOpening": 9.025641025641026,
-    "averageMiddlegame": 17.16025641025641,
-    "averageEndgame": 15.076923076923077,
+    "averageOpening": 9.018292682926829,
+    "averageMiddlegame": 16.798780487804876,
+    "averageEndgame": 15.53048780487805,
     "longestWaitTillCapture": {
       "moves": 22,
       "white": "matthewhuber",
@@ -48,48 +48,48 @@
     }
   },
   "results": {
-    "whiteWins": 33,
-    "blackWins": 28,
+    "whiteWins": 34,
+    "blackWins": 34,
     "draws": 12,
-    "whiteWinPercentage": 42.30769230769231,
-    "blackWinPercentage": 35.8974358974359,
-    "drawPercentage": 15.384615384615385
+    "whiteWinPercentage": 41.46341463414634,
+    "blackWinPercentage": 41.46341463414634,
+    "drawPercentage": 14.634146341463413
   },
   "openings": {
     "firstMoves": {
       "d4": {
-        "count": 30,
-        "percentage": 38.46153846153847,
-        "winRate": 40
+        "count": 31,
+        "percentage": 37.80487804878049,
+        "winRate": 38.70967741935484
       },
       "b4": {
         "count": 1,
-        "percentage": 1.282051282051282,
+        "percentage": 1.2195121951219512,
         "winRate": 100
       },
       "e4": {
-        "count": 37,
-        "percentage": 47.43589743589743,
-        "winRate": 40.54054054054054
+        "count": 40,
+        "percentage": 48.78048780487805,
+        "winRate": 37.5
       },
       "c4": {
         "count": 4,
-        "percentage": 5.128205128205128,
+        "percentage": 4.878048780487805,
         "winRate": 75
       },
       "Nf3": {
         "count": 4,
-        "percentage": 5.128205128205128,
-        "winRate": 25
+        "percentage": 4.878048780487805,
+        "winRate": 50
       },
       "g3": {
         "count": 1,
-        "percentage": 1.282051282051282,
+        "percentage": 1.2195121951219512,
         "winRate": 100
       },
       "d3": {
         "count": 1,
-        "percentage": 1.282051282051282,
+        "percentage": 1.2195121951219512,
         "winRate": 0
       }
     },
@@ -99,6 +99,12 @@
         "count": 3,
         "eco": "B22",
         "name": "Sicilian Defense: Alapin Variation"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 Nf6",
+        "count": 3,
+        "eco": "D35",
+        "name": "Queen's Gambit Declined: Normal Defense"
       },
       {
         "moves": "e4 c5 Nf3 e6 d4 cxd4",
@@ -119,6 +125,12 @@
         "name": "Petrov's Defense"
       },
       {
+        "moves": "e4 e5 Nf3 Nc6 d4 exd4",
+        "count": 2,
+        "eco": "C44",
+        "name": "Scotch Game"
+      },
+      {
         "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5",
         "count": 2,
         "eco": "C50",
@@ -135,12 +147,6 @@
         "count": 2,
         "eco": "D10",
         "name": "Slav Defense"
-      },
-      {
-        "moves": "d4 d5 c4 e6 Nc3 Nf6",
-        "count": 2,
-        "eco": "D35",
-        "name": "Queen's Gambit Declined: Normal Defense"
       },
       {
         "moves": "d4 Nf6 c4 g6 Nc3 d5",
@@ -347,6 +353,12 @@
         "name": "Caro-Kann Defense: Exchange Variation"
       },
       {
+        "moves": "e4 c5 Ne2 Nc6 c4 g6",
+        "count": 1,
+        "eco": "B20",
+        "name": "Sicilian Defense: Keres Variation"
+      },
+      {
         "moves": "e4 c5 d4 cxd4 Nf3 Nc6",
         "count": 1,
         "eco": "B21",
@@ -369,6 +381,12 @@
         "count": 1,
         "eco": "B23",
         "name": "Sicilian Defense: Closed, Traditional"
+      },
+      {
+        "moves": "e4 c5 Nc3 Nc6 f4 g6",
+        "count": 1,
+        "eco": "B23",
+        "name": "Sicilian Defense: Grand Prix Attack"
       },
       {
         "moves": "e4 c5 Nf3 Nc6 c3 e5",
@@ -423,12 +441,6 @@
         "count": 1,
         "eco": "C29",
         "name": "Vienna Game: Vienna Gambit"
-      },
-      {
-        "moves": "e4 e5 Nf3 Nc6 d4 exd4",
-        "count": 1,
-        "eco": "C44",
-        "name": "Scotch Game"
       },
       {
         "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6",
@@ -505,7 +517,7 @@
     ]
   },
   "tactics": {
-    "totalCaptures": 1336,
+    "totalCaptures": 1405,
     "enPassantGames": [
       {
         "white": "TimothyHa",
@@ -545,12 +557,12 @@
     ],
     "promotions": 13,
     "castling": {
-      "kingside": 115,
+      "kingside": 122,
       "queenside": 18
     },
     "bloodiestGame": {
       "captures": 30,
-      "gameIndex": 40,
+      "gameIndex": 42,
       "gameId": "wtcYx4bL",
       "white": "mekumcu",
       "black": "svidler_simp"
@@ -572,7 +584,7 @@
     "totalUnderpromotions": 1,
     "underpromotions": [
       {
-        "gameIndex": 51,
+        "gameIndex": 53,
         "moveNumber": 40,
         "promotedTo": "r",
         "color": "w",
@@ -584,77 +596,77 @@
   },
   "pieces": {
     "activity": {
-      "pawns": 1721,
-      "knights": 1128,
-      "bishops": 1058,
-      "rooks": 945,
-      "queens": 636,
-      "kings": 949
+      "pawns": 1806,
+      "knights": 1200,
+      "bishops": 1103,
+      "rooks": 997,
+      "queens": 662,
+      "kings": 1013
     },
     "captured": {
-      "pawns": 615,
-      "knights": 240,
-      "bishops": 221,
-      "rooks": 162,
-      "queens": 98
+      "pawns": 649,
+      "knights": 251,
+      "bishops": 228,
+      "rooks": 175,
+      "queens": 102
     },
     "survivalRate": {
-      "rooks": 0.483974358974359,
-      "queens": 0.44871794871794873,
-      "bishops": 0.2916666666666667,
-      "knights": 0.23076923076923078
+      "rooks": 0.4695121951219512,
+      "queens": 0.45121951219512196,
+      "bishops": 0.3048780487804878,
+      "knights": 0.2347560975609756
     }
   },
   "checkmates": {
     "byPiece": {
-      "queen": 4,
+      "queen": 5,
       "rook": 1,
       "bishop": 0,
       "knight": 0,
       "pawn": 5
     },
     "fastest": {
-      "moves": 24,
-      "gameIndex": 26,
-      "gameId": "8ad7OEPE",
-      "white": "AlexGaul",
-      "black": "Kluddiron",
-      "winner": "White"
+      "moves": 17,
+      "gameIndex": 70,
+      "gameId": "AtRHJ3NB",
+      "white": "Bpack",
+      "black": "Anthammer",
+      "winner": "Black"
     }
   },
   "boardHeatmap": {
     "bloodiestSquare": {
       "square": "d4",
-      "captures": 100,
-      "description": "d4 saw 100 captures"
+      "captures": 104,
+      "description": "d4 saw 104 captures"
     },
     "mostPopularSquare": {
       "square": "d4",
-      "visits": 252,
-      "description": "d4 was visited 252 times"
+      "visits": 268,
+      "description": "d4 was visited 268 times"
     },
     "leastPopularSquare": {
-      "square": "h1",
-      "visits": 22,
-      "description": "h1 was only visited 22 times"
+      "square": "a8",
+      "visits": 23,
+      "description": "a8 was only visited 23 times"
     },
     "quietestSquares": [],
     "top5Bloodiest": [
       {
         "square": "d4",
-        "captures": 100
+        "captures": 104
       },
       {
         "square": "d5",
-        "captures": 84
+        "captures": 93
       },
       {
         "square": "e4",
-        "captures": 68
+        "captures": 72
       },
       {
         "square": "e5",
-        "captures": 66
+        "captures": 71
       },
       {
         "square": "f6",
@@ -664,23 +676,23 @@
     "top5Popular": [
       {
         "square": "d4",
-        "visits": 252
+        "visits": 268
       },
       {
         "square": "f6",
-        "visits": 248
+        "visits": 252
       },
       {
         "square": "d5",
-        "visits": 233
+        "visits": 247
       },
       {
         "square": "e5",
-        "visits": 210
+        "visits": 223
       },
       {
         "square": "e4",
-        "visits": 209
+        "visits": 222
       }
     ]
   },
@@ -698,11 +710,11 @@
       "gameId": "lKsxil4Q"
     },
     "speedDemon": {
-      "white": "AlexGaul",
-      "black": "Kluddiron",
-      "moves": 24,
-      "winner": "White",
-      "gameId": "8ad7OEPE"
+      "white": "Bpack",
+      "black": "Anthammer",
+      "moves": 17,
+      "winner": "Black",
+      "gameId": "AtRHJ3NB"
     },
     "endgameWizard": {
       "white": "chatakkuma",
@@ -720,31 +732,31 @@
   "funStats": {
     "fastestQueenTrade": {
       "moves": 8,
-      "gameIndex": 35,
+      "gameIndex": 37,
       "gameId": "UWZK81aC",
       "white": "TristanBrown17",
       "black": "Hesperian"
     },
     "slowestQueenTrade": {
       "moves": 44,
-      "gameIndex": 24,
+      "gameIndex": 25,
       "gameId": "oJoTAO8Z",
       "white": "sammgus",
       "black": "lc69"
     },
     "longestCaptureSequence": {
       "length": 7,
-      "gameIndex": 36,
+      "gameIndex": 38,
       "gameId": "jnZaaIQT",
-      "startMove": 19,
+      "startMove": 38,
       "white": "Scarff",
       "black": "ScotchWhisky"
     },
     "longestCheckSequence": {
       "length": 11,
-      "gameIndex": 23,
+      "gameIndex": 24,
       "gameId": "vVE7xdHD",
-      "startMove": 40,
+      "startMove": 80,
       "white": "keeto",
       "black": "Lexgrad"
     },
@@ -768,14 +780,14 @@
     },
     "castlingRace": {
       "moves": 4,
-      "gameIndex": 25,
+      "gameIndex": 26,
       "gameId": "YG6escav",
       "winner": "white",
       "white": "matthewhuber",
       "black": "robertjackson"
     },
     "openingHipster": {
-      "gameIndex": 73,
+      "gameIndex": 78,
       "gameId": "cBAvr5fd",
       "eco": "A22",
       "name": "English Opening: King's English Variation, Two Knights Variation, Smyslov System",
@@ -786,7 +798,7 @@
     },
     "dadbodShuffler": {
       "moves": 40,
-      "gameIndex": 22,
+      "gameIndex": 23,
       "gameId": "3ixj2ar2",
       "color": "Black",
       "white": "chatakkuma",
@@ -794,7 +806,7 @@
     },
     "sportyQueen": {
       "distance": 64,
-      "gameIndex": 24,
+      "gameIndex": 25,
       "gameId": "oJoTAO8Z",
       "color": "White",
       "white": "sammgus",
@@ -810,7 +822,7 @@
     },
     "rookLift": {
       "moveNumber": 11,
-      "gameIndex": 36,
+      "gameIndex": 38,
       "gameId": "jnZaaIQT",
       "color": "White",
       "rook": "White's c1 Rook",
@@ -820,7 +832,7 @@
     },
     "centerStage": {
       "moves": 7,
-      "gameIndex": 22,
+      "gameIndex": 23,
       "gameId": "3ixj2ar2",
       "piece": "Black's c5 Bishop",
       "startSquare": "c5",
@@ -830,7 +842,7 @@
     },
     "darkLord": {
       "captures": 11,
-      "gameIndex": 21,
+      "gameIndex": 22,
       "gameId": "tlrXNLNi",
       "color": "Black",
       "white": "dmrgn155",
@@ -838,7 +850,7 @@
     },
     "chickenAward": {
       "retreats": 32,
-      "gameIndex": 22,
+      "gameIndex": 23,
       "gameId": "3ixj2ar2",
       "color": "Black",
       "white": "chatakkuma",
@@ -852,18 +864,8 @@
       "player": "cham",
       "color": "white",
       "timeSpent": 2,
-      "moveNumber": 78,
+      "moveNumber": 155,
       "move": "Kg5"
-    },
-    "openingBlitzer": {
-      "white": "NameGoesInHere",
-      "black": "Le_Merovingien",
-      "gameIndex": 71,
-      "gameId": "DFHI8NhG",
-      "player": "Le_Merovingien",
-      "color": "black",
-      "avgTime": 1.7777777777777777,
-      "moveCount": 9
     },
     "sadTimes": {
       "white": "Pughie",
@@ -873,14 +875,14 @@
       "player": "electricfalcon",
       "color": "black",
       "timeSpent": 565,
-      "moveNumber": 18,
+      "moveNumber": 36,
       "move": "Ne8",
       "eval": -5.33
     },
     "mostPremoves": {
       "white": "Silkthewanderer",
       "black": "Not_Any_More",
-      "gameIndex": 64,
+      "gameIndex": 66,
       "gameId": "gqkjGERv",
       "player": "Not_Any_More",
       "color": "black",
@@ -889,18 +891,18 @@
     "longestThink": {
       "white": "Aurichalcite",
       "black": "yavorant",
-      "gameIndex": 45,
+      "gameIndex": 47,
       "gameId": "XdKWHWkF",
       "player": "yavorant",
       "color": "black",
       "timeSpent": 2585,
-      "moveNumber": 8,
+      "moveNumber": 16,
       "move": "Bxf3"
     },
     "zeitnotAddict": {
       "white": "chatakkuma",
       "black": "sahkal",
-      "gameIndex": 22,
+      "gameIndex": 23,
       "gameId": "3ixj2ar2",
       "player": "sahkal",
       "color": "black",
@@ -909,7 +911,7 @@
     "bulletSpeed": {
       "white": "Minot",
       "black": "sivakumarr",
-      "gameIndex": 34,
+      "gameIndex": 36,
       "gameId": "Aj0rZD7q",
       "player": "sivakumarr",
       "color": "black",
@@ -920,10 +922,10 @@
   "teams": {
     "awards": {
       "bloodthirstyTeam": {
-        "name": "Doomsday Hedgehogs",
-        "totalCaptures": 57,
-        "averagePerGame": "11.4",
-        "playerCount": 7
+        "name": "Pawn Crackers",
+        "totalCaptures": 61,
+        "averagePerGame": "10.2",
+        "playerCount": 9
       },
       "lateKnightShow": {
         "name": "Doomsday Hedgehogs",
@@ -932,10 +934,10 @@
         "playerCount": 7
       },
       "pawnCrackers": {
-        "name": "Nakamura Airlines — King Flight Safety Briefing",
-        "pawnCaptures": 20,
-        "averagePerGame": "4.0",
-        "playerCount": 9
+        "name": "Too OTH for OTB",
+        "pawnCaptures": 21,
+        "averagePerGame": "3.5",
+        "playerCount": 8
       },
       "castlingSpeed": {
         "name": "Pawn Hub",
@@ -962,9 +964,9 @@
         "playerCount": 8
       },
       "marathonRunners": {
-        "name": "Nakamura Airlines — King Flight Safety Briefing",
-        "averageGameLength": "55.8",
-        "playerCount": 9
+        "name": "This should be a king walk in the park",
+        "averageGameLength": "60.5",
+        "playerCount": 8
       },
       "speedDemons": {
         "name": "Kein sehr starkes Team",
@@ -973,8 +975,8 @@
       },
       "chickenTeam": {
         "name": " Have you been mis-sold a pawn sacrifice? You may be due compensation",
-        "retreatingMoves": 55,
-        "averagePerGame": "11.0",
+        "retreatingMoves": 56,
+        "averagePerGame": "9.3",
         "playerCount": 9
       },
       "nonChickenTeam": {
@@ -1298,33 +1300,33 @@
         "gameId": "M9aZPvca",
         "white": "markommbrzi",
         "black": "Simpformyqueen",
-        "whiteACPL": 14.9,
-        "blackACPL": 4.5,
-        "whiteAccuracy": 90.1,
-        "blackAccuracy": 97.2,
+        "whiteACPL": 27.9,
+        "blackACPL": 17.9,
+        "whiteAccuracy": 87.4,
+        "blackAccuracy": 91.7,
         "whiteMoveQuality": {
-          "blunders": 1,
-          "mistakes": 0,
-          "inaccuracies": 0,
-          "good": 1,
-          "excellent": 14
+          "blunders": 3,
+          "mistakes": 1,
+          "inaccuracies": 3,
+          "good": 11,
+          "excellent": 43
         },
         "blackMoveQuality": {
-          "blunders": 0,
-          "mistakes": 0,
-          "inaccuracies": 0,
-          "good": 1,
-          "excellent": 14
+          "blunders": 2,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 9,
+          "excellent": 48
         },
         "biggestBlunder": {
-          "moveNumber": 16,
+          "moveNumber": 51,
           "player": "white",
-          "cpLoss": 186,
-          "winLoss": 24.473040686503467,
-          "severity": 24.473040686503467,
-          "move": "Re1",
-          "evalBefore": 0,
-          "evalAfter": -186
+          "cpLoss": 397,
+          "winLoss": 39.405353727376614,
+          "severity": 39.405353727376614,
+          "move": "Kxa5",
+          "evalBefore": -14,
+          "evalAfter": -411
         },
         "biggestComeback": null,
         "luckyEscape": null
@@ -1367,26 +1369,26 @@
       },
       {
         "gameIndex": 10,
-        "gameId": "aj5c5Dck",
-        "white": "Zanderqfb",
-        "black": "Rolihlahla",
-        "whiteACPL": 16,
-        "blackACPL": 14.9,
-        "whiteAccuracy": 90.5,
-        "blackAccuracy": 91.2,
+        "gameId": "V39UZiH9",
+        "white": "VicPez",
+        "black": "Grizzzly1000",
+        "whiteACPL": 5,
+        "blackACPL": 4.9,
+        "whiteAccuracy": 96.9,
+        "blackAccuracy": 96.9,
         "whiteMoveQuality": {
           "blunders": 0,
           "mistakes": 0,
-          "inaccuracies": 6,
-          "good": 7,
-          "excellent": 20
+          "inaccuracies": 0,
+          "good": 1,
+          "excellent": 8
         },
         "blackMoveQuality": {
           "blunders": 0,
-          "mistakes": 1,
-          "inaccuracies": 4,
-          "good": 6,
-          "excellent": 22
+          "mistakes": 0,
+          "inaccuracies": 0,
+          "good": 1,
+          "excellent": 7
         },
         "biggestBlunder": null,
         "biggestComeback": null,
@@ -1541,26 +1543,62 @@
       },
       {
         "gameIndex": 15,
+        "gameId": "aj5c5Dck",
+        "white": "Zanderqfb",
+        "black": "Rolihlahla",
+        "whiteACPL": 19,
+        "blackACPL": 13.7,
+        "whiteAccuracy": 86.7,
+        "blackAccuracy": 91.8,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 6,
+          "good": 7,
+          "excellent": 22
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 4,
+          "good": 6,
+          "excellent": 25
+        },
+        "biggestBlunder": {
+          "moveNumber": 35,
+          "player": "white",
+          "cpLoss": 410,
+          "winLoss": 39.77164740712311,
+          "severity": 39.77164740712311,
+          "move": "Re4",
+          "evalBefore": -16,
+          "evalAfter": -426
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 16,
         "gameId": "oDsDod6Y",
         "white": "RBorja1980",
         "black": "udaysatya",
-        "whiteACPL": 34.8,
-        "blackACPL": 26.1,
-        "whiteAccuracy": 76.9,
-        "blackAccuracy": 82.5,
+        "whiteACPL": 33.3,
+        "blackACPL": 21.4,
+        "whiteAccuracy": 83.3,
+        "blackAccuracy": 88.2,
         "whiteMoveQuality": {
           "blunders": 2,
           "mistakes": 2,
           "inaccuracies": 2,
-          "good": 5,
-          "excellent": 13
+          "good": 8,
+          "excellent": 24
         },
         "blackMoveQuality": {
           "blunders": 1,
           "mistakes": 1,
           "inaccuracies": 3,
-          "good": 4,
-          "excellent": 14
+          "good": 5,
+          "excellent": 28
         },
         "biggestBlunder": {
           "moveNumber": 10,
@@ -1582,7 +1620,7 @@
         }
       },
       {
-        "gameIndex": 16,
+        "gameIndex": 17,
         "gameId": "uZ2vuWT1",
         "white": "pezzo17",
         "black": "doc_in_training",
@@ -1618,7 +1656,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 17,
+        "gameIndex": 18,
         "gameId": "UmlrpfKM",
         "white": "mkubecek",
         "black": "alexkoj",
@@ -1654,7 +1692,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 18,
+        "gameIndex": 19,
         "gameId": "awJmXbl9",
         "white": "nikhedonia26",
         "black": "gpetris",
@@ -1690,7 +1728,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 19,
+        "gameIndex": 20,
         "gameId": "ETTNo2UB",
         "white": "UpGoerFive",
         "black": "cjsailer",
@@ -1740,7 +1778,7 @@
         }
       },
       {
-        "gameIndex": 20,
+        "gameIndex": 21,
         "gameId": "w1Im9fP5",
         "white": "cvillian",
         "black": "spor3",
@@ -1782,7 +1820,7 @@
         }
       },
       {
-        "gameIndex": 21,
+        "gameIndex": 22,
         "gameId": "tlrXNLNi",
         "white": "dmrgn155",
         "black": "KS_Legion_Legionowo",
@@ -1824,7 +1862,7 @@
         }
       },
       {
-        "gameIndex": 22,
+        "gameIndex": 23,
         "gameId": "3ixj2ar2",
         "white": "chatakkuma",
         "black": "sahkal",
@@ -1866,7 +1904,7 @@
         }
       },
       {
-        "gameIndex": 23,
+        "gameIndex": 24,
         "gameId": "vVE7xdHD",
         "white": "keeto",
         "black": "Lexgrad",
@@ -1902,7 +1940,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 24,
+        "gameIndex": 25,
         "gameId": "oJoTAO8Z",
         "white": "sammgus",
         "black": "lc69",
@@ -1952,7 +1990,7 @@
         }
       },
       {
-        "gameIndex": 25,
+        "gameIndex": 26,
         "gameId": "YG6escav",
         "white": "matthewhuber",
         "black": "robertjackson",
@@ -2002,7 +2040,7 @@
         }
       },
       {
-        "gameIndex": 26,
+        "gameIndex": 27,
         "gameId": "8ad7OEPE",
         "white": "AlexGaul",
         "black": "Kluddiron",
@@ -2052,7 +2090,7 @@
         }
       },
       {
-        "gameIndex": 27,
+        "gameIndex": 28,
         "gameId": "m781JxF7",
         "white": "GroneN",
         "black": "AleksanderBerge",
@@ -2079,7 +2117,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 28,
+        "gameIndex": 29,
         "gameId": "eeS1pfAK",
         "white": "lintypickle",
         "black": "Qudit",
@@ -2121,7 +2159,49 @@
         }
       },
       {
-        "gameIndex": 29,
+        "gameIndex": 30,
+        "gameId": "SUe6tSby",
+        "white": "Vib_spec",
+        "black": "PatrickVrielink",
+        "whiteACPL": 49.6,
+        "blackACPL": 42,
+        "whiteAccuracy": 68,
+        "blackAccuracy": 76.4,
+        "whiteMoveQuality": {
+          "blunders": 4,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 10
+        },
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 5,
+          "good": 6,
+          "excellent": 7
+        },
+        "biggestBlunder": {
+          "moveNumber": 16,
+          "player": "white",
+          "cpLoss": 370,
+          "winLoss": 43.09571340299614,
+          "severity": 56.563123841432436,
+          "move": "Qg3",
+          "evalBefore": 325,
+          "evalAfter": -45
+        },
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 280,
+          "evalBefore": 325,
+          "evalAfter": -45,
+          "moveNumber": 16
+        }
+      },
+      {
+        "gameIndex": 31,
         "gameId": "NGGKLE0Z",
         "white": "JZTrain",
         "black": "tartarugone",
@@ -2157,7 +2237,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 30,
+        "gameIndex": 32,
         "gameId": "prokugRm",
         "white": "Kanem",
         "black": "snowDeath",
@@ -2193,7 +2273,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 31,
+        "gameIndex": 33,
         "gameId": "ATzcA49R",
         "white": "timemp",
         "black": "cowtone",
@@ -2220,7 +2300,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 32,
+        "gameIndex": 34,
         "gameId": "ahzWc4dI",
         "white": "Tedrhuyagonall",
         "black": "gaben1773",
@@ -2262,7 +2342,7 @@
         }
       },
       {
-        "gameIndex": 33,
+        "gameIndex": 35,
         "gameId": "IP1aNOQn",
         "white": "prostidude",
         "black": "flyingfred",
@@ -2298,7 +2378,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 34,
+        "gameIndex": 36,
         "gameId": "Aj0rZD7q",
         "white": "Minot",
         "black": "sivakumarr",
@@ -2334,7 +2414,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 35,
+        "gameIndex": 37,
         "gameId": "UWZK81aC",
         "white": "TristanBrown17",
         "black": "Hesperian",
@@ -2376,7 +2456,7 @@
         }
       },
       {
-        "gameIndex": 36,
+        "gameIndex": 38,
         "gameId": "jnZaaIQT",
         "white": "Scarff",
         "black": "ScotchWhisky",
@@ -2426,7 +2506,7 @@
         }
       },
       {
-        "gameIndex": 37,
+        "gameIndex": 39,
         "gameId": "GFy1zuFM",
         "white": "Dadievid",
         "black": "Lutin23",
@@ -2462,7 +2542,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 38,
+        "gameIndex": 40,
         "gameId": "wIXQqNnX",
         "white": "LemuelGullible",
         "black": "SycoraxCirce",
@@ -2489,7 +2569,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 39,
+        "gameIndex": 41,
         "gameId": "p8QPxoeU",
         "white": "chess131969",
         "black": "dodo2309",
@@ -2530,7 +2610,7 @@
         }
       },
       {
-        "gameIndex": 40,
+        "gameIndex": 42,
         "gameId": "wtcYx4bL",
         "white": "mekumcu",
         "black": "svidler_simp",
@@ -2557,7 +2637,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 41,
+        "gameIndex": 43,
         "gameId": "2DufGLaC",
         "white": "CapeStGeorge",
         "black": "EvilNalu",
@@ -2599,7 +2679,7 @@
         }
       },
       {
-        "gameIndex": 42,
+        "gameIndex": 44,
         "gameId": "HTNLmo9Q",
         "white": "Tellerwascher",
         "black": "NLance",
@@ -2635,7 +2715,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 43,
+        "gameIndex": 45,
         "gameId": "fEW65w82",
         "white": "Billy_Sprinkle",
         "black": "cesaralexanderchess",
@@ -2677,7 +2757,7 @@
         }
       },
       {
-        "gameIndex": 44,
+        "gameIndex": 46,
         "gameId": "zzlP6cwc",
         "white": "capturingbravo",
         "black": "hpors",
@@ -2719,7 +2799,7 @@
         }
       },
       {
-        "gameIndex": 45,
+        "gameIndex": 47,
         "gameId": "XdKWHWkF",
         "white": "Aurichalcite",
         "black": "yavorant",
@@ -2746,7 +2826,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 46,
+        "gameIndex": 48,
         "gameId": "DEUviHY6",
         "white": "Lohthar",
         "black": "XX-121",
@@ -2782,7 +2862,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 47,
+        "gameIndex": 49,
         "gameId": "MlmFTkcb",
         "white": "Pope123",
         "black": "Subhraneil24",
@@ -2818,7 +2898,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 48,
+        "gameIndex": 50,
         "gameId": "OHAt19Ms",
         "white": "Angels_Demons",
         "black": "SamirBhatt",
@@ -2845,7 +2925,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 49,
+        "gameIndex": 51,
         "gameId": "2JTQNueh",
         "white": "chessfefe",
         "black": "fireball100",
@@ -2887,7 +2967,7 @@
         }
       },
       {
-        "gameIndex": 50,
+        "gameIndex": 52,
         "gameId": "tSSImcGy",
         "white": "BMAstatine",
         "black": "Dan-Jon",
@@ -2923,7 +3003,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 51,
+        "gameIndex": 53,
         "gameId": "EUJNwzgP",
         "white": "firestar2202",
         "black": "acurteman",
@@ -2964,7 +3044,7 @@
         }
       },
       {
-        "gameIndex": 52,
+        "gameIndex": 54,
         "gameId": "W67cZqso",
         "white": "Fierolocchio",
         "black": "Micomps",
@@ -3000,7 +3080,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 53,
+        "gameIndex": 55,
         "gameId": "toeP4gSZ",
         "white": "mkac",
         "black": "sussasun",
@@ -3036,7 +3116,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 54,
+        "gameIndex": 56,
         "gameId": "XI7Ewg2s",
         "white": "alex11star",
         "black": "NaveenGeorge",
@@ -3063,7 +3143,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 55,
+        "gameIndex": 57,
         "gameId": "Kd9FEmyU",
         "white": "classicalprac",
         "black": "RAHUL1681",
@@ -3090,7 +3170,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 56,
+        "gameIndex": 58,
         "gameId": "6kA776Ow",
         "white": "DavidSifre",
         "black": "gavillacres",
@@ -3140,7 +3220,7 @@
         }
       },
       {
-        "gameIndex": 57,
+        "gameIndex": 59,
         "gameId": "69mySEOi",
         "white": "kostasvl",
         "black": "pawneater2020",
@@ -3167,7 +3247,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 58,
+        "gameIndex": 60,
         "gameId": "59ULBNRx",
         "white": "jose684",
         "black": "tone_fresh",
@@ -3203,7 +3283,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 59,
+        "gameIndex": 61,
         "gameId": "cfiRKdaa",
         "white": "leosiu",
         "black": "Shadawe",
@@ -3239,7 +3319,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 60,
+        "gameIndex": 62,
         "gameId": "YzWeUUIz",
         "white": "momor",
         "black": "falko47",
@@ -3281,7 +3361,7 @@
         }
       },
       {
-        "gameIndex": 61,
+        "gameIndex": 63,
         "gameId": "s8fABr7w",
         "white": "juandeleon",
         "black": "mynameismund",
@@ -3323,7 +3403,7 @@
         }
       },
       {
-        "gameIndex": 62,
+        "gameIndex": 64,
         "gameId": "PjDKLp7m",
         "white": "tommeketoch",
         "black": "LloydRet",
@@ -3350,7 +3430,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 63,
+        "gameIndex": 65,
         "gameId": "0JL5cCxU",
         "white": "DrRickinCT",
         "black": "laughingoctopus",
@@ -3400,7 +3480,7 @@
         }
       },
       {
-        "gameIndex": 64,
+        "gameIndex": 66,
         "gameId": "gqkjGERv",
         "white": "Silkthewanderer",
         "black": "Not_Any_More",
@@ -3436,7 +3516,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 65,
+        "gameIndex": 67,
         "gameId": "MjyULO2g",
         "white": "quirked",
         "black": "MetropolisOfDesire",
@@ -3463,7 +3543,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 66,
+        "gameIndex": 68,
         "gameId": "Fgfl6M9c",
         "white": "dumplingsandball",
         "black": "NirakuHakamura",
@@ -3499,7 +3579,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 67,
+        "gameIndex": 69,
         "gameId": "dTAHPInR",
         "white": "Zubenelgenubi",
         "black": "nikker33",
@@ -3526,7 +3606,43 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 68,
+        "gameIndex": 70,
+        "gameId": "AtRHJ3NB",
+        "white": "Bpack",
+        "black": "Anthammer",
+        "whiteACPL": 46.7,
+        "blackACPL": 24.9,
+        "whiteAccuracy": 77.1,
+        "blackAccuracy": 90,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 1,
+          "good": 2,
+          "excellent": 9
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 4,
+          "excellent": 11
+        },
+        "biggestBlunder": {
+          "moveNumber": 10,
+          "player": "white",
+          "cpLoss": 160,
+          "winLoss": 22.549107076929594,
+          "severity": 22.549107076929594,
+          "move": "Bxc6",
+          "evalBefore": 59,
+          "evalAfter": -101
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 71,
         "gameId": "Aa4zjTWl",
         "white": "Tigermoth1",
         "black": "PratikBora",
@@ -3562,7 +3678,34 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 69,
+        "gameIndex": 72,
+        "gameId": "ppa9not3",
+        "white": "FunnyLikeAClown",
+        "black": "Moccy",
+        "whiteACPL": 13.3,
+        "blackACPL": 27.2,
+        "whiteAccuracy": 94.9,
+        "blackAccuracy": 89.4,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 3,
+          "good": 4,
+          "excellent": 26
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 5,
+          "good": 3,
+          "excellent": 22
+        },
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 73,
         "gameId": "yL0t57YZ",
         "white": "supergm3000",
         "black": "Strategic_Nonsense",
@@ -3589,7 +3732,43 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 70,
+        "gameIndex": 74,
+        "gameId": "hrj4yHKy",
+        "white": "chk12",
+        "black": "ventricule",
+        "whiteACPL": 18,
+        "blackACPL": 6.3,
+        "whiteAccuracy": 89.3,
+        "blackAccuracy": 96.1,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 15
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 0,
+          "good": 4,
+          "excellent": 16
+        },
+        "biggestBlunder": {
+          "moveNumber": 14,
+          "player": "white",
+          "cpLoss": 163,
+          "winLoss": 22.88001980369905,
+          "severity": 22.88001980369905,
+          "move": "Qb3",
+          "evalBefore": 52,
+          "evalAfter": -111
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 75,
         "gameId": "9TSrFv1t",
         "white": "SarahWynn",
         "black": "che55m45ter",
@@ -3625,7 +3804,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 71,
+        "gameIndex": 76,
         "gameId": "DFHI8NhG",
         "white": "NameGoesInHere",
         "black": "Le_Merovingien",
@@ -3667,7 +3846,7 @@
         }
       },
       {
-        "gameIndex": 72,
+        "gameIndex": 77,
         "gameId": "MxOTjqM7",
         "white": "PVGibson",
         "black": "Jbyrd11",
@@ -3694,7 +3873,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 73,
+        "gameIndex": 78,
         "gameId": "cBAvr5fd",
         "white": "muksia",
         "black": "sterpfi",
@@ -3721,34 +3900,34 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 74,
-        "gameId": "ppa9not3",
-        "white": "FunnyLikeAClown",
-        "black": "Moccy",
-        "whiteACPL": 14.7,
-        "blackACPL": 38.4,
-        "whiteAccuracy": 92.8,
-        "blackAccuracy": 84.1,
+        "gameIndex": 79,
+        "gameId": "1FnTOeXL",
+        "white": "AndreCV",
+        "black": "MerrickS",
+        "whiteACPL": 31,
+        "blackACPL": 19.5,
+        "whiteAccuracy": 88.3,
+        "blackAccuracy": 92.1,
         "whiteMoveQuality": {
           "blunders": 0,
-          "mistakes": 0,
-          "inaccuracies": 3,
-          "good": 4,
-          "excellent": 14
+          "mistakes": 5,
+          "inaccuracies": 5,
+          "good": 6,
+          "excellent": 37
         },
         "blackMoveQuality": {
           "blunders": 0,
-          "mistakes": 2,
-          "inaccuracies": 5,
-          "good": 3,
-          "excellent": 10
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 10,
+          "excellent": 38
         },
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
       },
       {
-        "gameIndex": 75,
+        "gameIndex": 80,
         "gameId": "51u5yiHP",
         "white": "isaypotato",
         "black": "resistire",
@@ -3784,34 +3963,7 @@
         "luckyEscape": null
       },
       {
-        "gameIndex": 76,
-        "gameId": "1FnTOeXL",
-        "white": "AndreCV",
-        "black": "MerrickS",
-        "whiteACPL": 37.3,
-        "blackACPL": 28.5,
-        "whiteAccuracy": 80.1,
-        "blackAccuracy": 84.6,
-        "whiteMoveQuality": {
-          "blunders": 0,
-          "mistakes": 4,
-          "inaccuracies": 5,
-          "good": 4,
-          "excellent": 11
-        },
-        "blackMoveQuality": {
-          "blunders": 0,
-          "mistakes": 3,
-          "inaccuracies": 2,
-          "good": 8,
-          "excellent": 11
-        },
-        "biggestBlunder": null,
-        "biggestComeback": null,
-        "luckyEscape": null
-      },
-      {
-        "gameIndex": 77,
+        "gameIndex": 81,
         "gameId": "CF9rFuhk",
         "white": "byJlo4ka",
         "black": "elii123",
@@ -3841,12 +3993,12 @@
     "summary": {
       "accuracyKing": {
         "player": "black",
-        "accuracy": 97.2,
-        "acpl": 4.5,
-        "white": "markommbrzi",
-        "black": "Simpformyqueen",
-        "gameIndex": 8,
-        "gameId": "M9aZPvca"
+        "accuracy": 97,
+        "acpl": 27.6,
+        "white": "Minot",
+        "black": "sivakumarr",
+        "gameIndex": 36,
+        "gameId": "Aj0rZD7q"
       },
       "biggestBlunder": {
         "moveNumber": 16,
@@ -3859,7 +4011,7 @@
         "evalAfter": -203,
         "white": "sammgus",
         "black": "lc69",
-        "gameIndex": 24,
+        "gameIndex": 25,
         "gameId": "oJoTAO8Z"
       },
       "comebackKing": {
@@ -3883,17 +4035,17 @@
         "moveNumber": 26,
         "white": "capturingbravo",
         "black": "hpors",
-        "gameIndex": 44,
+        "gameIndex": 46,
         "gameId": "zzlP6cwc"
       },
       "lowestACPL": {
         "player": "black",
-        "acpl": 4.5,
-        "accuracy": 97.2,
-        "white": "markommbrzi",
-        "black": "Simpformyqueen",
-        "gameIndex": 8,
-        "gameId": "M9aZPvca"
+        "acpl": 4.9,
+        "accuracy": 96.9,
+        "white": "VicPez",
+        "black": "Grizzzly1000",
+        "gameIndex": 10,
+        "gameId": "V39UZiH9"
       },
       "highestACPL": {
         "player": "black",
@@ -3901,17 +4053,17 @@
         "accuracy": 77.8,
         "white": "Pope123",
         "black": "Subhraneil24",
-        "gameIndex": 47,
+        "gameIndex": 49,
         "gameId": "MlmFTkcb"
       },
       "lowestCombinedACPL": {
-        "combinedACPL": 19.4,
-        "whiteACPL": 14.9,
-        "blackACPL": 4.5,
-        "white": "markommbrzi",
-        "black": "Simpformyqueen",
-        "gameIndex": 8,
-        "gameId": "M9aZPvca"
+        "combinedACPL": 9.9,
+        "whiteACPL": 5,
+        "blackACPL": 4.9,
+        "white": "VicPez",
+        "black": "Grizzzly1000",
+        "gameIndex": 10,
+        "gameId": "V39UZiH9"
       },
       "highestCombinedACPL": {
         "combinedACPL": 95.6,
@@ -3919,7 +4071,7 @@
         "blackACPL": 62.1,
         "white": "Pope123",
         "black": "Subhraneil24",
-        "gameIndex": 47,
+        "gameIndex": 49,
         "gameId": "MlmFTkcb"
       }
     }

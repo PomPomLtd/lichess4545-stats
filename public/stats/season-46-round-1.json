@@ -1,7 +1,7 @@
 {
   "roundNumber": 1,
   "seasonNumber": 46,
-  "generatedAt": "2025-10-31T18:50:37.067Z",
+  "generatedAt": "2025-10-31T20:56:55.185Z",
   "overview": {
     "totalGames": 158,
     "totalMoves": 12850,
@@ -1042,7 +1042,7 @@
       "length": 11,
       "gameIndex": 78,
       "gameId": "I1LV4Tmf",
-      "startMove": 16,
+      "startMove": 31,
       "white": "mronemore",
       "black": "MoonlightAnomaly"
     },
@@ -1050,7 +1050,7 @@
       "length": 12,
       "gameIndex": 115,
       "gameId": "DHcf1MdX",
-      "startMove": 28,
+      "startMove": 55,
       "white": "nvasquez",
       "black": "juandeleon"
     },
@@ -1158,18 +1158,8 @@
       "player": "ihavec0mputer",
       "color": "white",
       "timeSpent": 2,
-      "moveNumber": 35,
+      "moveNumber": 69,
       "move": "Qg8+"
-    },
-    "openingBlitzer": {
-      "white": "Qudit",
-      "black": "Serog1sPerog1s",
-      "gameIndex": 20,
-      "gameId": "z0O4QrXQ",
-      "player": "Serog1sPerog1s",
-      "color": "black",
-      "avgTime": 1.2222222222222223,
-      "moveCount": 9
     },
     "sadTimes": {
       "white": "manuP73",
@@ -1179,7 +1169,7 @@
       "player": "manuP73",
       "color": "white",
       "timeSpent": 524,
-      "moveNumber": 28,
+      "moveNumber": 55,
       "move": "Qd5+",
       "eval": -5.13
     },
@@ -1200,7 +1190,7 @@
       "player": "svidler_simp",
       "color": "white",
       "timeSpent": 1767,
-      "moveNumber": 18,
+      "moveNumber": 35,
       "move": "O-O-O"
     },
     "zeitnotAddict": {
