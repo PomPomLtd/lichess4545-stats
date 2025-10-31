@@ -710,8 +710,13 @@ export default function RoundStatsPage() {
       return
     }
     try {
-      const response = await fetch(`/stats/season-${season}-round-${roundNumber + 1}.json`, { method: 'HEAD' })
-      setNextRoundExists(response.ok)
+      const response = await fetch(`/stats/season-${season}-round-${roundNumber + 1}.json`)
+      // Check if response is actually JSON, not an HTML 404 page
+      if (response.ok && response.headers.get('content-type')?.includes('application/json')) {
+        setNextRoundExists(true)
+      } else {
+        setNextRoundExists(false)
+      }
     } catch {
       setNextRoundExists(false)
     }
