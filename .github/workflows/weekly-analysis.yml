@@ -31,6 +31,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js (early for detection)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies (early for detection)
+        run: npm ci
+
       - name: Determine season and round
         id: detect
         run: |
@@ -41,7 +50,11 @@ jobs:
           fi
           echo "season=$SEASON" >> $GITHUB_OUTPUT
 
-          # Auto-detect next round to analyze
+          # Fetch season data to know expected game counts
+          echo "Fetching season data..."
+          node scripts/fetch-lichess-season.js --season=$SEASON
+
+          # Auto-detect which round to analyze
           ROUND="${{ github.event.inputs.round }}"
           if [ -z "$ROUND" ]; then
             # Find the highest existing round number
@@ -55,8 +68,34 @@ jobs:
               fi
             done
 
-            # Next round is latest + 1 (max 8 rounds)
-            ROUND=$((LATEST_ROUND + 1))
+            if [ "$LATEST_ROUND" -eq 0 ]; then
+              # No rounds analyzed yet, start with round 1
+              ROUND=1
+            else
+              # Check if latest round is complete by comparing game counts
+              STATS_FILE="public/stats/season-${SEASON}-round-${LATEST_ROUND}.json"
+              CURRENT_GAMES=$(jq -r '.overview.totalGames // 0' "$STATS_FILE")
+
+              # Count expected games from season data
+              EXPECTED_GAMES=$(node -e "
+                const fs = require('fs');
+                const data = JSON.parse(fs.readFileSync('data/season-${SEASON}-games.json', 'utf8'));
+                const roundGames = data.games.filter(g => g.round === ${LATEST_ROUND});
+                console.log(roundGames.length);
+              ")
+
+              echo "Latest round $LATEST_ROUND: $CURRENT_GAMES/$EXPECTED_GAMES games"
+
+              if [ "$CURRENT_GAMES" -lt "$EXPECTED_GAMES" ]; then
+                # Round incomplete, re-analyze with full data
+                ROUND=$LATEST_ROUND
+                echo "Round $LATEST_ROUND incomplete - will re-analyze with latest games"
+              else
+                # Round complete, move to next round
+                ROUND=$((LATEST_ROUND + 1))
+                echo "Round $LATEST_ROUND complete - moving to round $ROUND"
+              fi
+            fi
 
             if [ "$ROUND" -gt 8 ]; then
               echo "All rounds for Season $SEASON have been analyzed (rounds 1-8)"
@@ -73,28 +112,16 @@ jobs:
           sudo apt-get install -y stockfish
           stockfish --version
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install Node dependencies
-        run: npm ci
-
       - name: Install Python dependencies
         run: |
           pip3 install python-chess stockfish
 
-      - name: Download season games and PGNs
+      - name: Download round PGNs
         id: download
         continue-on-error: true
         run: |
           SEASON="${{ steps.detect.outputs.season }}"
           ROUND="${{ steps.detect.outputs.round }}"
-
-          echo "Fetching Season $SEASON data from Lichess 4545..."
-          node scripts/fetch-lichess-season.js --season=$SEASON
 
           echo "Downloading Round $ROUND PGNs from Lichess.org..."
           node scripts/download-pgns.js --season=$SEASON --round=$ROUND
