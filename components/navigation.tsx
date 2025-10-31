@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
@@ -45,13 +46,20 @@ export function Navigation() {
   }, [mobileMenuOpen])
 
   return (
-    <nav className="bg-gray-800 relative z-50">
+    <nav className="relative z-50" style={{ backgroundColor: '#132F3A' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-white font-bold text-xl hover:text-gray-300 transition-colors">
-                ♞ Lichess 4545 Stats
+              <Link href="/" className="flex items-center gap-3 text-white font-bold text-xl hover:opacity-90 transition-opacity">
+                <Image
+                  src="/favicon.svg"
+                  alt="Lichess 4545 Logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
+                />
+                <span>Lichess 4545 Stats</span>
               </Link>
             </div>
             <div className="hidden lg:block">
@@ -62,8 +70,8 @@ export function Navigation() {
                     href={item.href}
                     className={classNames(
                       pathname === item.href
-                        ? 'bg-gray-900 text-white'
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        ? 'bg-white/10 text-white'
+                        : 'text-gray-300 hover:bg-white/10 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200'
                     )}
                     aria-current={pathname === item.href ? 'page' : undefined}
@@ -79,7 +87,8 @@ export function Navigation() {
           <div className="lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors"
+              className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white transition-colors"
+              style={{ backgroundColor: '#132F3A' }}
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle main menu"
             >
@@ -120,15 +129,16 @@ export function Navigation() {
       {/* Mobile menu slide-out */}
       <div
         className={classNames(
-          'fixed top-0 right-0 z-40 h-full w-64 bg-gray-800 transform transition-transform duration-300 ease-in-out lg:hidden',
+          'fixed top-0 right-0 z-40 h-full w-64 transform transition-transform duration-300 ease-in-out lg:hidden',
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         )}
+        style={{ backgroundColor: '#132F3A' }}
       >
         <div className="flex items-center justify-between h-16 px-4 border-b border-gray-700">
           <span className="text-white font-bold text-lg">Menu</span>
           <button
             onClick={() => setMobileMenuOpen(false)}
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
             aria-label="Close menu"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
@@ -143,8 +153,8 @@ export function Navigation() {
               href={item.href}
               className={classNames(
                 pathname === item.href
-                  ? 'bg-gray-900 text-white'
-                  : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                  ? 'bg-white/10 text-white'
+                  : 'text-gray-300 hover:bg-white/10 hover:text-white',
                 'block rounded-md px-3 py-3 text-base font-medium transition-colors duration-200'
               )}
               aria-current={pathname === item.href ? 'page' : undefined}
