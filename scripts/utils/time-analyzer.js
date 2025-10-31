@@ -155,6 +155,10 @@ function analyzeGameTime(game, increment = 45) {
   const gameId = headers.GameId || headers.Site?.split('/').pop() || null;
   const result = headers.Result || '*';
 
+  // Check if game ended in checkmate
+  const isCheckmate = game.moveList && game.moveList.length > 0 &&
+    game.moveList[game.moveList.length - 1].san.includes('#');
+
   // Find premoves (moves made in < 0.5 seconds)
   const premoves = moveTimes.filter(m => m.timeSpent < 0.5);
   const whitePremoves = premoves.filter(m => m.color === 'white').length;
@@ -196,6 +200,7 @@ function analyzeGameTime(game, increment = 45) {
     black,
     gameId,
     result,
+    isCheckmate,
     premoves: {
       white: whitePremoves,
       black: blackPremoves,
@@ -395,8 +400,8 @@ function analyzeAllGames(games, increment = 45) {
   // 6. 🎯 Sniper - Fastest time to spot and execute checkmate
   const sniperCandidates = [];
   for (const game of gameAnalyses) {
-    // Only consider games that ended in checkmate (not draws)
-    if (game.result !== '1-0' && game.result !== '0-1') {
+    // Only consider games that actually ended in checkmate
+    if (!game.isCheckmate) {
       continue;
     }
 
