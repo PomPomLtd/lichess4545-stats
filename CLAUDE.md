@@ -26,9 +26,82 @@ curl -s "https://lichess.org/api/broadcast/round/{roundId}/pgn" | \
 cat round1.pgn | node scripts/generate-stats.js --round 1 --season 46
 ```
 
+**Generate Season Overview:**
+```bash
+# Aggregates all round stats into season overview
+node scripts/generate-overview.js --season 46
+```
+
 **Output:**
 - Round stats: `public/stats/season-<N>-round-<N>.json`
-- View at: `http://localhost:3000/stats/<season>/round/<roundNumber>`
+  - View at: `http://localhost:3000/stats/<season>/round/<roundNumber>`
+- Season overview: `public/stats/season-<N>-overview.json`
+  - View at: `http://localhost:3000/stats/<season>/overview`
+
+### Team Statistics
+
+**Team Awards** (12 awards tracked in each round):
+1. 🩸 Most Bloodthirsty - Most total captures
+2. 🦐 Best Pawn Crackers - Most pawn captures
+3. 🌙 Late Knight Show - Most knight moves after move 30
+4. ⚡ Fastest Castling - Lowest average castling move number
+5. 🚀 Space Invaders - Most pieces in enemy territory
+6. ⚔️ Check Masters - Most checks delivered
+7. 🔲 Corner Conquerors - Most corner square activity
+8. 🏃 Marathon Runners - Most total moves
+9. 💨 Speed Demons - Shortest average game length
+10. 🐔 Chicken Champions - Most retreating moves
+11. 🚫🐔 Bravest Team - Fewest retreating moves
+12. 👑 Promotion Party - Most pawn promotions
+
+**Team Roster Loading:**
+- Team rosters loaded from Season API: `https://www.lichess4545.com/api/season/{season}/games.json`
+- Creates O(1) player→team lookup map
+- Team names use Syne Tactile font for display
+
+**Team Hall of Fame:**
+- Season overview aggregates best team performances across all rounds
+- Tracks highest value for each award type
+- Displayed in dedicated section on overview page
+
+### Season Overview
+
+**Purpose:** Aggregates all round statistics into season-wide superlatives, leaderboards, and trends.
+
+**Components** (5 sections in `/components/stats/overview/`):
+1. `overview-hero.tsx` - Season aggregates (total games, moves, pieces captured)
+2. `piece-cemetery.tsx` - Creative graveyard with all captured pieces (1,100+ pieces)
+3. `hall-of-fame-section.tsx` - Best player awards from all rounds (14 superlatives)
+4. `team-hall-of-fame-section.tsx` - Best team performances from all rounds (12 awards)
+5. `leaderboards-section.tsx` - Player rankings (9 leaderboards)
+6. `trends-section.tsx` - Round-by-round visualization of key metrics
+
+**Hall of Fame** (14 player superlatives):
+- Cleanest Game, Wildest Game, Biggest Blunder
+- Most Accurate, Worst ACPL
+- Longest Game, Shortest Game
+- Sportiest Queen, Most Retreats
+- Longest Check Sequence, Longest Capture Spree
+- Earliest Castling, Most Obscure Opening
+- Biggest Comeback, Lucky Escape
+
+**Leaderboards** (9 rankings):
+- Most Awards, Best Average ACPL, Worst Average ACPL
+- Most Improved, Most Games, Most Versatile
+- Most Consistent, Highest Win Rate
+- Most Blunders, Fewest Blunders
+
+**Trends** (10 metrics tracked by round):
+- Average ACPL, Average Accuracy, Average Game Length
+- e4 Percentage, d4 Percentage
+- Draw Rate, White Win Rate, Black Win Rate
+- Blunders/Game, Mistakes/Game, Average Queen Distance
+
+**Generation:**
+- Run after 2+ rounds are complete
+- Fast execution (~10 seconds) - aggregates existing round data
+- Output: `public/stats/season-<N>-overview.json`
+- View at: `http://localhost:3000/stats/<season>/overview`
 
 ### Key Statistics Components
 
@@ -113,40 +186,92 @@ npm run build  # Always run before committing to verify TypeScript
 - TypeScript interfaces in `app/stats/[season]/round/[roundNumber]/page.tsx` must match component interfaces
 - All fun stats must have consistent interface structure across calculators and UI components
 
-## Remote Analysis (GitHub Actions)
+## Workflow Quick Reference
 
-**Workflows:**
-- `.github/workflows/analyze-round.yml` - Single round Stockfish analysis
-- `.github/workflows/analyze-multiple-rounds.yml` - Parallel batch analysis (up to 3 rounds)
-
-**Usage:**
+**Trigger Manual Workflows:**
 ```bash
-# Trigger remote analysis (recommended)
+# Analyze single round with Stockfish
 gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
 
-# Monitor progress
-gh run watch
+# Analyze multiple rounds (batch)
+gh workflow run analyze-multiple-rounds.yml -f rounds=1,2,3 -f season=46 -f depth=15
 
-# When complete, pull results
-git pull
+# Generate season overview
+gh workflow run generate-overview.yml -f season=46
+
+# Trigger weekly analysis (normally auto-runs Monday 12pm UTC)
+gh workflow run weekly-analysis.yml -f depth=15
+
+# Trigger mid-week update (normally auto-runs Thursday 12pm UTC)
+gh workflow run midweek-update.yml
 ```
 
-**Features:**
-- Automatically downloads PGNs from lichess4545.com API
-- Runs Stockfish analysis on GitHub runners (Intel Xeon CPUs)
-- Auto-detects Python and Stockfish paths (works on Ubuntu)
-- Commits results and triggers Vercel deployment
-- Takes ~1-2 hours per round (slower than Apple Silicon, but hands-free!)
+**Check Workflow Status:**
+```bash
+gh workflow list                    # List all workflows
+gh run list --limit 5              # Show recent runs
+gh run watch                       # Watch latest run
+gh run view <run-id> --log         # View logs
+```
 
-**Key Files:**
-- `scripts/fetch-lichess-season.js` - Fetches game data from API
-- `scripts/download-pgns.js` - Downloads PGNs from Lichess.org
-- `scripts/generate-stats.js` - Generates statistics with optional Stockfish analysis
-- `scripts/analyze-pgn.py` - Python Stockfish analyzer
+## Automated Workflows (GitHub Actions)
 
-**Path Detection:**
-- `getPythonCommand()` in generate-stats.js - Detects venv or system python3
-- `find_stockfish_path()` in analyze-pgn.py - Auto-detects Stockfish binary location
+### Scheduled Workflows (Automatic)
+
+**Weekly Round Analysis** - `.github/workflows/weekly-analysis.yml`
+- **Schedule**: Every Monday at 12:00 UTC (noon)
+- **Purpose**: Analyze new rounds with Stockfish (depth 15)
+- **Features**:
+  - Auto-detects which round to analyze (checks game counts)
+  - Re-analyzes incomplete rounds with latest games
+  - Moves to next round when current is complete (game count matches expected)
+  - Supports 8 rounds per season
+  - Commits results automatically
+
+**Mid-Week Stats Update** - `.github/workflows/midweek-update.yml`
+- **Schedule**: Every Thursday at 12:00 UTC (mid-week)
+- **Purpose**: Quick refresh of current round stats (no Stockfish)
+- **Features**:
+  - Updates stats for latest completed games
+  - Fast execution (~5 minutes)
+  - Auto-detects current round
+
+**Season Overview Generation** - `.github/workflows/generate-overview.yml`
+- **Schedule**: Every Monday at 14:00 UTC (2pm, 2 hours after round analysis)
+- **Purpose**: Aggregate all rounds into season overview
+- **Features**:
+  - Generates hall of fame (player + team superlatives)
+  - Creates leaderboards and trends
+  - Includes piece cemetery
+  - Fast execution (~10 seconds)
+
+### Manual Workflows
+
+**Single Round Analysis** - `.github/workflows/analyze-round.yml`
+```bash
+gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
+```
+
+**Batch Analysis** - `.github/workflows/analyze-multiple-rounds.yml`
+```bash
+gh workflow run analyze-multiple-rounds.yml -f rounds=1,2,3 -f season=46 -f depth=15
+```
+
+**Manual Overview** - `.github/workflows/generate-overview.yml`
+```bash
+gh workflow run generate-overview.yml -f season=46
+```
+
+### Key Features
+
+- **Smart Round Detection**: Compares game counts to determine round completion
+- **Auto-rebase**: Uses `git pull --rebase` to handle concurrent commits
+- **Python/Stockfish Auto-detection**: Works on Ubuntu runners
+- **Vercel Deployment**: Auto-triggers on commit
+- **Execution Time**:
+  - Round analysis: ~1-2 hours (with Stockfish)
+  - Mid-week update: ~5 minutes (no Stockfish)
+  - Overview: ~10 seconds (aggregates existing data)
 
 See **REMOTE_ANALYSIS.md** for complete documentation.
 
