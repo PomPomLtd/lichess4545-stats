@@ -47,16 +47,16 @@ jobs:
         run: |
           pip3 install python-chess stockfish
 
-      - name: Verify PGN file exists
+      - name: Download season games and PGNs
         run: |
-          PGN_FILE="data/season-${{ github.event.inputs.season }}-round-${{ github.event.inputs.round }}.pgn"
-          if [ ! -f "$PGN_FILE" ]; then
-            echo "Error: PGN file not found at $PGN_FILE"
-            echo "Please ensure the PGN file is committed to the repository first."
-            exit 1
-          fi
-          echo "Found PGN file: $PGN_FILE"
-          wc -l "$PGN_FILE"
+          echo "Fetching Season ${{ github.event.inputs.season }} data from Lichess 4545..."
+          node scripts/fetch-lichess-season.js --season=${{ github.event.inputs.season }}
+
+          echo "Downloading Round ${{ github.event.inputs.round }} PGNs from Lichess.org..."
+          node scripts/download-pgns.js --season=${{ github.event.inputs.season }} --round=${{ github.event.inputs.round }}
+
+          echo "PGN file ready:"
+          wc -l "data/season-${{ github.event.inputs.season }}-round-${{ github.event.inputs.round }}.pgn"
 
       - name: Run Stockfish Analysis
         run: |

@@ -46,6 +46,14 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
+      - name: Download season games and PGNs for Round ${{ matrix.round }}
+        run: |
+          echo "Fetching Season ${{ github.event.inputs.season }} data from Lichess 4545..."
+          node scripts/fetch-lichess-season.js --season=${{ github.event.inputs.season }}
+
+          echo "Downloading Round ${{ matrix.round }} PGNs from Lichess.org..."
+          node scripts/download-pgns.js --season=${{ github.event.inputs.season }} --round=${{ matrix.round }}
+
       - name: Analyze Round ${{ matrix.round }}
         run: |
           echo "Starting analysis for Season ${{ github.event.inputs.season }} Round ${{ matrix.round }}"
