@@ -564,12 +564,10 @@ export function FunStats({ funStats }: FunStatsProps) {
         )}
 
         {funStats.openingBlitzer && (
-          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg">
+          <AwardCard gameId={funStats.openingBlitzer.gameId} className="bg-cyan-50 dark:bg-cyan-900/20">
             <div className="font-semibold text-cyan-900 dark:text-cyan-300 mb-1">📚 Opening Blitzer</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.openingBlitzer.gameId}>
-                {funStats.openingBlitzer.player}
-              </GameLink>
+              {funStats.openingBlitzer.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Averaged {formatTime(funStats.openingBlitzer.avgTime)} per move in opening
@@ -577,16 +575,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.openingBlitzer.white} vs {funStats.openingBlitzer.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.sadTimes && (
-          <div className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
+          <AwardCard gameId={funStats.sadTimes.gameId} className="bg-gray-50 dark:bg-gray-800/50">
             <div className="font-semibold text-gray-900 dark:text-gray-300 mb-1">😢 Sad Times Award</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.sadTimes.gameId}>
-                {funStats.sadTimes.player}
-              </GameLink>
+              {funStats.sadTimes.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Thought for {formatTime(funStats.sadTimes.timeSpent)} at eval {funStats.sadTimes.eval.toFixed(2)}
@@ -594,16 +590,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.sadTimes.white} vs {funStats.sadTimes.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.mostPremoves && (
-          <div className="p-4 bg-lime-50 dark:bg-lime-900/20 rounded-lg">
+          <AwardCard gameId={funStats.mostPremoves.gameId} className="bg-lime-50 dark:bg-lime-900/20">
             <div className="font-semibold text-lime-900 dark:text-lime-300 mb-1">🎮 Premove Master</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.mostPremoves.gameId}>
-                {funStats.mostPremoves.player}
-              </GameLink>
+              {funStats.mostPremoves.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Made {funStats.mostPremoves.count} premoves (under 0.5s)
@@ -611,16 +605,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.mostPremoves.white} vs {funStats.mostPremoves.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.longestThink && (
-          <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+          <AwardCard gameId={funStats.longestThink.gameId} className="bg-yellow-50 dark:bg-yellow-900/20">
             <div className="font-semibold text-yellow-900 dark:text-yellow-300 mb-1">🤔 Deep Thinker</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.longestThink.gameId}>
-                {funStats.longestThink.player}
-              </GameLink>
+              {funStats.longestThink.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Spent {formatTime(funStats.longestThink.timeSpent)} on a single move
@@ -628,16 +620,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.longestThink.white} vs {funStats.longestThink.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.zeitnotAddict && (
-          <div className="p-4 bg-rose-50 dark:bg-rose-900/20 rounded-lg">
+          <AwardCard gameId={funStats.zeitnotAddict.gameId} className="bg-rose-50 dark:bg-rose-900/20">
             <div className="font-semibold text-rose-900 dark:text-rose-300 mb-1">⏰ Zeitnot Addict</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.zeitnotAddict.gameId}>
-                {funStats.zeitnotAddict.player}
-              </GameLink>
+              {funStats.zeitnotAddict.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Made {funStats.zeitnotAddict.count} moves with under 60 seconds
@@ -645,16 +635,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.zeitnotAddict.white} vs {funStats.zeitnotAddict.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.timeScrambleSurvivor && (
-          <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
+          <AwardCard gameId={funStats.timeScrambleSurvivor.gameId} className="bg-emerald-50 dark:bg-emerald-900/20">
             <div className="font-semibold text-emerald-900 dark:text-emerald-300 mb-1">🏆 Time Scramble Survivor</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.timeScrambleSurvivor.gameId}>
-                {funStats.timeScrambleSurvivor.winner}
-              </GameLink>
+              {funStats.timeScrambleSurvivor.winner}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Won with {formatTime(funStats.timeScrambleSurvivor.minClock)} remaining
@@ -662,16 +650,14 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.timeScrambleSurvivor.white} vs {funStats.timeScrambleSurvivor.black}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.bulletSpeed && (
-          <div className="p-4 bg-sky-50 dark:bg-sky-900/20 rounded-lg">
+          <AwardCard gameId={funStats.bulletSpeed.gameId} className="bg-sky-50 dark:bg-sky-900/20">
             <div className="font-semibold text-sky-900 dark:text-sky-300 mb-1">⚡ Bullet Speed</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
-              <GameLink gameId={funStats.bulletSpeed.gameId}>
-                {funStats.bulletSpeed.player}
-              </GameLink>
+              {funStats.bulletSpeed.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Averaged {formatTime(funStats.bulletSpeed.avgTime)} per move
@@ -679,7 +665,7 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.bulletSpeed.white} vs {funStats.bulletSpeed.black}
             </div>
-          </div>
+          </AwardCard>
         )}
       </div>
     </StatCard>

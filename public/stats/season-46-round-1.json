@@ -1,7 +1,7 @@
 {
   "roundNumber": 1,
   "seasonNumber": 46,
-  "generatedAt": "2025-10-31T10:14:37.043Z",
+  "generatedAt": "2025-10-31T10:35:24.647Z",
   "overview": {
     "totalGames": 158,
     "totalMoves": 12850,
@@ -1166,24 +1166,24 @@
       "description": "a4-b5 pieces faced off for 48 moves without capturing"
     },
     "sniper": {
-      "white": "Matt365",
-      "black": "chesssedin",
-      "gameIndex": 138,
-      "gameId": "NI8a3EbV",
-      "player": "chesssedin",
+      "white": "NaveenGeorge",
+      "black": "MerrickS",
+      "gameIndex": 139,
+      "gameId": "WMIt1OhG",
+      "player": "MerrickS",
       "color": "black",
-      "timeSpent": 281,
-      "moveNumber": 32,
-      "move": "a4"
+      "timeSpent": 1,
+      "moveNumber": 49,
+      "move": "Kg6"
     },
     "openingBlitzer": {
-      "white": "BigPig93",
-      "black": "PVGibson",
-      "gameIndex": 142,
-      "gameId": "SXle0EP0",
-      "player": "BigPig93",
-      "color": "white",
-      "avgTime": 0.1111111111111111,
+      "white": "Qudit",
+      "black": "Serog1sPerog1s",
+      "gameIndex": 49,
+      "gameId": "z0O4QrXQ",
+      "player": "Serog1sPerog1s",
+      "color": "black",
+      "avgTime": 1.2222222222222223,
       "moveCount": 9
     },
     "sadTimes": {
@@ -1193,30 +1193,30 @@
       "gameId": "vSNEbINN",
       "player": "manuP73",
       "color": "white",
-      "timeSpent": 2997,
-      "moveNumber": 29,
-      "move": "cxd5",
-      "eval": -6.21
+      "timeSpent": 524,
+      "moveNumber": 28,
+      "move": "Qd5+",
+      "eval": -5.13
     },
     "mostPremoves": {
       "white": "fork2020",
       "black": "markommbrzi",
       "gameIndex": 17,
       "gameId": "Y66zPJoZ",
-      "player": "markommbrzi",
-      "color": "black",
-      "count": 97
+      "player": "fork2020",
+      "color": "white",
+      "count": 21
     },
     "longestThink": {
-      "white": "manuP73",
-      "black": "Turtle-Tickler_2",
-      "gameIndex": 40,
-      "gameId": "vSNEbINN",
-      "player": "manuP73",
+      "white": "svidler_simp",
+      "black": "Drotciv",
+      "gameIndex": 144,
+      "gameId": "75RvpQ0X",
+      "player": "svidler_simp",
       "color": "white",
-      "timeSpent": 3411,
-      "moveNumber": 39,
-      "move": "Ke3"
+      "timeSpent": 1767,
+      "moveNumber": 18,
+      "move": "O-O-O"
     },
     "zeitnotAddict": {
       "white": "fork2020",
@@ -1228,14 +1228,14 @@
       "count": 9
     },
     "bulletSpeed": {
-      "white": "BigPig93",
-      "black": "PVGibson",
-      "gameIndex": 142,
-      "gameId": "SXle0EP0",
-      "player": "BigPig93",
+      "white": "Strategic_Nonsense",
+      "black": "Knight_Without_Armor",
+      "gameIndex": 32,
+      "gameId": "pBihtXtl",
+      "player": "Strategic_Nonsense",
       "color": "white",
-      "avgTime": 0.047619047619047616,
-      "moveCount": 21
+      "avgTime": 10.36,
+      "moveCount": 25
     }
   },
   "tacticalPatterns": {
@@ -2334,7 +2334,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "d5-f7",
+          "squares": "b7-d5",
           "startMove": 40,
           "endMove": 43
         },
@@ -2584,7 +2584,7 @@
         },
         "longestTension": {
           "moves": 7,
-          "squares": "c6-d4",
+          "squares": "d4-e6",
           "startMove": 10,
           "endMove": 17
         },
@@ -3009,7 +3009,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "a3-d6",
+          "squares": "d6-g3",
           "startMove": 53,
           "endMove": 58
         },
@@ -3109,7 +3109,7 @@
         },
         "longestTension": {
           "moves": 17,
-          "squares": "d4-f5",
+          "squares": "f5-h4",
           "startMove": 64,
           "endMove": 81
         },
@@ -3734,7 +3734,7 @@
         },
         "longestTension": {
           "moves": 8,
-          "squares": "a7-d4",
+          "squares": "d5-e5",
           "startMove": 33,
           "endMove": 41
         },
@@ -3809,7 +3809,7 @@
         },
         "longestTension": {
           "moves": 9,
-          "squares": "d5-f6",
+          "squares": "c7-d5",
           "startMove": 19,
           "endMove": 28
         },
@@ -3884,7 +3884,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "d4-f6",
+          "squares": "d5-e6",
           "startMove": 17,
           "endMove": 21
         },
@@ -3959,7 +3959,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "f7-g5",
+          "squares": "e6-g5",
           "startMove": 45,
           "endMove": 55
         },
@@ -4859,7 +4859,7 @@
         },
         "longestTension": {
           "moves": 13,
-          "squares": "e4-f2",
+          "squares": "c3-e4",
           "startMove": 17,
           "endMove": 30
         },
@@ -4984,7 +4984,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "c6-e5",
+          "squares": "e5-f7",
           "startMove": 23,
           "endMove": 28
         },
@@ -5009,7 +5009,7 @@
         },
         "longestTension": {
           "moves": 7,
-          "squares": "c6-d4",
+          "squares": "d4-e6",
           "startMove": 8,
           "endMove": 15
         },
@@ -5084,7 +5084,7 @@
         },
         "longestTension": {
           "moves": 13,
-          "squares": "f4-g2",
+          "squares": "f4-h3",
           "startMove": 43,
           "endMove": 56
         },

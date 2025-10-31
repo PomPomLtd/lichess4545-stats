@@ -96,17 +96,27 @@ function parseEval(evalStr) {
 function calculateMoveTimes(clockTimes, increment = 45) {
   const moveTimes = [];
 
-  for (let i = 1; i < clockTimes.length; i++) {
-    const prev = clockTimes[i - 1];
+  // We need to compare each player's consecutive moves with themselves
+  // to calculate how much time THEY spent thinking
+  for (let i = 0; i < clockTimes.length; i++) {
     const curr = clockTimes[i];
 
-    // Only compare consecutive moves by the same player
-    if (curr.color === prev.color) {
+    // Find this player's previous move
+    let prevSamePlayer = null;
+    for (let j = i - 1; j >= 0; j--) {
+      if (clockTimes[j].color === curr.color) {
+        prevSamePlayer = clockTimes[j];
+        break;
+      }
+    }
+
+    // Skip first move for each player (no previous move to compare)
+    if (!prevSamePlayer) {
       continue;
     }
 
     // Time spent = (previous clock + increment) - current clock
-    const timeSpent = (prev.clockTime + increment) - curr.clockTime;
+    const timeSpent = (prevSamePlayer.clockTime + increment) - curr.clockTime;
 
     moveTimes.push({
       moveNumber: curr.moveNumber,
@@ -114,8 +124,8 @@ function calculateMoveTimes(clockTimes, increment = 45) {
       move: curr.move,
       timeSpent: Math.max(0, timeSpent), // Ensure non-negative
       clockRemaining: curr.clockTime,
-      evalBefore: prev.eval, // Eval before the move
-      evalAfter: curr.eval   // Eval after the move
+      evalBefore: prevSamePlayer.eval, // Eval before this player's move
+      evalAfter: curr.eval   // Eval after this player's move
     });
   }
 
