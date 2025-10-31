@@ -346,18 +346,18 @@ export function FunStats({ funStats }: FunStatsProps) {
 
         {funStats.longestCheckSequence && (
           <AwardCard gameId={funStats.longestCheckSequence.gameId} className="bg-orange-50 dark:bg-orange-900/20">
-            <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">👑 Longest King Hunt</AwardCard>
+            <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">👑 Longest King Hunt</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.longestCheckSequence.white} black={funStats.longestCheckSequence.black} />
-            </AwardCard>
+            </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.longestCheckSequence.length} checks by one side starting move {funStats.longestCheckSequence.startMove}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.pawnStorm && (
-          <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg">
+          <AwardCard gameId={funStats.pawnStorm.gameId} className="bg-cyan-50 dark:bg-cyan-900/20">
             <div className="font-semibold text-cyan-900 dark:text-cyan-300 mb-1">🌪️ Pawn Storm Award</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.pawnStorm.white} black={funStats.pawnStorm.black} />
@@ -365,11 +365,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.pawnStorm.count} pawn moves in the opening phase
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.pieceLoyalty && (
-          <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg">
+          <AwardCard gameId={funStats.pieceLoyalty.gameId} className="bg-indigo-50 dark:bg-indigo-900/20">
             <div className="font-semibold text-indigo-900 dark:text-indigo-300 mb-1">🏠 Piece Loyalty Award</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.pieceLoyalty.white} black={funStats.pieceLoyalty.black} />
@@ -377,11 +377,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.pieceLoyalty.piece} stayed on {funStats.pieceLoyalty.square} for {funStats.pieceLoyalty.moves} moves
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.squareTourist && (
-          <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+          <AwardCard gameId={funStats.squareTourist.gameId} className="bg-teal-50 dark:bg-teal-900/20">
             <div className="font-semibold text-teal-900 dark:text-teal-300 mb-1">✈️ Square Tourist Award</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.squareTourist.white} black={funStats.squareTourist.black} />
@@ -389,11 +389,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.squareTourist.color}&apos;s {funStats.squareTourist.startSquare} {funStats.squareTourist.piece} visited {funStats.squareTourist.squares} different squares
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.castlingRace && (
-          <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+          <AwardCard gameId={funStats.castlingRace.gameId} className="bg-purple-50 dark:bg-purple-900/20">
             <div className="font-semibold text-purple-900 dark:text-purple-300 mb-1">🏁 Castling Race Winner</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.castlingRace.white} black={funStats.castlingRace.black} />
@@ -401,11 +401,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.castlingRace.winner === 'white' ? funStats.castlingRace.white : funStats.castlingRace.black} castled first on move {funStats.castlingRace.moves}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.openingHipster && (
-          <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+          <AwardCard gameId={funStats.openingHipster.gameId} className="bg-blue-50 dark:bg-blue-900/20">
             <div className="font-semibold text-blue-900 dark:text-blue-300 mb-1">🎩 Opening Hipster</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.openingHipster.white} black={funStats.openingHipster.black} />
@@ -413,11 +413,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Most obscure opening: {funStats.openingHipster.eco} {funStats.openingHipster.name}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.dadbodShuffler && (
-          <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+          <AwardCard gameId={funStats.dadbodShuffler.gameId} className="bg-yellow-50 dark:bg-yellow-900/20">
             <div className="font-semibold text-yellow-900 dark:text-yellow-300 mb-1">👑 Dadbod Shuffler</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.dadbodShuffler.white} black={funStats.dadbodShuffler.black} />
@@ -425,11 +425,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.dadbodShuffler.color} king moved {funStats.dadbodShuffler.moves} times
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.sportyQueen && (
-          <div className="p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
+          <AwardCard gameId={funStats.sportyQueen.gameId} className="bg-pink-50 dark:bg-pink-900/20">
             <div className="font-semibold text-pink-900 dark:text-pink-300 mb-1">👸 Sporty Queen</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.sportyQueen.white} black={funStats.sportyQueen.black} />
@@ -437,11 +437,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.sportyQueen.color} queen traveled {Math.round(funStats.sportyQueen.distance)} squares (~{(funStats.sportyQueen.distance * 0.82 * 5.5).toFixed(0)} cm, or {(funStats.sportyQueen.distance * 0.82 * 5.5 * 18.54 / 100).toFixed(0)}m at human scale)
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.edgeLord && (
-          <div className="p-4 bg-slate-50 dark:bg-slate-900/20 rounded-lg">
+          <AwardCard gameId={funStats.edgeLord.gameId} className="bg-slate-50 dark:bg-slate-900/20">
             <div className="font-semibold text-slate-900 dark:text-slate-300 mb-1">📐 Professional Edger</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.edgeLord.white} black={funStats.edgeLord.black} />
@@ -449,11 +449,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.edgeLord.color} made {funStats.edgeLord.moves} moves on edge files (a/h)
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.rookLift && (
-          <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
+          <AwardCard gameId={funStats.rookLift.gameId} className="bg-emerald-50 dark:bg-emerald-900/20">
             <div className="font-semibold text-emerald-900 dark:text-emerald-300 mb-1">🚀 Do You Even Rook Lift Bro</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.rookLift.white} black={funStats.rookLift.black} />
@@ -461,11 +461,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.rookLift.rook} activated on move {funStats.rookLift.moveNumber}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.centerStage && (
-          <div className="p-4 bg-violet-50 dark:bg-violet-900/20 rounded-lg">
+          <AwardCard gameId={funStats.centerStage.gameId} className="bg-violet-50 dark:bg-violet-900/20">
             <div className="font-semibold text-violet-900 dark:text-violet-300 mb-1">⭐ Center Stage</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.centerStage.white} black={funStats.centerStage.black} />
@@ -473,11 +473,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.centerStage.piece} dominated the center with {funStats.centerStage.moves} moves on d4/d5/e4/e5
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.darkLord && (
-          <div className="p-4 bg-gray-800 dark:bg-gray-950 rounded-lg border border-gray-700 dark:border-gray-800">
+          <AwardCard gameId={funStats.darkLord.gameId} className="bg-gray-800 dark:bg-gray-950 border border-gray-700 dark:border-gray-800">
             <div className="font-semibold text-gray-100 dark:text-gray-200 mb-1">🌑 Dark Mode Enthusiast</div>
             <div className="text-sm text-gray-200 dark:text-gray-300">
               <PlayerVs white={funStats.darkLord.white} black={funStats.darkLord.black} />
@@ -485,11 +485,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-300 dark:text-gray-400 mt-1">
               {funStats.darkLord.color} captured {funStats.darkLord.captures} pieces on dark squares
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.chickenAward && (
-          <div className="p-4 bg-lime-50 dark:bg-lime-900/20 rounded-lg">
+          <AwardCard gameId={funStats.chickenAward.gameId} className="bg-lime-50 dark:bg-lime-900/20">
             <div className="font-semibold text-lime-900 dark:text-lime-300 mb-1">🐔 Chicken Award</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.chickenAward.white} black={funStats.chickenAward.black} />
@@ -497,7 +497,7 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.chickenAward.color} made {funStats.chickenAward.retreats} retreating moves
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.homebody && (
