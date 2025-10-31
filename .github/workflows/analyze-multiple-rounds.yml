@@ -20,6 +20,8 @@ on:
 jobs:
   analyze:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     strategy:
       matrix:
         round: ${{ fromJson(format('[{0}]', github.event.inputs.rounds)) }}
@@ -68,6 +70,8 @@ jobs:
   commit:
     needs: analyze
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
