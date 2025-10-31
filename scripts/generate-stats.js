@@ -18,6 +18,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const { parseMultipleGames } = require('./utils/pgn-parser');
 const { calculateStats } = require('./utils/stats-calculator');
+const { loadSeasonGames, extractTeamRosters, buildPlayerTeamMap, filterTeamGamesByRound } = require('./utils/team-loader');
 
 // Get Python command (venv if available, otherwise system python3)
 function getPythonCommand() {
@@ -245,9 +246,28 @@ async function main() {
       analysisData = analyzeGames(parseResults.valid);
     }
 
-    // Step 5: Calculate statistics (pass tactical data for awards)
+    // Step 5: Load team data (optional - for team statistics)
+    console.log('\n👥 Loading team data...');
+    let teamData = null;
+    const seasonGames = loadSeasonGames(options.season);
+    if (seasonGames) {
+      const allTeamRosters = extractTeamRosters(seasonGames);
+      const teamRosters = filterTeamGamesByRound(allTeamRosters, options.round);
+      const playerTeamMap = buildPlayerTeamMap(allTeamRosters);
+
+      teamData = {
+        rosters: teamRosters,
+        playerTeamMap
+      };
+
+      console.log(`✅ Loaded ${Object.keys(teamRosters).length} teams`);
+    } else {
+      console.log('⚠️  Team data not available - skipping team statistics');
+    }
+
+    // Step 6: Calculate statistics (pass tactical data and team data)
     console.log('\n📊 Calculating statistics...');
-    const stats = calculateStats(parseResults.valid, options.round, options.season, tacticsData);
+    const stats = calculateStats(parseResults.valid, options.round, options.season, tacticsData, teamData);
 
     // Step 6: Merge tactical and analysis data into stats
     if (tacticsData) {
@@ -321,6 +341,48 @@ async function main() {
         const qd = tacticsData.summary.quickDraw;
         const name = qd.player === 'white' ? qd.white : qd.black;
         console.log(`   🔫 Fastest Gun: ${name} (first invasion move ${Math.floor((qd.moveNumber + 1) / 2)})`);
+      }
+    }
+
+    if (stats.teams) {
+      console.log('\n👥 Team Awards:');
+      const a = stats.teams.awards;
+
+      if (a.bloodthirstyTeam) {
+        console.log(`   🩸 Bloodthirsty Team: ${a.bloodthirstyTeam.name} (${a.bloodthirstyTeam.totalCaptures} captures, ${a.bloodthirstyTeam.averagePerGame} avg)`);
+      }
+      if (a.pawnCrackers) {
+        console.log(`   🦐 Pawn Crackers: ${a.pawnCrackers.name} (${a.pawnCrackers.pawnCaptures} pawn captures, ${a.pawnCrackers.averagePerGame} avg)`);
+      }
+      if (a.lateKnightShow) {
+        console.log(`   🌙 The Late Knight Show: ${a.lateKnightShow.name} (${a.lateKnightShow.lateKnightMoves} late knight moves, ${a.lateKnightShow.averagePerGame} avg)`);
+      }
+      if (a.castlingSpeed) {
+        console.log(`   ⚡ Castling Speed: ${a.castlingSpeed.name} (avg move ${a.castlingSpeed.averageCastlingMove})`);
+      }
+      if (a.spaceInvaders) {
+        console.log(`   🚀 Space Invaders: ${a.spaceInvaders.name} (${a.spaceInvaders.invasionMoves} invasion moves, ${a.spaceInvaders.averagePerGame} avg)`);
+      }
+      if (a.checkMasters) {
+        console.log(`   ⚔️ Check Masters: ${a.checkMasters.name} (${a.checkMasters.checksDelivered} checks delivered, ${a.checkMasters.averagePerGame} avg)`);
+      }
+      if (a.cornerConquerors) {
+        console.log(`   🔲 Corner Conquerors: ${a.cornerConquerors.name} (${a.cornerConquerors.cornerMoves} corner moves, ${a.cornerConquerors.averagePerGame} avg)`);
+      }
+      if (a.marathonRunners) {
+        console.log(`   🏃 Marathon Runners: ${a.marathonRunners.name} (${a.marathonRunners.averageGameLength} avg moves/game)`);
+      }
+      if (a.speedDemons) {
+        console.log(`   💨 Speed Demons: ${a.speedDemons.name} (${a.speedDemons.averageGameLength} avg moves/game)`);
+      }
+      if (a.chickenTeam) {
+        console.log(`   🐔 Chicken Team: ${a.chickenTeam.name} (${a.chickenTeam.retreatingMoves} retreating moves, ${a.chickenTeam.averagePerGame} avg)`);
+      }
+      if (a.nonChickenTeam) {
+        console.log(`   🚫🐔 Non-Chicken Team: ${a.nonChickenTeam.name} (${a.nonChickenTeam.retreatingMoves} retreating moves, ${a.nonChickenTeam.averagePerGame} avg)`);
+      }
+      if (a.promotionParty) {
+        console.log(`   👑 Promotion Party: ${a.promotionParty.name} (${a.promotionParty.promotions} promotions, ${a.promotionParty.averagePerGame} avg)`);
       }
     }
 

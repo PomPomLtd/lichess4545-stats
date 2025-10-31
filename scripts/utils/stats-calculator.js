@@ -18,6 +18,7 @@ const { calculatePieceStats } = require('./calculators/pieces');
 const { calculateBoardHeatmap } = require('./calculators/heatmap');
 const { calculateAwards } = require('./calculators/awards');
 const { calculateFunStats } = require('./calculators/fun-stats');
+const { calculateTeamStats, calculateTeamAwards } = require('./calculators/teams');
 
 /**
  * Calculate comprehensive statistics from parsed games
@@ -26,9 +27,10 @@ const { calculateFunStats } = require('./calculators/fun-stats');
  * @param {number} roundNumber - Round number
  * @param {number} seasonNumber - Season number
  * @param {Object} tacticalPatterns - Optional tactical patterns data from Python analysis
+ * @param {Object} teamData - Optional team data: { rosters, playerTeamMap }
  * @returns {Object} Complete statistics object
  */
-function calculateStats(parsedGames, roundNumber, seasonNumber, tacticalPatterns = null) {
+function calculateStats(parsedGames, roundNumber, seasonNumber, tacticalPatterns = null, teamData = null) {
   const stats = {
     roundNumber,
     seasonNumber,
@@ -44,6 +46,17 @@ function calculateStats(parsedGames, roundNumber, seasonNumber, tacticalPatterns
     awards: calculateAwards(parsedGames),
     funStats: calculateFunStats(parsedGames, tacticalPatterns)
   };
+
+  // Calculate team stats if team data is provided
+  if (teamData && teamData.rosters && teamData.playerTeamMap) {
+    const teamStats = calculateTeamStats(parsedGames, teamData.rosters, teamData.playerTeamMap);
+    const teamAwards = calculateTeamAwards(teamStats);
+
+    stats.teams = {
+      awards: teamAwards,
+      totalTeams: Object.keys(teamData.rosters).length
+    };
+  }
 
   return stats;
 }

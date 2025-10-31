@@ -6,6 +6,7 @@ import { RoundHeader } from '@/components/stats/round-header'
 import { OverviewStats } from '@/components/stats/overview-stats'
 import { ResultsBreakdown } from '@/components/stats/results-breakdown'
 import { AwardsSection } from '@/components/stats/awards-section'
+import { TeamAwardsSection } from '@/components/stats/team-awards-section'
 import { GamePhases } from '@/components/stats/game-phases'
 import { TacticsSection } from '@/components/stats/tactics-section'
 import { OpeningsSection } from '@/components/stats/openings-section'
@@ -596,6 +597,81 @@ interface StatsData {
       } | null
     }
   }
+  teams?: {
+    awards: {
+      bloodthirstyTeam: {
+        name: string
+        totalCaptures: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      pawnCrackers: {
+        name: string
+        pawnCaptures: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      lateKnightShow: {
+        name: string
+        lateKnightMoves: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      castlingSpeed: {
+        name: string
+        averageCastlingMove: string
+        castlingGames: number
+        playerCount: number
+      } | null
+      spaceInvaders: {
+        name: string
+        invasionMoves: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      checkMasters: {
+        name: string
+        checksDelivered: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      cornerConquerors: {
+        name: string
+        cornerMoves: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      marathonRunners: {
+        name: string
+        averageGameLength: string
+        playerCount: number
+      } | null
+      speedDemons: {
+        name: string
+        averageGameLength: string
+        playerCount: number
+      } | null
+      chickenTeam: {
+        name: string
+        retreatingMoves: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      nonChickenTeam: {
+        name: string
+        retreatingMoves: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+      promotionParty: {
+        name: string
+        promotions: number
+        averagePerGame: string
+        playerCount: number
+      } | null
+    }
+    totalTeams: number
+  }
 }
 
 export default function RoundStatsPage() {
@@ -676,6 +752,8 @@ export default function RoundStatsPage() {
           <ResultsBreakdown results={stats.results} />
 
           <AwardsSection awards={stats.awards} />
+
+          {stats.teams && <TeamAwardsSection teams={stats.teams} />}
 
           {stats.analysis && <AnalysisSection analysis={stats.analysis} />}
 
