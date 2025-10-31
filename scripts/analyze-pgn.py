@@ -39,6 +39,8 @@ Output JSON format:
 import sys
 import json
 import argparse
+import os
+import shutil
 import chess
 import chess.pgn
 from stockfish import Stockfish
@@ -378,12 +380,37 @@ def analyze_game(game, stockfish, depth=15, sample_rate=1):
         'luckyEscape': lucky_escape
     }
 
+def find_stockfish_path():
+    """Find Stockfish binary in common locations."""
+    # Try shutil.which first (searches PATH)
+    path = shutil.which('stockfish')
+    if path:
+        return path
+
+    # Try common installation paths
+    common_paths = [
+        '/opt/homebrew/bin/stockfish',  # macOS Homebrew (Apple Silicon)
+        '/usr/local/bin/stockfish',      # macOS Homebrew (Intel)
+        '/usr/bin/stockfish',            # Linux apt
+        '/usr/games/stockfish',          # Linux apt alternative location
+    ]
+
+    for path in common_paths:
+        if os.path.exists(path):
+            return path
+
+    return 'stockfish'  # Fall back to hoping it's in PATH
+
 def main():
     parser = argparse.ArgumentParser(description='Analyze chess PGN with Stockfish')
     parser.add_argument('--depth', type=int, default=15, help='Stockfish search depth (default: 15)')
     parser.add_argument('--sample', type=int, default=1, help='Analyze every Nth move (default: 1 = all moves)')
-    parser.add_argument('--stockfish-path', type=str, default='/opt/homebrew/bin/stockfish', help='Path to Stockfish binary')
+    parser.add_argument('--stockfish-path', type=str, default=None, help='Path to Stockfish binary (auto-detected if not specified)')
     args = parser.parse_args()
+
+    # Auto-detect Stockfish path if not specified
+    if args.stockfish_path is None:
+        args.stockfish_path = find_stockfish_path()
 
     # Initialize Stockfish
     try:
