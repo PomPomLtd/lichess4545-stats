@@ -1,90 +1,95 @@
 {
   "roundNumber": 2,
   "seasonNumber": 46,
-  "generatedAt": "2025-10-31T09:34:05.659Z",
+  "generatedAt": "2025-10-31T16:27:13.673Z",
   "overview": {
-    "totalGames": 64,
-    "totalMoves": 5497,
-    "averageGameLength": 42.9453125,
+    "totalGames": 73,
+    "totalMoves": 6178,
+    "averageGameLength": 42.31506849315068,
     "longestGame": {
       "moves": 98,
       "white": "chatakkuma",
       "black": "sahkal",
-      "result": "1/2-1/2"
+      "result": "1/2-1/2",
+      "gameId": "3ixj2ar2"
     },
     "shortestGame": {
       "moves": 13,
       "white": "jdannan",
       "black": "KirkD",
-      "result": "1-0"
+      "result": "1-0",
+      "gameId": "lKsxil4Q"
     }
   },
   "gamePhases": {
-    "averageOpening": 9.078125,
-    "averageMiddlegame": 17.203125,
-    "averageEndgame": 16.6640625,
+    "averageOpening": 9.027397260273972,
+    "averageMiddlegame": 17.34246575342466,
+    "averageEndgame": 15.945205479452055,
     "longestWaitTillCapture": {
       "moves": 22,
       "white": "matthewhuber",
       "black": "robertjackson",
-      "game": "matthewhuber vs robertjackson"
+      "game": "matthewhuber vs robertjackson",
+      "gameId": "YG6escav"
     },
     "longestMiddlegame": {
       "moves": 33,
       "white": "matthewhuber",
       "black": "robertjackson",
-      "game": "matthewhuber vs robertjackson"
+      "game": "matthewhuber vs robertjackson",
+      "gameId": "YG6escav"
     },
     "longestEndgame": {
       "moves": 69,
       "white": "chatakkuma",
       "black": "sahkal",
-      "game": "chatakkuma vs sahkal"
+      "game": "chatakkuma vs sahkal",
+      "gameId": "3ixj2ar2"
     }
   },
   "results": {
-    "whiteWins": 28,
-    "blackWins": 23,
-    "draws": 10,
-    "whiteWinPercentage": 43.75,
-    "blackWinPercentage": 35.9375,
-    "drawPercentage": 15.625
+    "whiteWins": 32,
+    "blackWins": 28,
+    "draws": 12,
+    "whiteWinPercentage": 43.83561643835616,
+    "blackWinPercentage": 38.35616438356164,
+    "drawPercentage": 16.43835616438356
   },
   "openings": {
     "firstMoves": {
       "d4": {
-        "count": 24,
-        "percentage": 37.5,
-        "winRate": 45.83333333333333
-      },
-      "c4": {
-        "count": 4,
-        "percentage": 6.25,
-        "winRate": 50
-      },
-      "e4": {
-        "count": 31,
-        "percentage": 48.4375,
-        "winRate": 41.935483870967744
+        "count": 28,
+        "percentage": 38.35616438356164,
+        "winRate": 39.285714285714285
       },
       "b4": {
         "count": 1,
-        "percentage": 1.5625,
-        "winRate": 0
+        "percentage": 1.36986301369863,
+        "winRate": 100
+      },
+      "e4": {
+        "count": 35,
+        "percentage": 47.94520547945205,
+        "winRate": 42.857142857142854
+      },
+      "c4": {
+        "count": 4,
+        "percentage": 5.47945205479452,
+        "winRate": 75
       },
       "Nf3": {
-        "count": 2,
-        "percentage": 3.125,
-        "winRate": 50
+        "count": 3,
+        "percentage": 4.10958904109589,
+        "winRate": 33.33333333333333
       },
       "g3": {
         "count": 1,
-        "percentage": 1.5625,
+        "percentage": 1.36986301369863,
         "winRate": 100
       },
       "d3": {
         "count": 1,
-        "percentage": 1.5625,
+        "percentage": 1.36986301369863,
         "winRate": 0
       }
     },
@@ -94,6 +99,12 @@
         "count": 3,
         "eco": "B22",
         "name": "Sicilian Defense: Alapin Variation"
+      },
+      {
+        "moves": "e4 c5 Nf3 e6 d4 cxd4",
+        "count": 2,
+        "eco": "B40",
+        "name": "Sicilian Defense: French Variation, Open"
       },
       {
         "moves": "e4 e6 d4 d5 e5 c5",
@@ -162,22 +173,28 @@
         "name": "King's Indian Attack: Symmetrical Defense"
       },
       {
+        "moves": "Nf3 d5 d4 Nf6 c4 c6",
+        "count": 1,
+        "eco": "A06",
+        "name": "Zukertort Opening"
+      },
+      {
         "moves": "c4 e6 g3 d5 Bg2 c6",
         "count": 1,
         "eco": "A13",
         "name": "English Opening: Agincourt Defense"
       },
       {
-        "moves": "c4 e5 Nc3 Nf6 g3 Bb4",
-        "count": 1,
-        "eco": "A22",
-        "name": "English Opening: King's English Variation, Two Knights Variation, Smyslov System"
-      },
-      {
         "moves": "c4 e5 Nc3 Nf6 g3 Bc5",
         "count": 1,
         "eco": "A22",
         "name": "English Opening: Carls-Bremen System"
+      },
+      {
+        "moves": "c4 e5 Nc3 Nf6 g3 Bb4",
+        "count": 1,
+        "eco": "A22",
+        "name": "English Opening: King's English Variation, Two Knights Variation, Smyslov System"
       },
       {
         "moves": "c4 c5 g3 g6 Bg2 Bg7",
@@ -234,6 +251,18 @@
         "name": "Queen's Pawn Game: Chigorin Variation"
       },
       {
+        "moves": "d4 Nf6 Nf3 e6 e3 b6",
+        "count": 1,
+        "eco": "A46",
+        "name": "Yusupov-Rubinstein System"
+      },
+      {
+        "moves": "d4 Nf6 Nf3 c5 d5 g6",
+        "count": 1,
+        "eco": "A46",
+        "name": "Indian Defense: Spielmann-Indian"
+      },
+      {
         "moves": "d4 Nf6 c4 b6 Nf3 Bb7",
         "count": 1,
         "eco": "A50",
@@ -280,6 +309,12 @@
         "count": 1,
         "eco": "B10",
         "name": "Caro-Kann Defense: Endgame Offer"
+      },
+      {
+        "moves": "e4 c6 d4 d5 f3 Qb6",
+        "count": 1,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Maróczy Variation"
       },
       {
         "moves": "e4 c6 d4 d5 Nd2 dxe4",
@@ -330,12 +365,6 @@
         "name": "Sicilian Defense: Open"
       },
       {
-        "moves": "e4 c5 Nf3 e6 d4 cxd4",
-        "count": 1,
-        "eco": "B40",
-        "name": "Sicilian Defense: French Variation, Open"
-      },
-      {
         "moves": "e4 c5 Nf3 d6 Nc3 Nf6",
         "count": 1,
         "eco": "B50",
@@ -370,6 +399,18 @@
         "count": 1,
         "eco": "C29",
         "name": "Vienna Game: Vienna Gambit"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nf6 Nxe5 d6",
+        "count": 1,
+        "eco": "C42",
+        "name": "Petrov's Defense"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nc6 d4 exd4",
+        "count": 1,
+        "eco": "C44",
+        "name": "Scotch Game"
       },
       {
         "moves": "e4 e5 Nf3 Nc6 Nc3 Nf6",
@@ -424,11 +465,23 @@
         "count": 1,
         "eco": "E60",
         "name": "Indian Defense: West Indian Defense"
+      },
+      {
+        "moves": "d4 Nf6 c4 g6 f3 Bg7",
+        "count": 1,
+        "eco": "E60",
+        "name": "Indian Defense: Anti-Grünfeld, Alekhine Variation"
+      },
+      {
+        "moves": "d4 Nf6 c4 g6 Nc3 Bg7",
+        "count": 1,
+        "eco": "E61",
+        "name": "King's Indian Defense"
       }
     ]
   },
   "tactics": {
-    "totalCaptures": 1123,
+    "totalCaptures": 1265,
     "enPassantGames": [
       {
         "white": "TimothyHa",
@@ -459,35 +512,43 @@
         "white": "chess131969",
         "black": "dodo2309",
         "count": 1
+      },
+      {
+        "white": "jose684",
+        "black": "tone_fresh",
+        "count": 1
       }
     ],
     "promotions": 13,
     "castling": {
-      "kingside": 95,
-      "queenside": 12
+      "kingside": 109,
+      "queenside": 14
     },
     "bloodiestGame": {
       "captures": 30,
-      "gameIndex": 34,
+      "gameIndex": 38,
+      "gameId": "wtcYx4bL",
       "white": "mekumcu",
       "black": "svidler_simp"
     },
     "quietestGame": {
-      "captures": 2,
-      "gameIndex": 3,
-      "white": "jdannan",
-      "black": "KirkD"
+      "captures": 0,
+      "gameIndex": 10,
+      "gameId": "MxOTjqM7",
+      "white": "PVGibson",
+      "black": "Jbyrd11"
     },
     "longestNonCaptureStreak": {
       "moves": 50,
       "gameIndex": 1,
+      "gameId": "bLHyTKX5",
       "white": "cham",
       "black": "baberle"
     },
     "totalUnderpromotions": 1,
     "underpromotions": [
       {
-        "gameIndex": 45,
+        "gameIndex": 49,
         "moveNumber": 40,
         "promotedTo": "r",
         "color": "w",
@@ -499,25 +560,25 @@
   },
   "pieces": {
     "activity": {
-      "pawns": 1447,
-      "knights": 955,
-      "bishops": 851,
-      "rooks": 849,
-      "queens": 542,
-      "kings": 853
+      "pawns": 1644,
+      "knights": 1076,
+      "bishops": 1002,
+      "rooks": 921,
+      "queens": 601,
+      "kings": 934
     },
     "captured": {
-      "pawns": 520,
-      "knights": 195,
-      "bishops": 187,
-      "rooks": 136,
-      "queens": 85
+      "pawns": 587,
+      "knights": 224,
+      "bishops": 206,
+      "rooks": 156,
+      "queens": 92
     },
     "survivalRate": {
-      "rooks": 0.47265625,
-      "queens": 0.4296875,
-      "bishops": 0.26953125,
-      "knights": 0.23828125
+      "rooks": 0.4691780821917808,
+      "queens": 0.4520547945205479,
+      "bishops": 0.2945205479452055,
+      "knights": 0.2328767123287671
     }
   },
   "checkmates": {
@@ -530,7 +591,8 @@
     },
     "fastest": {
       "moves": 24,
-      "gameIndex": 21,
+      "gameIndex": 24,
+      "gameId": "8ad7OEPE",
       "white": "AlexGaul",
       "black": "Kluddiron",
       "winner": "White"
@@ -539,62 +601,62 @@
   "boardHeatmap": {
     "bloodiestSquare": {
       "square": "d4",
-      "captures": 79,
-      "description": "d4 saw 79 captures"
+      "captures": 91,
+      "description": "d4 saw 91 captures"
     },
     "mostPopularSquare": {
       "square": "f6",
-      "visits": 210,
-      "description": "f6 was visited 210 times"
+      "visits": 240,
+      "description": "f6 was visited 240 times"
     },
     "leastPopularSquare": {
-      "square": "a8",
-      "visits": 18,
-      "description": "a8 was only visited 18 times"
+      "square": "h1",
+      "visits": 22,
+      "description": "h1 was only visited 22 times"
     },
     "quietestSquares": [],
     "top5Bloodiest": [
       {
         "square": "d4",
-        "captures": 79
+        "captures": 91
       },
       {
         "square": "d5",
-        "captures": 72
+        "captures": 81
       },
       {
         "square": "e4",
-        "captures": 58
+        "captures": 65
       },
       {
         "square": "e5",
-        "captures": 52
+        "captures": 61
       },
       {
-        "square": "c3",
-        "captures": 46
+        "square": "f6",
+        "captures": 56
       }
     ],
     "top5Popular": [
       {
         "square": "f6",
-        "visits": 210
+        "visits": 240
       },
       {
         "square": "d4",
-        "visits": 206
+        "visits": 236
       },
       {
         "square": "d5",
-        "visits": 201
+        "visits": 224
       },
       {
         "square": "e5",
-        "visits": 173
+        "visits": 201
       },
       {
         "square": "e4",
-        "visits": 170
+        "visits": 199
       }
     ]
   },
@@ -602,67 +664,78 @@
     "bloodbath": {
       "white": "mekumcu",
       "black": "svidler_simp",
-      "captures": 30
+      "captures": 30,
+      "gameId": "wtcYx4bL"
     },
     "pacifist": {
-      "white": "jdannan",
-      "black": "KirkD",
-      "captures": 2
+      "white": "PVGibson",
+      "black": "Jbyrd11",
+      "captures": 0,
+      "gameId": "MxOTjqM7"
     },
     "speedDemon": {
       "white": "AlexGaul",
       "black": "Kluddiron",
       "moves": 24,
-      "winner": "White"
+      "winner": "White",
+      "gameId": "8ad7OEPE"
     },
     "endgameWizard": {
       "white": "chatakkuma",
       "black": "sahkal",
-      "endgameMoves": 69
+      "endgameMoves": 69,
+      "gameId": "3ixj2ar2"
     },
     "openingSprinter": {
       "white": "Tellerwascher",
       "black": "NLance",
-      "openingMoves": 5
+      "openingMoves": 5,
+      "gameId": "HTNLmo9Q"
     }
   },
   "funStats": {
     "fastestQueenTrade": {
       "moves": 8,
-      "gameIndex": 29,
+      "gameIndex": 33,
+      "gameId": "UWZK81aC",
       "white": "TristanBrown17",
       "black": "Hesperian"
     },
     "slowestQueenTrade": {
       "moves": 44,
-      "gameIndex": 19,
+      "gameIndex": 22,
+      "gameId": "oJoTAO8Z",
       "white": "sammgus",
       "black": "lc69"
     },
     "longestCaptureSequence": {
       "length": 7,
-      "gameIndex": 30,
+      "gameIndex": 34,
+      "gameId": "jnZaaIQT",
       "startMove": 19,
       "white": "Scarff",
       "black": "ScotchWhisky"
     },
     "longestCheckSequence": {
       "length": 11,
-      "gameIndex": 18,
+      "gameIndex": 21,
+      "gameId": "vVE7xdHD",
       "startMove": 40,
       "white": "keeto",
       "black": "Lexgrad"
     },
     "pawnStorm": {
       "count": 12,
-      "gameIndex": 58,
-      "white": "quirked",
-      "black": "MetropolisOfDesire"
+      "gameIndex": 13,
+      "gameId": "W40LD9rY",
+      "white": "goirish",
+      "black": "ViAaNjS"
     },
     "pieceLoyalty": null,
     "squareTourist": {
       "squares": 23,
       "gameIndex": 1,
+      "gameId": "bLHyTKX5",
       "piece": "Rook",
       "color": "White",
       "startSquare": "f1",
@@ -671,13 +744,15 @@
     },
     "castlingRace": {
       "moves": 4,
-      "gameIndex": 20,
+      "gameIndex": 23,
+      "gameId": "YG6escav",
       "winner": "white",
       "white": "matthewhuber",
       "black": "robertjackson"
     },
     "openingHipster": {
-      "gameIndex": 2,
+      "gameIndex": 70,
+      "gameId": "cBAvr5fd",
       "eco": "A22",
       "name": "English Opening: King's English Variation, Two Knights Variation, Smyslov System",
       "moves": "c4 e5 Nc3 Nf6 g3 Bb4",
@@ -687,14 +762,16 @@
     },
     "dadbodShuffler": {
       "moves": 40,
-      "gameIndex": 17,
+      "gameIndex": 20,
+      "gameId": "3ixj2ar2",
       "color": "Black",
       "white": "chatakkuma",
       "black": "sahkal"
     },
     "sportyQueen": {
       "distance": 64,
-      "gameIndex": 19,
+      "gameIndex": 22,
+      "gameId": "oJoTAO8Z",
       "color": "White",
       "white": "sammgus",
       "black": "lc69"
@@ -702,13 +779,15 @@
     "edgeLord": {
       "moves": 27,
       "gameIndex": 1,
+      "gameId": "bLHyTKX5",
       "color": "Black",
       "white": "cham",
       "black": "baberle"
     },
     "rookLift": {
       "moveNumber": 11,
-      "gameIndex": 30,
+      "gameIndex": 34,
+      "gameId": "jnZaaIQT",
       "color": "White",
       "rook": "White's c1 Rook",
       "square": "c1",
@@ -717,7 +796,8 @@
     },
     "centerStage": {
       "moves": 7,
-      "gameIndex": 17,
+      "gameIndex": 20,
+      "gameId": "3ixj2ar2",
       "piece": "Black's c5 Bishop",
       "startSquare": "c5",
       "color": "Black",
@@ -726,1723 +806,2938 @@
     },
     "darkLord": {
       "captures": 11,
-      "gameIndex": 16,
+      "gameIndex": 19,
+      "gameId": "tlrXNLNi",
       "color": "Black",
       "white": "dmrgn155",
       "black": "KS_Legion_Legionowo"
     },
     "chickenAward": {
       "retreats": 32,
-      "gameIndex": 17,
+      "gameIndex": 20,
+      "gameId": "3ixj2ar2",
       "color": "Black",
       "white": "chatakkuma",
       "black": "sahkal"
     },
-    "homebody": {
-      "white": "BMAstatine",
-      "black": "Dan-Jon",
-      "player": "black",
-      "playerName": "Dan-Jon",
-      "piecesInEnemy": 0,
-      "description": "Dan-Jon only crossed 0 piece(s) into opponent's half of the board"
+    "sniper": {
+      "white": "cham",
+      "black": "baberle",
+      "gameIndex": 1,
+      "gameId": "bLHyTKX5",
+      "player": "cham",
+      "color": "white",
+      "timeSpent": 2,
+      "moveNumber": 78,
+      "move": "Kg5"
     },
-    "lateBloomer": {
-      "white": "Fierolocchio",
-      "black": "Micomps",
-      "player": "white",
-      "playerName": "Fierolocchio",
-      "moveNumber": 51,
-      "description": "Fierolocchio waited until move 26 to cross into opponent's half"
+    "openingBlitzer": {
+      "white": "NameGoesInHere",
+      "black": "Le_Merovingien",
+      "gameIndex": 69,
+      "gameId": "DFHI8NhG",
+      "player": "Le_Merovingien",
+      "color": "black",
+      "avgTime": 1.7777777777777777,
+      "moveCount": 9
     },
-    "quickDraw": {
-      "white": "arbisto",
-      "black": "guitarspider",
-      "player": "white",
-      "playerName": "arbisto",
-      "moveNumber": 3,
-      "description": "arbisto crossed into opponent's half on move 2"
+    "sadTimes": {
+      "white": "Pughie",
+      "black": "electricfalcon",
+      "gameIndex": 3,
+      "gameId": "gFC3q0Hc",
+      "player": "electricfalcon",
+      "color": "black",
+      "timeSpent": 565,
+      "moveNumber": 18,
+      "move": "Ne8",
+      "eval": -5.33
     },
-    "crosshairs": {
-      "white": "mkubecek",
-      "black": "alexkoj",
-      "square": "d4",
-      "attackers": 8,
-      "whiteAttackers": 4,
-      "blackAttackers": 4,
-      "moveNumber": 43,
-      "move": "Nf5",
-      "description": "d4 under attack by 8 pieces (move 43)"
+    "mostPremoves": {
+      "white": "Silkthewanderer",
+      "black": "Not_Any_More",
+      "gameIndex": 62,
+      "gameId": "gqkjGERv",
+      "player": "Not_Any_More",
+      "color": "black",
+      "count": 5
     },
-    "longestTension": {
-      "white": "sillydoor",
-      "black": "GoneNowhere",
-      "moves": 41,
-      "squares": "c5-d4",
-      "startMove": 6,
-      "endMove": 47,
-      "description": "c5-d4 pieces faced off for 41 moves without capturing"
+    "longestThink": {
+      "white": "Aurichalcite",
+      "black": "yavorant",
+      "gameIndex": 43,
+      "gameId": "XdKWHWkF",
+      "player": "yavorant",
+      "color": "black",
+      "timeSpent": 2585,
+      "moveNumber": 8,
+      "move": "Bxf3"
+    },
+    "zeitnotAddict": {
+      "white": "chatakkuma",
+      "black": "sahkal",
+      "gameIndex": 20,
+      "gameId": "3ixj2ar2",
+      "player": "sahkal",
+      "color": "black",
+      "count": 13
+    },
+    "bulletSpeed": {
+      "white": "Minot",
+      "black": "sivakumarr",
+      "gameIndex": 32,
+      "gameId": "Aj0rZD7q",
+      "player": "sivakumarr",
+      "color": "black",
+      "avgTime": 14.117647058823529,
+      "moveCount": 51
     }
   },
-  "tacticalPatterns": {
+  "teams": {
+    "awards": {
+      "bloodthirstyTeam": {
+        "name": "Doomsday Hedgehogs",
+        "totalCaptures": 57,
+        "averagePerGame": "11.4",
+        "playerCount": 7
+      },
+      "lateKnightShow": {
+        "name": "Doomsday Hedgehogs",
+        "lateKnightMoves": 40,
+        "averagePerGame": "8.0",
+        "playerCount": 7
+      },
+      "pawnCrackers": {
+        "name": "Nakamura Airlines — King Flight Safety Briefing",
+        "pawnCaptures": 20,
+        "averagePerGame": "4.0",
+        "playerCount": 9
+      },
+      "castlingSpeed": {
+        "name": "Pawn Hub",
+        "averageCastlingMove": "4.0",
+        "castlingGames": 1,
+        "playerCount": 8
+      },
+      "spaceInvaders": {
+        "name": "Nakamura Airlines — King Flight Safety Briefing",
+        "invasionMoves": 104,
+        "averagePerGame": "20.8",
+        "playerCount": 9
+      },
+      "checkMasters": {
+        "name": "Doomsday Hedgehogs",
+        "checksDelivered": 29,
+        "averagePerGame": "5.8",
+        "playerCount": 7
+      },
+      "cornerConquerors": {
+        "name": "The Wide Peepos",
+        "cornerMoves": 22,
+        "averagePerGame": "3.7",
+        "playerCount": 8
+      },
+      "marathonRunners": {
+        "name": "This should be a king walk in the park",
+        "averageGameLength": "63.0",
+        "playerCount": 8
+      },
+      "speedDemons": {
+        "name": "Mate in 6/7",
+        "averageGameLength": "12.0",
+        "playerCount": 7
+      },
+      "chickenTeam": {
+        "name": " Have you been mis-sold a pawn sacrifice? You may be due compensation",
+        "retreatingMoves": 55,
+        "averagePerGame": "11.0",
+        "playerCount": 9
+      },
+      "nonChickenTeam": {
+        "name": "Fischer's Forkers",
+        "retreatingMoves": 0,
+        "averagePerGame": "0.0",
+        "playerCount": 8
+      },
+      "promotionParty": {
+        "name": "Pawn Crackers",
+        "promotions": 2,
+        "averagePerGame": "0.4",
+        "playerCount": 9
+      }
+    },
+    "totalTeams": 42
+  },
+  "analysis": {
     "games": [
       {
+        "gameIndex": 0,
+        "gameId": "RPOJ8htr",
         "white": "arbisto",
         "black": "guitarspider",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 3,
-          "blackFirstInvasion": 20
+        "whiteACPL": 19.8,
+        "blackACPL": 18.3,
+        "whiteAccuracy": 89.3,
+        "blackAccuracy": 90.1,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 3,
+          "inaccuracies": 5,
+          "good": 9,
+          "excellent": 48
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 2,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 4,
+          "inaccuracies": 2,
+          "good": 8,
+          "excellent": 51
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "c3-d5",
-          "startMove": 33,
-          "endMove": 43
+        "biggestBlunder": {
+          "moveNumber": 44,
+          "player": "black",
+          "cpLoss": 185,
+          "winLoss": 24.36345220073278,
+          "severity": 24.36345220073278,
+          "move": "Bf5",
+          "evalBefore": 0,
+          "evalAfter": 185
         },
-        "gameIndex": 0
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 1,
+        "gameId": "bLHyTKX5",
         "white": "cham",
         "black": "baberle",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 6,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 21,
-          "blackFirstInvasion": 8
+        "whiteACPL": 79,
+        "blackACPL": 85.6,
+        "whiteAccuracy": 86.5,
+        "blackAccuracy": 89,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 9,
+          "good": 11,
+          "excellent": 61
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 8,
-          "move": "Ne4"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 4,
+          "inaccuracies": 6,
+          "good": 9,
+          "excellent": 63
         },
-        "longestTension": {
-          "moves": 15,
-          "squares": "c4-d5",
-          "startMove": 6,
-          "endMove": 21
+        "biggestBlunder": {
+          "moveNumber": 25,
+          "player": "black",
+          "cpLoss": 468,
+          "winLoss": 36.08048582491128,
+          "severity": 36.08048582491128,
+          "move": "Qb7",
+          "evalBefore": 67,
+          "evalAfter": 535
         },
-        "gameIndex": 1
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 85
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 159,
+          "evalBefore": 201,
+          "evalAfter": 42,
+          "moveNumber": 75
+        }
       },
       {
-        "white": "muksia",
-        "black": "sterpfi",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 17,
-          "blackFirstInvasion": 6
+        "gameIndex": 2,
+        "gameId": "9PhEYm4p",
+        "white": "M0r1",
+        "black": "AACtrl",
+        "whiteACPL": 54,
+        "blackACPL": 23,
+        "whiteAccuracy": 85.2,
+        "blackAccuracy": 91.8,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 5,
+          "good": 4,
+          "excellent": 22
         },
-        "mostAttackedSquare": {
-          "square": "e2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nc3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 26
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "e1-e8",
-          "startMove": 33,
-          "endMove": 37
+        "biggestBlunder": {
+          "moveNumber": 17,
+          "player": "white",
+          "cpLoss": 162,
+          "winLoss": 21.349698037799094,
+          "severity": 21.349698037799094,
+          "move": "dxe5",
+          "evalBefore": -14,
+          "evalAfter": -176
         },
-        "gameIndex": 2
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
-        "white": "jdannan",
-        "black": "KirkD",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 1,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 14
-        },
-        "mostAttackedSquare": {
-          "square": "e2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 14,
-          "move": "Bg4"
-        },
-        "longestTension": {
-          "moves": 3,
-          "squares": "c6-d4",
-          "startMove": 21,
-          "endMove": 24
-        },
-        "gameIndex": 3
-      },
-      {
-        "white": "rio2018",
-        "black": "Badplayer35",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 27,
-          "blackFirstInvasion": 14
-        },
-        "mostAttackedSquare": {
-          "square": "f6",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 30,
-          "move": "Nxd5"
-        },
-        "longestTension": {
-          "moves": 10,
-          "squares": "e4-f6",
-          "startMove": 17,
-          "endMove": 27
-        },
-        "gameIndex": 4
-      },
-      {
+        "gameIndex": 3,
+        "gameId": "gFC3q0Hc",
         "white": "Pughie",
         "black": "electricfalcon",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 1,
-          "whiteFirstInvasion": 29,
-          "blackFirstInvasion": 16
+        "whiteACPL": 20.3,
+        "blackACPL": 53,
+        "whiteAccuracy": 92.7,
+        "blackAccuracy": 85.2,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 5,
+          "excellent": 20
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 2,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 6,
+          "excellent": 14
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "c6-d4",
-          "startMove": 25,
-          "endMove": 29
+        "biggestBlunder": {
+          "moveNumber": 16,
+          "player": "black",
+          "cpLoss": 342,
+          "winLoss": 20.29030744787015,
+          "severity": 20.29030744787015,
+          "move": "Nxd7",
+          "evalBefore": 194,
+          "evalAfter": 536
         },
-        "gameIndex": 5
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
-        "white": "klavier88",
-        "black": "Warvold",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 1,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 6
+        "gameIndex": 4,
+        "gameId": "lKsxil4Q",
+        "white": "jdannan",
+        "black": "KirkD",
+        "whiteACPL": 14.8,
+        "blackACPL": 39.2,
+        "whiteAccuracy": 91.9,
+        "blackAccuracy": 81.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 0,
+          "good": 4,
+          "excellent": 8
         },
-        "mostAttackedSquare": {
-          "square": "e4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 43,
-          "move": "Bg5"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 3,
+          "good": 1,
+          "excellent": 7
         },
-        "longestTension": {
-          "moves": 3,
-          "squares": "c4-e5",
-          "startMove": 32,
-          "endMove": 35
+        "biggestBlunder": {
+          "moveNumber": 11,
+          "player": "black",
+          "cpLoss": 180,
+          "winLoss": 22.01813992129243,
+          "severity": 22.01813992129243,
+          "move": "Nh5",
+          "evalBefore": 46,
+          "evalAfter": 226
         },
-        "gameIndex": 6
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 5,
+        "gameId": "ogJeBKG8",
+        "white": "rio2018",
+        "black": "Badplayer35",
+        "whiteACPL": 30.8,
+        "blackACPL": 18.7,
+        "whiteAccuracy": 86.9,
+        "blackAccuracy": 91.4,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 8,
+          "excellent": 19
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 1,
+          "good": 8,
+          "excellent": 22
+        },
+        "biggestBlunder": {
+          "moveNumber": 28,
+          "player": "white",
+          "cpLoss": 231,
+          "winLoss": 21.19955258438229,
+          "severity": 21.19955258438229,
+          "move": "Bxd5",
+          "evalBefore": -127,
+          "evalAfter": -358
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 6,
+        "gameId": "nygSCJiH",
         "white": "sillydoor",
         "black": "GoneNowhere",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 15,
-          "blackFirstInvasion": 28
+        "whiteACPL": 25,
+        "blackACPL": 37.6,
+        "whiteAccuracy": 86.1,
+        "blackAccuracy": 81.6,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 5,
+          "good": 9,
+          "excellent": 24
         },
-        "mostAttackedSquare": {
-          "square": "e4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 25,
-          "move": "Qf3"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 4,
+          "good": 8,
+          "excellent": 25
         },
-        "longestTension": {
-          "moves": 41,
-          "squares": "c5-d4",
-          "startMove": 6,
-          "endMove": 47
+        "biggestBlunder": {
+          "moveNumber": 38,
+          "player": "black",
+          "cpLoss": 648,
+          "winLoss": 72.16820364080908,
+          "severity": 83.71511622333853,
+          "move": "b4",
+          "evalBefore": -264,
+          "evalAfter": 384
         },
-        "gameIndex": 7
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": -120,
+          "evalBefore": -264,
+          "evalAfter": 384,
+          "moveNumber": 38
+        }
       },
       {
+        "gameIndex": 7,
+        "gameId": "eLENYPss",
+        "white": "klavier88",
+        "black": "Warvold",
+        "whiteACPL": 22.2,
+        "blackACPL": 19.1,
+        "whiteAccuracy": 86.8,
+        "blackAccuracy": 88.6,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 5,
+          "excellent": 12
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 16
+        },
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 8,
+        "gameId": "dVFFIN1K",
+        "white": "juliochobo",
+        "black": "Chesilly",
+        "whiteACPL": 45.8,
+        "blackACPL": 25.3,
+        "whiteAccuracy": 82.1,
+        "blackAccuracy": 89,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 5,
+          "excellent": 18
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 5,
+          "excellent": 20
+        },
+        "biggestBlunder": {
+          "moveNumber": 16,
+          "player": "white",
+          "cpLoss": 471,
+          "winLoss": 55.99728518481015,
+          "severity": 55.99728518481015,
+          "move": "Bg2",
+          "evalBefore": 137,
+          "evalAfter": -334
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 9,
+        "gameId": "QFyhDsYL",
         "white": "TimothyHa",
         "black": "betolini",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 23,
-          "blackFirstInvasion": 12
+        "whiteACPL": 38.2,
+        "blackACPL": 22.9,
+        "whiteAccuracy": 86.5,
+        "blackAccuracy": 91.5,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 7,
+          "good": 8,
+          "excellent": 19
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 12,
-          "move": "Bb4+"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 24
         },
-        "longestTension": {
-          "moves": 18,
-          "squares": "c4-d5",
-          "startMove": 4,
-          "endMove": 22
-        },
-        "gameIndex": 8
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 10,
+        "gameId": "MxOTjqM7",
+        "white": "PVGibson",
+        "black": "Jbyrd11",
+        "whiteACPL": 14.4,
+        "blackACPL": 19,
+        "whiteAccuracy": 91.3,
+        "blackAccuracy": 88.6,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 1,
+          "good": 5,
+          "excellent": 7
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 0,
+          "good": 5,
+          "excellent": 6
+        },
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 11,
+        "gameId": "hWaYn0D2",
         "white": "PatchyThePirate",
         "black": "STCLion",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 14
+        "whiteACPL": 43,
+        "blackACPL": 55.9,
+        "whiteAccuracy": 81,
+        "blackAccuracy": 77.2,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 7,
+          "good": 5,
+          "excellent": 25
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 12,
-          "move": "Qa5+"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 7,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 21
         },
-        "longestTension": {
-          "moves": 12,
-          "squares": "b3-d4",
-          "startMove": 60,
-          "endMove": 72
+        "biggestBlunder": {
+          "moveNumber": 9,
+          "player": "white",
+          "cpLoss": 578,
+          "winLoss": 62.72801754809004,
+          "severity": 62.72801754809004,
+          "move": "d6",
+          "evalBefore": 153,
+          "evalAfter": -425
         },
-        "gameIndex": 9
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 234,
+          "evalBefore": -251,
+          "evalAfter": -17,
+          "moveNumber": 11
+        }
       },
       {
+        "gameIndex": 12,
+        "gameId": "vDCg9r20",
         "white": "sideshow_bob",
         "black": "Joonaf",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 33,
-          "blackFirstInvasion": 14
+        "whiteACPL": 27.2,
+        "blackACPL": 26.5,
+        "whiteAccuracy": 85.7,
+        "blackAccuracy": 86.1,
+        "whiteMoveQuality": {
+          "blunders": 4,
+          "mistakes": 7,
+          "inaccuracies": 7,
+          "good": 8,
+          "excellent": 55
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 16,
-          "move": "Nc6"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 5,
+          "inaccuracies": 9,
+          "good": 11,
+          "excellent": 53
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "d5-f6",
-          "startMove": 50,
-          "endMove": 60
+        "biggestBlunder": {
+          "moveNumber": 67,
+          "player": "black",
+          "cpLoss": 360,
+          "winLoss": 37.21873481198572,
+          "severity": 53.781071803319364,
+          "move": "Nd5",
+          "evalBefore": -378,
+          "evalAfter": -18
         },
-        "gameIndex": 10
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 360,
+          "evalBefore": -378,
+          "evalAfter": -18,
+          "moveNumber": 67
+        }
       },
       {
+        "gameIndex": 13,
+        "gameId": "W40LD9rY",
+        "white": "goirish",
+        "black": "ViAaNjS",
+        "whiteACPL": 36.8,
+        "blackACPL": 15.9,
+        "whiteAccuracy": 85.4,
+        "blackAccuracy": 93.5,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 0,
+          "good": 4,
+          "excellent": 17
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 3,
+          "good": 3,
+          "excellent": 19
+        },
+        "biggestBlunder": {
+          "moveNumber": 16,
+          "player": "white",
+          "cpLoss": 335,
+          "winLoss": 32.48177699243009,
+          "severity": 32.48177699243009,
+          "move": "Qc2",
+          "evalBefore": -56,
+          "evalAfter": -391
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 14,
+        "gameId": "uZ2vuWT1",
         "white": "pezzo17",
         "black": "doc_in_training",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 12
+        "whiteACPL": 26.9,
+        "blackACPL": 56.8,
+        "whiteAccuracy": 92.7,
+        "blackAccuracy": 84.5,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 3,
+          "good": 2,
+          "excellent": 17
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 11,
-          "move": "d4"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 1,
+          "inaccuracies": 4,
+          "good": 1,
+          "excellent": 15
         },
-        "longestTension": {
-          "moves": 13,
-          "squares": "d5-e7",
-          "startMove": 19,
-          "endMove": 32
+        "biggestBlunder": {
+          "moveNumber": 10,
+          "player": "black",
+          "cpLoss": 268,
+          "winLoss": 27.331594655461885,
+          "severity": 27.331594655461885,
+          "move": "g6",
+          "evalBefore": 73,
+          "evalAfter": 341
         },
-        "gameIndex": 11
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 15,
+        "gameId": "UmlrpfKM",
         "white": "mkubecek",
         "black": "alexkoj",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 6
+        "whiteACPL": 37.7,
+        "blackACPL": 27,
+        "whiteAccuracy": 83.1,
+        "blackAccuracy": 87.7,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 5,
+          "inaccuracies": 1,
+          "good": 3,
+          "excellent": 20
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 8,
-          "whiteAttackers": 4,
-          "blackAttackers": 4,
-          "moveNumber": 43,
-          "move": "Nf5"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 6,
+          "good": 4,
+          "excellent": 19
         },
-        "longestTension": {
-          "moves": 23,
-          "squares": "c3-d4",
-          "startMove": 25,
-          "endMove": 48
+        "biggestBlunder": {
+          "moveNumber": 20,
+          "player": "white",
+          "cpLoss": 249,
+          "winLoss": 34.077798425208236,
+          "severity": 34.077798425208236,
+          "move": "Be3",
+          "evalBefore": 159,
+          "evalAfter": -90
         },
-        "gameIndex": 12
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 16,
+        "gameId": "awJmXbl9",
         "white": "nikhedonia26",
         "black": "gpetris",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 36
+        "whiteACPL": 17.7,
+        "blackACPL": 39.7,
+        "whiteAccuracy": 90.7,
+        "blackAccuracy": 84.6,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 5,
+          "excellent": 21
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 12,
-          "move": "Nb6"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 6,
+          "excellent": 17
         },
-        "longestTension": {
-          "moves": 16,
-          "squares": "b4-d4",
-          "startMove": 37,
-          "endMove": 53
+        "biggestBlunder": {
+          "moveNumber": 21,
+          "player": "black",
+          "cpLoss": 226,
+          "winLoss": 30.797326657666012,
+          "severity": 30.797326657666012,
+          "move": "e6",
+          "evalBefore": -165,
+          "evalAfter": 61
         },
-        "gameIndex": 13
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 17,
+        "gameId": "ETTNo2UB",
         "white": "UpGoerFive",
         "black": "cjsailer",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 13,
-          "blackFirstInvasion": 4
+        "whiteACPL": 32.6,
+        "blackACPL": 38.8,
+        "whiteAccuracy": 84.9,
+        "blackAccuracy": 82.6,
+        "whiteMoveQuality": {
+          "blunders": 3,
+          "mistakes": 3,
+          "inaccuracies": 10,
+          "good": 7,
+          "excellent": 42
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 5,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 5,
+          "inaccuracies": 6,
+          "good": 15,
+          "excellent": 36
         },
-        "longestTension": {
-          "moves": 13,
-          "squares": "c6-d4",
-          "startMove": 7,
-          "endMove": 20
+        "biggestBlunder": {
+          "moveNumber": 44,
+          "player": "black",
+          "cpLoss": 482,
+          "winLoss": 59.97009610260041,
+          "severity": 68.21598431670796,
+          "move": "Rxf3",
+          "evalBefore": -255,
+          "evalAfter": 227
         },
-        "gameIndex": 14
+        "biggestComeback": {
+          "player": "white",
+          "swing": 796,
+          "evalFrom": "-320",
+          "evalTo": "476",
+          "evalFromCp": -320,
+          "evalToCp": 476,
+          "moveNumber": 46
+        },
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 28,
+          "evalBefore": -255,
+          "evalAfter": 227,
+          "moveNumber": 44
+        }
       },
       {
+        "gameIndex": 18,
+        "gameId": "w1Im9fP5",
         "white": "cvillian",
         "black": "spor3",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 4
+        "whiteACPL": 33.9,
+        "blackACPL": 36.5,
+        "whiteAccuracy": 83.8,
+        "blackAccuracy": 83.6,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 8,
+          "good": 9,
+          "excellent": 24
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 18,
-          "move": "Nb6"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 11,
+          "good": 7,
+          "excellent": 23
         },
-        "longestTension": {
-          "moves": 9,
-          "squares": "d5-f6",
-          "startMove": 36,
-          "endMove": 45
+        "biggestBlunder": {
+          "moveNumber": 30,
+          "player": "black",
+          "cpLoss": 261,
+          "winLoss": 31.793763105811564,
+          "severity": 31.793763105811564,
+          "move": "f6",
+          "evalBefore": 0,
+          "evalAfter": 261
         },
-        "gameIndex": 15
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 348,
+          "evalBefore": 439,
+          "evalAfter": -91,
+          "moveNumber": 39
+        }
       },
       {
+        "gameIndex": 19,
+        "gameId": "tlrXNLNi",
         "white": "dmrgn155",
         "black": "KS_Legion_Legionowo",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 23,
-          "blackFirstInvasion": 8
+        "whiteACPL": 37.9,
+        "blackACPL": 27.8,
+        "whiteAccuracy": 83.2,
+        "blackAccuracy": 86.4,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 5,
+          "inaccuracies": 8,
+          "good": 14,
+          "excellent": 33
         },
-        "mostAttackedSquare": {
-          "square": "f5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 21,
-          "move": "g4"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 4,
+          "inaccuracies": 7,
+          "good": 10,
+          "excellent": 39
         },
-        "longestTension": {
-          "moves": 13,
-          "squares": "c6-d4",
-          "startMove": 10,
-          "endMove": 23
+        "biggestBlunder": {
+          "moveNumber": 47,
+          "player": "white",
+          "cpLoss": 401,
+          "winLoss": 39.0852202238355,
+          "severity": 39.0852202238355,
+          "move": "Kxd3",
+          "evalBefore": -19,
+          "evalAfter": -420
         },
-        "gameIndex": 16
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 255,
+          "evalBefore": -263,
+          "evalAfter": -8,
+          "moveNumber": 41
+        }
       },
       {
+        "gameIndex": 20,
+        "gameId": "3ixj2ar2",
         "white": "chatakkuma",
         "black": "sahkal",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 16
+        "whiteACPL": 15.9,
+        "blackACPL": 14.5,
+        "whiteAccuracy": 90.9,
+        "blackAccuracy": 91.7,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 2,
+          "inaccuracies": 6,
+          "good": 13,
+          "excellent": 75
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 6,
+          "inaccuracies": 5,
+          "good": 14,
+          "excellent": 73
         },
-        "longestTension": {
-          "moves": 11,
-          "squares": "c4-d5",
-          "startMove": 5,
-          "endMove": 16
+        "biggestBlunder": {
+          "moveNumber": 54,
+          "player": "white",
+          "cpLoss": 263,
+          "winLoss": 32.70174504790172,
+          "severity": 36.789463178889434,
+          "move": "f5",
+          "evalBefore": 250,
+          "evalAfter": -13
         },
-        "gameIndex": 17
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 237,
+          "evalBefore": 250,
+          "evalAfter": -13,
+          "moveNumber": 54
+        }
       },
       {
+        "gameIndex": 21,
+        "gameId": "vVE7xdHD",
         "white": "keeto",
         "black": "Lexgrad",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 10
+        "whiteACPL": 89.1,
+        "blackACPL": 83.9,
+        "whiteAccuracy": 87.7,
+        "blackAccuracy": 90,
+        "whiteMoveQuality": {
+          "blunders": 3,
+          "mistakes": 1,
+          "inaccuracies": 10,
+          "good": 6,
+          "excellent": 51
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 17,
-          "move": "Bb2"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 7,
+          "good": 12,
+          "excellent": 47
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "c5-d4",
-          "startMove": 6,
-          "endMove": 10
+        "biggestBlunder": {
+          "moveNumber": 27,
+          "player": "white",
+          "cpLoss": 397,
+          "winLoss": 33.06980226943335,
+          "severity": 33.06980226943335,
+          "move": "Nh4",
+          "evalBefore": -76,
+          "evalAfter": -473
         },
-        "gameIndex": 18
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 22,
+        "gameId": "oJoTAO8Z",
         "white": "sammgus",
         "black": "lc69",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 8
+        "whiteACPL": 56.8,
+        "blackACPL": 45.5,
+        "whiteAccuracy": 79.1,
+        "blackAccuracy": 82.7,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 5,
+          "inaccuracies": 4,
+          "good": 9,
+          "excellent": 29
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 6,
-          "whiteAttackers": 1,
-          "blackAttackers": 5,
-          "moveNumber": 17,
-          "move": "Ne5"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 8,
+          "excellent": 34
         },
-        "longestTension": {
-          "moves": 7,
-          "squares": "f7-h8",
-          "startMove": 25,
-          "endMove": 32
+        "biggestBlunder": {
+          "moveNumber": 16,
+          "player": "white",
+          "cpLoss": 550,
+          "winLoss": 64.34185425526555,
+          "severity": 87.98748569407563,
+          "move": "f4",
+          "evalBefore": 347,
+          "evalAfter": -203
         },
-        "gameIndex": 19
+        "biggestComeback": {
+          "player": "white",
+          "swing": 648,
+          "evalFrom": "-301",
+          "evalTo": "347",
+          "evalFromCp": -301,
+          "evalToCp": 347,
+          "moveNumber": 15
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 144,
+          "evalBefore": 347,
+          "evalAfter": -203,
+          "moveNumber": 16
+        }
       },
       {
+        "gameIndex": 23,
+        "gameId": "YG6escav",
         "white": "matthewhuber",
         "black": "robertjackson",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 17,
-          "blackFirstInvasion": 8
+        "whiteACPL": 38.2,
+        "blackACPL": 56.8,
+        "whiteAccuracy": 74,
+        "blackAccuracy": 77.3,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 5,
+          "inaccuracies": 4,
+          "good": 9,
+          "excellent": 23
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 1,
-          "blackAttackers": 5,
-          "moveNumber": 15,
-          "move": "e4"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 8,
+          "inaccuracies": 2,
+          "good": 9,
+          "excellent": 21
         },
-        "longestTension": {
-          "moves": 16,
-          "squares": "c5-d4",
-          "startMove": 24,
-          "endMove": 40
+        "biggestBlunder": {
+          "moveNumber": 36,
+          "player": "black",
+          "cpLoss": 673,
+          "winLoss": 52.28451504955288,
+          "severity": 52.28451504955288,
+          "move": "Nxg6",
+          "evalBefore": -33,
+          "evalAfter": 640
         },
-        "gameIndex": 20
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 43
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 43
+        }
       },
       {
+        "gameIndex": 24,
+        "gameId": "8ad7OEPE",
         "white": "AlexGaul",
         "black": "Kluddiron",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 10
+        "whiteACPL": 12.4,
+        "blackACPL": 44.4,
+        "whiteAccuracy": 78.6,
+        "blackAccuracy": 86.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 18
         },
-        "mostAttackedSquare": {
-          "square": "e5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 20,
-          "move": "f6"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 0,
+          "good": 3,
+          "excellent": 17
         },
-        "longestTension": {
-          "moves": 13,
-          "squares": "f6-g5",
-          "startMove": 20,
-          "endMove": 33
+        "biggestBlunder": {
+          "moveNumber": 18,
+          "player": "black",
+          "cpLoss": 162,
+          "winLoss": 20.14552847773144,
+          "severity": 20.14552847773144,
+          "move": "Qa2",
+          "evalBefore": 48,
+          "evalAfter": 210
         },
-        "gameIndex": 21
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 24
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 24
+        }
       },
       {
+        "gameIndex": 25,
+        "gameId": "m781JxF7",
         "white": "GroneN",
         "black": "AleksanderBerge",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 12
+        "whiteACPL": 39.1,
+        "blackACPL": 6.2,
+        "whiteAccuracy": 86.1,
+        "blackAccuracy": 96.5,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 3,
+          "excellent": 12
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 16,
-          "move": "c5"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 0,
+          "good": 2,
+          "excellent": 18
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "c5-d4",
-          "startMove": 16,
-          "endMove": 22
-        },
-        "gameIndex": 22
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 26,
+        "gameId": "eeS1pfAK",
         "white": "lintypickle",
         "black": "Qudit",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 10
+        "whiteACPL": 12.8,
+        "blackACPL": 21.8,
+        "whiteAccuracy": 93,
+        "blackAccuracy": 87.9,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 30
         },
-        "mostAttackedSquare": {
-          "square": "e5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 44,
-          "move": "Bf6"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 28
         },
-        "longestTension": {
-          "moves": 20,
-          "squares": "c6-d4",
-          "startMove": 15,
-          "endMove": 35
+        "biggestBlunder": {
+          "moveNumber": 31,
+          "player": "black",
+          "cpLoss": 325,
+          "winLoss": 36.655664378954015,
+          "severity": 36.655664378954015,
+          "move": "Re4",
+          "evalBefore": 0,
+          "evalAfter": 325
         },
-        "gameIndex": 23
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 192,
+          "evalBefore": 210,
+          "evalAfter": 18,
+          "moveNumber": 29
+        }
       },
       {
+        "gameIndex": 27,
+        "gameId": "NGGKLE0Z",
         "white": "JZTrain",
         "black": "tartarugone",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 25,
-          "blackFirstInvasion": 10
+        "whiteACPL": 41.3,
+        "blackACPL": 20.4,
+        "whiteAccuracy": 86.5,
+        "blackAccuracy": 93,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 7,
+          "excellent": 18
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 2,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 4,
+          "good": 4,
+          "excellent": 23
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "d7-e5",
-          "startMove": 25,
-          "endMove": 31
+        "biggestBlunder": {
+          "moveNumber": 14,
+          "player": "white",
+          "cpLoss": 174,
+          "winLoss": 22.535986264254163,
+          "severity": 22.535986264254163,
+          "move": "Be4",
+          "evalBefore": -18,
+          "evalAfter": -192
         },
-        "gameIndex": 24
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 28,
+        "gameId": "prokugRm",
         "white": "Kanem",
         "black": "snowDeath",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 27,
-          "blackFirstInvasion": 18
+        "whiteACPL": 22.8,
+        "blackACPL": 13.1,
+        "whiteAccuracy": 89,
+        "blackAccuracy": 93,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 0,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 31
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 21,
-          "move": "Qc4"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 32
         },
-        "longestTension": {
-          "moves": 11,
-          "squares": "a1-a8",
-          "startMove": 39,
-          "endMove": 50
+        "biggestBlunder": {
+          "moveNumber": 25,
+          "player": "white",
+          "cpLoss": 286,
+          "winLoss": 37.810852683763244,
+          "severity": 37.810852683763244,
+          "move": "b4",
+          "evalBefore": 77,
+          "evalAfter": -209
         },
-        "gameIndex": 25
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 29,
+        "gameId": "ATzcA49R",
         "white": "timemp",
         "black": "cowtone",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 8
+        "whiteACPL": 16.6,
+        "blackACPL": 38.7,
+        "whiteAccuracy": 93.6,
+        "blackAccuracy": 87.9,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 5,
+          "excellent": 26
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 4,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 5,
+          "good": 6,
+          "excellent": 19
         },
-        "longestTension": {
-          "moves": 17,
-          "squares": "c6-d4",
-          "startMove": 15,
-          "endMove": 32
-        },
-        "gameIndex": 26
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 30,
+        "gameId": "ahzWc4dI",
+        "white": "Tedrhuyagonall",
+        "black": "gaben1773",
+        "whiteACPL": 28.1,
+        "blackACPL": 42.5,
+        "whiteAccuracy": 89,
+        "blackAccuracy": 84.8,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 29
+        },
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 26
+        },
+        "biggestBlunder": {
+          "moveNumber": 14,
+          "player": "black",
+          "cpLoss": 272,
+          "winLoss": 32.53155836762836,
+          "severity": 32.53155836762836,
+          "move": "Bc4",
+          "evalBefore": 3,
+          "evalAfter": 275
+        },
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 199,
+          "evalBefore": 202,
+          "evalAfter": 3,
+          "moveNumber": 14
+        }
+      },
+      {
+        "gameIndex": 31,
+        "gameId": "IP1aNOQn",
         "white": "prostidude",
         "black": "flyingfred",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 10
+        "whiteACPL": 29.9,
+        "blackACPL": 30.1,
+        "whiteAccuracy": 83.1,
+        "blackAccuracy": 83,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 8,
+          "inaccuracies": 7,
+          "good": 8,
+          "excellent": 36
         },
-        "mostAttackedSquare": {
-          "square": "e5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 26,
-          "move": "f6"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 7,
+          "inaccuracies": 11,
+          "good": 8,
+          "excellent": 32
         },
-        "longestTension": {
-          "moves": 11,
-          "squares": "e5-g6",
-          "startMove": 16,
-          "endMove": 27
+        "biggestBlunder": {
+          "moveNumber": 34,
+          "player": "black",
+          "cpLoss": 267,
+          "winLoss": 36.528507476827926,
+          "severity": 36.528507476827926,
+          "move": "Rcc8",
+          "evalBefore": -113,
+          "evalAfter": 154
         },
-        "gameIndex": 27
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 32,
+        "gameId": "Aj0rZD7q",
         "white": "Minot",
         "black": "sivakumarr",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 15,
-          "blackFirstInvasion": 16
+        "whiteACPL": 176.7,
+        "blackACPL": 163.7,
+        "whiteAccuracy": 93,
+        "blackAccuracy": 97,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 7,
+          "excellent": 41
         },
-        "mostAttackedSquare": {
-          "square": "f5",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 31,
-          "move": "Qc2"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 2,
+          "excellent": 48
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "c4-d5",
-          "startMove": 6,
-          "endMove": 16
+        "biggestBlunder": {
+          "moveNumber": 13,
+          "player": "white",
+          "cpLoss": 253,
+          "winLoss": 21.74201806686673,
+          "severity": 21.74201806686673,
+          "move": "Bxf7+",
+          "evalBefore": -136,
+          "evalAfter": -389
         },
-        "gameIndex": 28
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 33,
+        "gameId": "UWZK81aC",
         "white": "TristanBrown17",
         "black": "Hesperian",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 10
+        "whiteACPL": 31.6,
+        "blackACPL": 21,
+        "whiteAccuracy": 89.4,
+        "blackAccuracy": 92.2,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 5,
+          "good": 7,
+          "excellent": 49
         },
-        "mostAttackedSquare": {
-          "square": "e7",
-          "attackers": 6,
-          "whiteAttackers": 1,
-          "blackAttackers": 5,
-          "moveNumber": 9,
-          "move": "Nd5"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 0,
+          "good": 11,
+          "excellent": 48
         },
-        "longestTension": {
-          "moves": 5,
-          "squares": "a4-b5",
-          "startMove": 68,
-          "endMove": 73
+        "biggestBlunder": {
+          "moveNumber": 44,
+          "player": "white",
+          "cpLoss": 405,
+          "winLoss": 41.14417700030158,
+          "severity": 41.14417700030158,
+          "move": "Bd3",
+          "evalBefore": 0,
+          "evalAfter": -405
         },
-        "gameIndex": 29
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 415,
+          "evalBefore": 450,
+          "evalAfter": 35,
+          "moveNumber": 18
+        }
       },
       {
+        "gameIndex": 34,
+        "gameId": "jnZaaIQT",
         "white": "Scarff",
         "black": "ScotchWhisky",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 19,
-          "blackFirstInvasion": 10
+        "whiteACPL": 20.5,
+        "blackACPL": 30.2,
+        "whiteAccuracy": 82.1,
+        "blackAccuracy": 86.2,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 4,
+          "good": 10,
+          "excellent": 30
         },
-        "mostAttackedSquare": {
-          "square": "e2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 5,
-          "move": "Nc3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 8,
+          "good": 7,
+          "excellent": 27
         },
-        "longestTension": {
-          "moves": 20,
-          "squares": "c4-d5",
-          "startMove": 3,
-          "endMove": 23
+        "biggestBlunder": {
+          "moveNumber": 14,
+          "player": "white",
+          "cpLoss": 157,
+          "winLoss": 20.342629368358217,
+          "severity": 20.342629368358217,
+          "move": "b4",
+          "evalBefore": 185,
+          "evalAfter": 28
         },
-        "gameIndex": 30
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 47
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 47
+        }
       },
       {
+        "gameIndex": 35,
+        "gameId": "GFy1zuFM",
         "white": "Dadievid",
         "black": "Lutin23",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 21,
-          "blackFirstInvasion": 36
+        "whiteACPL": 29.7,
+        "blackACPL": 47.5,
+        "whiteAccuracy": 89.9,
+        "blackAccuracy": 87.5,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 0,
+          "good": 7,
+          "excellent": 49
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 5,
-          "whiteAttackers": 2,
-          "blackAttackers": 3,
-          "moveNumber": 22,
-          "move": "Ne7"
+        "blackMoveQuality": {
+          "blunders": 3,
+          "mistakes": 3,
+          "inaccuracies": 3,
+          "good": 3,
+          "excellent": 48
         },
-        "longestTension": {
-          "moves": 12,
-          "squares": "c4-d5",
-          "startMove": 24,
-          "endMove": 36
+        "biggestBlunder": {
+          "moveNumber": 48,
+          "player": "white",
+          "cpLoss": 251,
+          "winLoss": 25.01531834140649,
+          "severity": 33.83321805675228,
+          "move": "Re7",
+          "evalBefore": 341,
+          "evalAfter": 90
         },
-        "gameIndex": 31
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 36,
+        "gameId": "wIXQqNnX",
         "white": "LemuelGullible",
         "black": "SycoraxCirce",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 6,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 10
+        "whiteACPL": 15.4,
+        "blackACPL": 16.1,
+        "whiteAccuracy": 91.6,
+        "blackAccuracy": 91.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 11,
+          "good": 7,
+          "excellent": 48
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 8,
-          "move": "dxc6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 4,
+          "good": 10,
+          "excellent": 49
         },
-        "longestTension": {
-          "moves": 9,
-          "squares": "d6-e4",
-          "startMove": 58,
-          "endMove": 67
-        },
-        "gameIndex": 32
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 37,
+        "gameId": "p8QPxoeU",
         "white": "chess131969",
         "black": "dodo2309",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 13,
-          "blackFirstInvasion": 16
+        "whiteACPL": 26.6,
+        "blackACPL": 38.8,
+        "whiteAccuracy": 75.8,
+        "blackAccuracy": 81.5,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 2,
+          "good": 10,
+          "excellent": 17
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 2,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 9,
+          "good": 6,
+          "excellent": 13
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "d7-e5",
-          "startMove": 14,
-          "endMove": 20
+        "biggestBlunder": null,
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 33
         },
-        "gameIndex": 33
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 33
+        }
       },
       {
+        "gameIndex": 38,
+        "gameId": "wtcYx4bL",
         "white": "mekumcu",
         "black": "svidler_simp",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 6,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 10
+        "whiteACPL": 16.2,
+        "blackACPL": 16.8,
+        "whiteAccuracy": 91.6,
+        "blackAccuracy": 91.4,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 6,
+          "good": 10,
+          "excellent": 41
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 7,
-          "whiteAttackers": 4,
-          "blackAttackers": 3,
-          "moveNumber": 19,
-          "move": "Be3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 10,
+          "excellent": 43
         },
-        "longestTension": {
-          "moves": 5,
-          "squares": "a2-c4",
-          "startMove": 35,
-          "endMove": 40
-        },
-        "gameIndex": 34
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 39,
+        "gameId": "2DufGLaC",
         "white": "CapeStGeorge",
         "black": "EvilNalu",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 19,
-          "blackFirstInvasion": 8
+        "whiteACPL": 65.9,
+        "blackACPL": 11.6,
+        "whiteAccuracy": 92.2,
+        "blackAccuracy": 95.1,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 11,
+          "excellent": 52
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 13,
-          "move": "Bxc4"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 7,
+          "excellent": 57
         },
-        "longestTension": {
-          "moves": 5,
-          "squares": "c4-d5",
-          "startMove": 3,
-          "endMove": 8
+        "biggestBlunder": {
+          "moveNumber": 32,
+          "player": "white",
+          "cpLoss": 299,
+          "winLoss": 31.90843458815108,
+          "severity": 31.90843458815108,
+          "move": "Bd1",
+          "evalBefore": -39,
+          "evalAfter": -338
         },
-        "gameIndex": 35
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 162,
+          "evalBefore": -201,
+          "evalAfter": -39,
+          "moveNumber": 31
+        }
       },
       {
+        "gameIndex": 40,
+        "gameId": "HTNLmo9Q",
         "white": "Tellerwascher",
         "black": "NLance",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 25,
-          "blackFirstInvasion": 16
+        "whiteACPL": 14.3,
+        "blackACPL": 35.1,
+        "whiteAccuracy": 91.8,
+        "blackAccuracy": 86.9,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 1,
+          "good": 0,
+          "excellent": 28
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 7,
-          "whiteAttackers": 2,
-          "blackAttackers": 5,
-          "moveNumber": 38,
-          "move": "Qc5"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 2,
+          "excellent": 24
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "c4-d5",
-          "startMove": 6,
-          "endMove": 16
+        "biggestBlunder": {
+          "moveNumber": 19,
+          "player": "black",
+          "cpLoss": 330,
+          "winLoss": 30.242338965072413,
+          "severity": 30.242338965072413,
+          "move": "Qc5",
+          "evalBefore": 78,
+          "evalAfter": 408
         },
-        "gameIndex": 36
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 41,
+        "gameId": "fEW65w82",
         "white": "Billy_Sprinkle",
         "black": "cesaralexanderchess",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 10
+        "whiteACPL": 27.3,
+        "blackACPL": 33.7,
+        "whiteAccuracy": 88.3,
+        "blackAccuracy": 86.3,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 8,
+          "good": 9,
+          "excellent": 37
         },
-        "mostAttackedSquare": {
-          "square": "c3",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 115,
-          "move": "Rexc5"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 6,
+          "inaccuracies": 8,
+          "good": 10,
+          "excellent": 33
         },
-        "longestTension": {
-          "moves": 12,
-          "squares": "g7-h7",
-          "startMove": 79,
-          "endMove": 91
+        "biggestBlunder": {
+          "moveNumber": 20,
+          "player": "white",
+          "cpLoss": 196,
+          "winLoss": 24.42993513525046,
+          "severity": 25.834656405527365,
+          "move": "h4",
+          "evalBefore": 223,
+          "evalAfter": 27
         },
-        "gameIndex": 37
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 196,
+          "evalBefore": 223,
+          "evalAfter": 27,
+          "moveNumber": 20
+        }
       },
       {
+        "gameIndex": 42,
+        "gameId": "zzlP6cwc",
         "white": "capturingbravo",
         "black": "hpors",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 6
+        "whiteACPL": 37.7,
+        "blackACPL": 35.2,
+        "whiteAccuracy": 90.2,
+        "blackAccuracy": 91.1,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 0,
+          "inaccuracies": 1,
+          "good": 3,
+          "excellent": 27
         },
-        "mostAttackedSquare": {
-          "square": "e2",
-          "attackers": 6,
-          "whiteAttackers": 5,
-          "blackAttackers": 1,
-          "moveNumber": 6,
-          "move": "Nd4"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 0,
+          "good": 3,
+          "excellent": 28
         },
-        "longestTension": {
-          "moves": 13,
-          "squares": "e4-f6",
-          "startMove": 35,
-          "endMove": 48
+        "biggestBlunder": {
+          "moveNumber": 5,
+          "player": "white",
+          "cpLoss": 403,
+          "winLoss": 41.72423830801534,
+          "severity": 41.72423830801534,
+          "move": "a4",
+          "evalBefore": 7,
+          "evalAfter": -396
         },
-        "gameIndex": 38
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 696,
+          "evalBefore": -696,
+          "evalAfter": 0,
+          "moveNumber": 26
+        }
       },
       {
+        "gameIndex": 43,
+        "gameId": "XdKWHWkF",
         "white": "Aurichalcite",
         "black": "yavorant",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 12
+        "whiteACPL": 21.7,
+        "blackACPL": 59.9,
+        "whiteAccuracy": 89.9,
+        "blackAccuracy": 81.4,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 3,
+          "good": 4,
+          "excellent": 13
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 3,
+          "good": 6,
+          "excellent": 7
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "e6-g7",
-          "startMove": 33,
-          "endMove": 39
-        },
-        "gameIndex": 39
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 44,
+        "gameId": "DEUviHY6",
         "white": "Lohthar",
         "black": "XX-121",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 20
+        "whiteACPL": 24.3,
+        "blackACPL": 7.8,
+        "whiteAccuracy": 82.1,
+        "blackAccuracy": 96.2,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 2,
+          "excellent": 9
         },
-        "mostAttackedSquare": {
-          "square": "f1",
-          "attackers": 6,
-          "whiteAttackers": 4,
-          "blackAttackers": 2,
-          "moveNumber": 28,
-          "move": "Ng3+"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 0,
+          "good": 4,
+          "excellent": 11
         },
-        "longestTension": {
-          "moves": 7,
-          "squares": "e4-f6",
-          "startMove": 11,
-          "endMove": 18
+        "biggestBlunder": {
+          "moveNumber": 13,
+          "player": "white",
+          "cpLoss": 0,
+          "winLoss": 25.746444105693023,
+          "severity": 25.756483258388535,
+          "move": "Ke3",
+          "evalBefore": -184,
+          "evalAfter": -9960
         },
-        "gameIndex": 40
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 45,
+        "gameId": "MlmFTkcb",
         "white": "Pope123",
         "black": "Subhraneil24",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 1,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 20
+        "whiteACPL": 35.5,
+        "blackACPL": 83.4,
+        "whiteAccuracy": 89.5,
+        "blackAccuracy": 77.8,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 2,
+          "good": 2,
+          "excellent": 11
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 6,
-          "whiteAttackers": 1,
-          "blackAttackers": 5,
-          "moveNumber": 16,
-          "move": "Nxe5"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 7
         },
-        "longestTension": {
-          "moves": 5,
-          "squares": "c5-d4",
-          "startMove": 10,
-          "endMove": 15
+        "biggestBlunder": {
+          "moveNumber": 8,
+          "player": "black",
+          "cpLoss": 215,
+          "winLoss": 21.90610498020942,
+          "severity": 21.90610498020942,
+          "move": "Nxe5",
+          "evalBefore": 101,
+          "evalAfter": 316
         },
-        "gameIndex": 41
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 46,
+        "gameId": "OHAt19Ms",
         "white": "Angels_Demons",
         "black": "SamirBhatt",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 10
+        "whiteACPL": 24.2,
+        "blackACPL": 26.8,
+        "whiteAccuracy": 86.2,
+        "blackAccuracy": 84.8,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 5,
+          "good": 8,
+          "excellent": 9
         },
-        "mostAttackedSquare": {
-          "square": "e2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 5,
-          "move": "Nc3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 5,
+          "good": 8,
+          "excellent": 8
         },
-        "longestTension": {
-          "moves": 14,
-          "squares": "c3-d5",
-          "startMove": 10,
-          "endMove": 24
-        },
-        "gameIndex": 42
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 47,
+        "gameId": "2JTQNueh",
         "white": "chessfefe",
         "black": "fireball100",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 28
+        "whiteACPL": 61.2,
+        "blackACPL": 55.8,
+        "whiteAccuracy": 73.2,
+        "blackAccuracy": 75.1,
+        "whiteMoveQuality": {
+          "blunders": 7,
+          "mistakes": 3,
+          "inaccuracies": 9,
+          "good": 8,
+          "excellent": 26
         },
-        "mostAttackedSquare": {
-          "square": "e5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 25,
-          "move": "Qe3"
+        "blackMoveQuality": {
+          "blunders": 4,
+          "mistakes": 7,
+          "inaccuracies": 7,
+          "good": 8,
+          "excellent": 27
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "a4-b5",
-          "startMove": 77,
-          "endMove": 81
+        "biggestBlunder": {
+          "moveNumber": 40,
+          "player": "black",
+          "cpLoss": 529,
+          "winLoss": 63.226903483018276,
+          "severity": 82.19497452792376,
+          "move": "Nc6",
+          "evalBefore": -320,
+          "evalAfter": 209
         },
-        "gameIndex": 43
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 213,
+          "evalBefore": -238,
+          "evalAfter": -25,
+          "moveNumber": 33
+        }
       },
       {
+        "gameIndex": 48,
+        "gameId": "tSSImcGy",
         "white": "BMAstatine",
         "black": "Dan-Jon",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 0,
-          "whiteFirstInvasion": 15,
-          "blackFirstInvasion": null
+        "whiteACPL": 9.8,
+        "blackACPL": 52.5,
+        "whiteAccuracy": 96.4,
+        "blackAccuracy": 87,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 0,
+          "good": 4,
+          "excellent": 15
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 6,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 3,
+          "excellent": 12
         },
-        "longestTension": {
-          "moves": 7,
-          "squares": "e6-g7",
-          "startMove": 19,
-          "endMove": 26
+        "biggestBlunder": {
+          "moveNumber": 9,
+          "player": "black",
+          "cpLoss": 273,
+          "winLoss": 25.455093888610406,
+          "severity": 25.455093888610406,
+          "move": "Nb8",
+          "evalBefore": 101,
+          "evalAfter": 374
         },
-        "gameIndex": 44
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 49,
+        "gameId": "EUJNwzgP",
         "white": "firestar2202",
         "black": "acurteman",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 14
+        "whiteACPL": 27.3,
+        "blackACPL": 56,
+        "whiteAccuracy": 84.7,
+        "blackAccuracy": 90.9,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 1,
+          "good": 2,
+          "excellent": 34
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 2,
-          "move": "Nf6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 5,
+          "good": 4,
+          "excellent": 29
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "f4-h5",
-          "startMove": 27,
-          "endMove": 33
+        "biggestBlunder": null,
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 40
         },
-        "gameIndex": 45
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 40
+        }
       },
       {
+        "gameIndex": 50,
+        "gameId": "W67cZqso",
         "white": "Fierolocchio",
         "black": "Micomps",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 6,
-          "whiteFirstInvasion": 51,
-          "blackFirstInvasion": 20
+        "whiteACPL": 43.5,
+        "blackACPL": 30.6,
+        "whiteAccuracy": 79,
+        "blackAccuracy": 84.1,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 6,
+          "inaccuracies": 6,
+          "good": 7,
+          "excellent": 22
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 16,
-          "move": "Bb7"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 5,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 26
         },
-        "longestTension": {
-          "moves": 22,
-          "squares": "b4-c3",
-          "startMove": 23,
-          "endMove": 45
+        "biggestBlunder": {
+          "moveNumber": 40,
+          "player": "white",
+          "cpLoss": 455,
+          "winLoss": 43.208648470274355,
+          "severity": 43.208648470274355,
+          "move": "Ra7",
+          "evalBefore": 0,
+          "evalAfter": -455
         },
-        "gameIndex": 46
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 51,
+        "gameId": "toeP4gSZ",
         "white": "mkac",
         "black": "sussasun",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 15,
-          "blackFirstInvasion": 14
+        "whiteACPL": 25.7,
+        "blackACPL": 80.3,
+        "whiteAccuracy": 87.8,
+        "blackAccuracy": 85.6,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 9,
+          "good": 12,
+          "excellent": 35
         },
-        "mostAttackedSquare": {
-          "square": "e5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 26,
-          "move": "Nd7"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 4,
+          "inaccuracies": 13,
+          "good": 10,
+          "excellent": 32
         },
-        "longestTension": {
-          "moves": 7,
-          "squares": "d6-f4",
-          "startMove": 8,
-          "endMove": 15
+        "biggestBlunder": {
+          "moveNumber": 36,
+          "player": "white",
+          "cpLoss": 187,
+          "winLoss": 21.81324011708947,
+          "severity": 24.594428232018377,
+          "move": "Kg2",
+          "evalBefore": 251,
+          "evalAfter": 64
         },
-        "gameIndex": 47
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 52,
+        "gameId": "XI7Ewg2s",
         "white": "alex11star",
         "black": "NaveenGeorge",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 19,
-          "blackFirstInvasion": 12
+        "whiteACPL": 37.2,
+        "blackACPL": 24.8,
+        "whiteAccuracy": 81.5,
+        "blackAccuracy": 86.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 6,
+          "inaccuracies": 4,
+          "good": 10,
+          "excellent": 14
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 6,
+          "inaccuracies": 3,
+          "good": 3,
+          "excellent": 22
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "e4-f6",
-          "startMove": 17,
-          "endMove": 27
-        },
-        "gameIndex": 48
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 53,
+        "gameId": "Kd9FEmyU",
         "white": "classicalprac",
         "black": "RAHUL1681",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 8
+        "whiteACPL": 24.8,
+        "blackACPL": 48.2,
+        "whiteAccuracy": 94.5,
+        "blackAccuracy": 87.8,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 21
         },
-        "mostAttackedSquare": {
-          "square": "f8",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 41,
-          "move": "Qc8+"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 6,
+          "excellent": 15
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "e5-f4",
-          "startMove": 5,
-          "endMove": 11
-        },
-        "gameIndex": 49
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 54,
+        "gameId": "6kA776Ow",
         "white": "DavidSifre",
         "black": "gavillacres",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 8
+        "whiteACPL": 29.2,
+        "blackACPL": 112,
+        "whiteAccuracy": 86.7,
+        "blackAccuracy": 90.7,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 1,
+          "good": 0,
+          "excellent": 47
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 19,
-          "move": "Qa4+"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 0,
+          "inaccuracies": 1,
+          "good": 3,
+          "excellent": 44
         },
-        "longestTension": {
-          "moves": 3,
-          "squares": "c3-e4",
-          "startMove": 31,
-          "endMove": 34
+        "biggestBlunder": {
+          "moveNumber": 10,
+          "player": "black",
+          "cpLoss": 433,
+          "winLoss": 45.73883825746556,
+          "severity": 45.73883825746556,
+          "move": "Bd7",
+          "evalBefore": -34,
+          "evalAfter": 399
         },
-        "gameIndex": 50
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 51
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 51
+        }
       },
       {
+        "gameIndex": 55,
+        "gameId": "69mySEOi",
         "white": "kostasvl",
         "black": "pawneater2020",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 29,
-          "blackFirstInvasion": 26
+        "whiteACPL": 27.9,
+        "blackACPL": 9.6,
+        "whiteAccuracy": 89.9,
+        "blackAccuracy": 95.5,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 6,
+          "excellent": 23
         },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 26,
-          "move": "Nxb3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 1,
+          "good": 9,
+          "excellent": 24
         },
-        "longestTension": {
-          "moves": 31,
-          "squares": "f4-g2",
-          "startMove": 37,
-          "endMove": 68
-        },
-        "gameIndex": 51
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 56,
+        "gameId": "59ULBNRx",
+        "white": "jose684",
+        "black": "tone_fresh",
+        "whiteACPL": 30.4,
+        "blackACPL": 28.8,
+        "whiteAccuracy": 86.9,
+        "blackAccuracy": 87.5,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 4,
+          "inaccuracies": 9,
+          "good": 10,
+          "excellent": 36
+        },
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 6,
+          "good": 11,
+          "excellent": 38
+        },
+        "biggestBlunder": {
+          "moveNumber": 40,
+          "player": "white",
+          "cpLoss": 210,
+          "winLoss": 22.95482725400644,
+          "severity": 28.004889249887857,
+          "move": "Rd6",
+          "evalBefore": 288,
+          "evalAfter": 78
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 57,
+        "gameId": "cfiRKdaa",
         "white": "leosiu",
         "black": "Shadawe",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 2,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 14
+        "whiteACPL": 37.7,
+        "blackACPL": 34.5,
+        "whiteAccuracy": 79.2,
+        "blackAccuracy": 80.8,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 3,
+          "inaccuracies": 3,
+          "good": 5,
+          "excellent": 15
         },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 6,
-          "whiteAttackers": 1,
-          "blackAttackers": 5,
-          "moveNumber": 17,
-          "move": "Ndb5"
+        "blackMoveQuality": {
+          "blunders": 3,
+          "mistakes": 1,
+          "inaccuracies": 3,
+          "good": 5,
+          "excellent": 15
         },
-        "longestTension": {
-          "moves": 12,
-          "squares": "d5-f6",
-          "startMove": 29,
-          "endMove": 41
+        "biggestBlunder": {
+          "moveNumber": 22,
+          "player": "black",
+          "cpLoss": 212,
+          "winLoss": 29.59302360514903,
+          "severity": 29.59302360514903,
+          "move": "Kd6",
+          "evalBefore": -102,
+          "evalAfter": 110
         },
-        "gameIndex": 52
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 58,
+        "gameId": "YzWeUUIz",
         "white": "momor",
         "black": "falko47",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 7,
-          "blackFirstInvasion": 18
+        "whiteACPL": 44.2,
+        "blackACPL": 94.3,
+        "whiteAccuracy": 78.8,
+        "blackAccuracy": 75.5,
+        "whiteMoveQuality": {
+          "blunders": 5,
+          "mistakes": 10,
+          "inaccuracies": 9,
+          "good": 8,
+          "excellent": 43
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 14,
-          "move": "Bb7"
+        "blackMoveQuality": {
+          "blunders": 8,
+          "mistakes": 9,
+          "inaccuracies": 6,
+          "good": 10,
+          "excellent": 41
         },
-        "longestTension": {
-          "moves": 19,
-          "squares": "c4-d5",
-          "startMove": 6,
-          "endMove": 25
+        "biggestBlunder": {
+          "moveNumber": 22,
+          "player": "black",
+          "cpLoss": 392,
+          "winLoss": 50.06335670024997,
+          "severity": 56.82190985478371,
+          "move": "Qg5",
+          "evalBefore": -254,
+          "evalAfter": 138
         },
-        "gameIndex": 53
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 281,
+          "evalBefore": -306,
+          "evalAfter": -25,
+          "moveNumber": 29
+        }
       },
       {
+        "gameIndex": 59,
+        "gameId": "s8fABr7w",
         "white": "juandeleon",
         "black": "mynameismund",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 29,
-          "blackFirstInvasion": 20
+        "whiteACPL": 37.1,
+        "blackACPL": 47.3,
+        "whiteAccuracy": 81.6,
+        "blackAccuracy": 78,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 4,
+          "inaccuracies": 2,
+          "good": 5,
+          "excellent": 26
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 3,
+          "mistakes": 3,
+          "inaccuracies": 6,
+          "good": 6,
+          "excellent": 20
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "d4-e5",
-          "startMove": 19,
-          "endMove": 29
+        "biggestBlunder": {
+          "moveNumber": 21,
+          "player": "black",
+          "cpLoss": 373,
+          "winLoss": 44.316396119035176,
+          "severity": 44.316396119035176,
+          "move": "Nxe4",
+          "evalBefore": -59,
+          "evalAfter": 314
         },
-        "gameIndex": 54
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": 351,
+          "evalBefore": 390,
+          "evalAfter": -39,
+          "moveNumber": 23
+        }
       },
       {
+        "gameIndex": 60,
+        "gameId": "PjDKLp7m",
         "white": "tommeketoch",
         "black": "LloydRet",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 6,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 13,
-          "blackFirstInvasion": 8
+        "whiteACPL": 15.8,
+        "blackACPL": 24.7,
+        "whiteAccuracy": 91.5,
+        "blackAccuracy": 88.7,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 7,
+          "good": 6,
+          "excellent": 42
         },
-        "mostAttackedSquare": {
-          "square": "f5",
-          "attackers": 7,
-          "whiteAttackers": 4,
-          "blackAttackers": 3,
-          "moveNumber": 41,
-          "move": "Qxe5"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 9,
+          "good": 8,
+          "excellent": 37
         },
-        "longestTension": {
-          "moves": 7,
-          "squares": "f5-h7",
-          "startMove": 97,
-          "endMove": 104
-        },
-        "gameIndex": 55
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 61,
+        "gameId": "0JL5cCxU",
         "white": "DrRickinCT",
         "black": "laughingoctopus",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 29,
-          "blackFirstInvasion": 10
+        "whiteACPL": 36.1,
+        "blackACPL": 120.4,
+        "whiteAccuracy": 84,
+        "blackAccuracy": 87.6,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 3,
+          "inaccuracies": 4,
+          "good": 7,
+          "excellent": 45
         },
-        "mostAttackedSquare": {
-          "square": "e4",
-          "attackers": 7,
-          "whiteAttackers": 3,
-          "blackAttackers": 4,
-          "moveNumber": 28,
-          "move": "d5"
+        "blackMoveQuality": {
+          "blunders": 2,
+          "mistakes": 2,
+          "inaccuracies": 9,
+          "good": 6,
+          "excellent": 41
         },
-        "longestTension": {
-          "moves": 12,
-          "squares": "e5-f4",
-          "startMove": 67,
-          "endMove": 79
+        "biggestBlunder": {
+          "moveNumber": 34,
+          "player": "white",
+          "cpLoss": 208,
+          "winLoss": 23.38157380474631,
+          "severity": 27.82407282764811,
+          "move": "f4",
+          "evalBefore": 276,
+          "evalAfter": 68
         },
-        "gameIndex": 56
+        "biggestComeback": {
+          "player": "black",
+          "swing": 2000,
+          "evalFrom": "M1",
+          "evalTo": "M0",
+          "evalFromCp": 9990,
+          "evalToCp": -10000,
+          "moveNumber": 61
+        },
+        "luckyEscape": {
+          "player": "black",
+          "escapeAmount": -10,
+          "evalBefore": 9990,
+          "evalAfter": -10000,
+          "moveNumber": 61
+        }
       },
       {
+        "gameIndex": 62,
+        "gameId": "gqkjGERv",
         "white": "Silkthewanderer",
         "black": "Not_Any_More",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 30
+        "whiteACPL": 30.5,
+        "blackACPL": 22.8,
+        "whiteAccuracy": 85.5,
+        "blackAccuracy": 87.6,
+        "whiteMoveQuality": {
+          "blunders": 3,
+          "mistakes": 5,
+          "inaccuracies": 7,
+          "good": 14,
+          "excellent": 44
         },
-        "mostAttackedSquare": {
-          "square": "a6",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 44,
-          "move": "Nb8"
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 6,
+          "inaccuracies": 6,
+          "good": 20,
+          "excellent": 40
         },
-        "longestTension": {
-          "moves": 14,
-          "squares": "e5-f4",
-          "startMove": 84,
-          "endMove": 98
+        "biggestBlunder": {
+          "moveNumber": 53,
+          "player": "white",
+          "cpLoss": 216,
+          "winLoss": 27.43733955820136,
+          "severity": 27.43733955820136,
+          "move": "Nc5",
+          "evalBefore": -4,
+          "evalAfter": -220
         },
-        "gameIndex": 57
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 63,
+        "gameId": "MjyULO2g",
         "white": "quirked",
         "black": "MetropolisOfDesire",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 20
+        "whiteACPL": 36.8,
+        "blackACPL": 12,
+        "whiteAccuracy": 85.5,
+        "blackAccuracy": 94.2,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 3,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 15
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 3,
-          "blackAttackers": 3,
-          "moveNumber": 39,
-          "move": "Qe6+"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 4,
+          "excellent": 18
         },
-        "longestTension": {
-          "moves": 15,
-          "squares": "d5-f6",
-          "startMove": 26,
-          "endMove": 41
-        },
-        "gameIndex": 58
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 64,
+        "gameId": "Fgfl6M9c",
         "white": "dumplingsandball",
         "black": "NirakuHakamura",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 4
+        "whiteACPL": 38.6,
+        "blackACPL": 18.3,
+        "whiteAccuracy": 83.9,
+        "blackAccuracy": 90.9,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 7,
+          "excellent": 15
         },
-        "mostAttackedSquare": {
-          "square": "e7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 6,
-          "move": "Nc6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 3,
+          "good": 5,
+          "excellent": 18
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "c6-e5",
-          "startMove": 11,
-          "endMove": 15
+        "biggestBlunder": {
+          "moveNumber": 19,
+          "player": "white",
+          "cpLoss": 239,
+          "winLoss": 29.357837792424412,
+          "severity": 29.357837792424412,
+          "move": "Bh6",
+          "evalBefore": -9,
+          "evalAfter": -248
         },
-        "gameIndex": 59
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 65,
+        "gameId": "dTAHPInR",
         "white": "Zubenelgenubi",
         "black": "nikker33",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 15,
-          "blackFirstInvasion": 10
+        "whiteACPL": 29.8,
+        "blackACPL": 16.2,
+        "whiteAccuracy": 87.6,
+        "blackAccuracy": 92.6,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 5,
+          "good": 10,
+          "excellent": 21
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 2,
-          "blackAttackers": 4,
-          "moveNumber": 16,
-          "move": "e6"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 4,
+          "good": 6,
+          "excellent": 28
         },
-        "longestTension": {
-          "moves": 18,
-          "squares": "c4-d5",
-          "startMove": 3,
-          "endMove": 21
-        },
-        "gameIndex": 60
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 66,
+        "gameId": "Aa4zjTWl",
         "white": "Tigermoth1",
         "black": "PratikBora",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 1,
-          "blackPiecesInEnemy": 1,
-          "whiteFirstInvasion": 17,
-          "blackFirstInvasion": 34
+        "whiteACPL": 64.7,
+        "blackACPL": 46.8,
+        "whiteAccuracy": 70.9,
+        "blackAccuracy": 77.8,
+        "whiteMoveQuality": {
+          "blunders": 2,
+          "mistakes": 4,
+          "inaccuracies": 1,
+          "good": 5,
+          "excellent": 7
         },
-        "mostAttackedSquare": {
-          "square": "d5",
-          "attackers": 6,
-          "whiteAttackers": 4,
-          "blackAttackers": 2,
-          "moveNumber": 18,
-          "move": "Bb7"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 5,
+          "inaccuracies": 3,
+          "good": 3,
+          "excellent": 8
         },
-        "longestTension": {
-          "moves": 6,
-          "squares": "c6-d5",
-          "startMove": 20,
-          "endMove": 26
+        "biggestBlunder": {
+          "moveNumber": 17,
+          "player": "white",
+          "cpLoss": 305,
+          "winLoss": 40.07986500063946,
+          "severity": 40.07986500063946,
+          "move": "Rac1",
+          "evalBefore": 87,
+          "evalAfter": -218
         },
-        "gameIndex": 61
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 67,
+        "gameId": "yL0t57YZ",
         "white": "supergm3000",
         "black": "Strategic_Nonsense",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 3,
-          "blackPiecesInEnemy": 5,
-          "whiteFirstInvasion": 35,
-          "blackFirstInvasion": 16
+        "whiteACPL": 40.3,
+        "blackACPL": 23.1,
+        "whiteAccuracy": 90.4,
+        "blackAccuracy": 95.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 4,
+          "good": 10,
+          "excellent": 25
         },
-        "mostAttackedSquare": {
-          "square": "d2",
-          "attackers": 5,
-          "whiteAttackers": 5,
-          "blackAttackers": 0,
-          "moveNumber": 3,
-          "move": "Nf3"
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 5,
+          "excellent": 33
         },
-        "longestTension": {
-          "moves": 4,
-          "squares": "a4-b5",
-          "startMove": 28,
-          "endMove": 32
-        },
-        "gameIndex": 62
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       },
       {
+        "gameIndex": 68,
+        "gameId": "9TSrFv1t",
+        "white": "SarahWynn",
+        "black": "che55m45ter",
+        "whiteACPL": 49.1,
+        "blackACPL": 100.3,
+        "whiteAccuracy": 83.7,
+        "blackAccuracy": 75.4,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 13
+        },
+        "blackMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 2,
+          "good": 6,
+          "excellent": 9
+        },
+        "biggestBlunder": {
+          "moveNumber": 10,
+          "player": "black",
+          "cpLoss": 468,
+          "winLoss": 57.43687962725811,
+          "severity": 57.43687962725811,
+          "move": "Kf8",
+          "evalBefore": -170,
+          "evalAfter": 298
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 69,
+        "gameId": "DFHI8NhG",
         "white": "NameGoesInHere",
         "black": "Le_Merovingien",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 6,
-          "blackPiecesInEnemy": 3,
-          "whiteFirstInvasion": 9,
-          "blackFirstInvasion": 6
+        "whiteACPL": 30.7,
+        "blackACPL": 41.1,
+        "whiteAccuracy": 88.2,
+        "blackAccuracy": 85.1,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 3,
+          "inaccuracies": 5,
+          "good": 12,
+          "excellent": 40
         },
-        "mostAttackedSquare": {
-          "square": "f3",
-          "attackers": 5,
-          "whiteAttackers": 4,
-          "blackAttackers": 1,
-          "moveNumber": 6,
-          "move": "dxe4"
+        "blackMoveQuality": {
+          "blunders": 3,
+          "mistakes": 2,
+          "inaccuracies": 7,
+          "good": 13,
+          "excellent": 35
         },
-        "longestTension": {
-          "moves": 10,
-          "squares": "c5-f5",
-          "startMove": 61,
-          "endMove": 71
+        "biggestBlunder": {
+          "moveNumber": 31,
+          "player": "black",
+          "cpLoss": 375,
+          "winLoss": 34.4884947857298,
+          "severity": 34.4884947857298,
+          "move": "a2+",
+          "evalBefore": 54,
+          "evalAfter": 429
         },
-        "gameIndex": 63
+        "biggestComeback": null,
+        "luckyEscape": {
+          "player": "white",
+          "escapeAmount": 207,
+          "evalBefore": -221,
+          "evalAfter": -14,
+          "moveNumber": 24
+        }
+      },
+      {
+        "gameIndex": 70,
+        "gameId": "cBAvr5fd",
+        "white": "muksia",
+        "black": "sterpfi",
+        "whiteACPL": 12.8,
+        "blackACPL": 19.1,
+        "whiteAccuracy": 94.8,
+        "blackAccuracy": 93.3,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 5,
+          "good": 10,
+          "excellent": 53
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 2,
+          "inaccuracies": 3,
+          "good": 12,
+          "excellent": 51
+        },
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 71,
+        "gameId": "51u5yiHP",
+        "white": "isaypotato",
+        "black": "resistire",
+        "whiteACPL": 25.9,
+        "blackACPL": 10.2,
+        "whiteAccuracy": 88.7,
+        "blackAccuracy": 95.1,
+        "whiteMoveQuality": {
+          "blunders": 1,
+          "mistakes": 2,
+          "inaccuracies": 0,
+          "good": 5,
+          "excellent": 20
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 2,
+          "good": 3,
+          "excellent": 23
+        },
+        "biggestBlunder": {
+          "moveNumber": 11,
+          "player": "white",
+          "cpLoss": 157,
+          "winLoss": 21.904196918418357,
+          "severity": 21.904196918418357,
+          "move": "gxh5",
+          "evalBefore": 121,
+          "evalAfter": -36
+        },
+        "biggestComeback": null,
+        "luckyEscape": null
+      },
+      {
+        "gameIndex": 72,
+        "gameId": "CF9rFuhk",
+        "white": "byJlo4ka",
+        "black": "elii123",
+        "whiteACPL": 25.8,
+        "blackACPL": 8.1,
+        "whiteAccuracy": 88.9,
+        "blackAccuracy": 91.4,
+        "whiteMoveQuality": {
+          "blunders": 0,
+          "mistakes": 0,
+          "inaccuracies": 8,
+          "good": 5,
+          "excellent": 15
+        },
+        "blackMoveQuality": {
+          "blunders": 0,
+          "mistakes": 1,
+          "inaccuracies": 1,
+          "good": 3,
+          "excellent": 23
+        },
+        "biggestBlunder": null,
+        "biggestComeback": null,
+        "luckyEscape": null
       }
     ],
     "summary": {
-      "totalGames": 64,
-      "homebody": {
-        "white": "BMAstatine",
-        "black": "Dan-Jon",
+      "accuracyKing": {
         "player": "black",
-        "piecesInEnemy": 0,
-        "gameIndex": 44
+        "accuracy": 97,
+        "acpl": 163.7,
+        "white": "Minot",
+        "black": "sivakumarr",
+        "gameIndex": 32,
+        "gameId": "Aj0rZD7q"
       },
-      "lateBlocker": null,
-      "mostAttackedSquareGame": {
-        "white": "mkubecek",
-        "black": "alexkoj",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 4,
-          "blackPiecesInEnemy": 4,
-          "whiteFirstInvasion": 11,
-          "blackFirstInvasion": 6
-        },
-        "mostAttackedSquare": {
-          "square": "d4",
-          "attackers": 8,
-          "whiteAttackers": 4,
-          "blackAttackers": 4,
-          "moveNumber": 43,
-          "move": "Nf5"
-        },
-        "longestTension": {
-          "moves": 23,
-          "squares": "c3-d4",
-          "startMove": 25,
-          "endMove": 48
-        },
-        "gameIndex": 12
-      },
-      "lateBloomer": {
-        "white": "Fierolocchio",
-        "black": "Micomps",
+      "biggestBlunder": {
+        "moveNumber": 16,
         "player": "white",
-        "moveNumber": 51,
-        "gameIndex": 46
+        "cpLoss": 550,
+        "winLoss": 64.34185425526555,
+        "severity": 87.98748569407563,
+        "move": "f4",
+        "evalBefore": 347,
+        "evalAfter": -203,
+        "white": "sammgus",
+        "black": "lc69",
+        "gameIndex": 22,
+        "gameId": "oJoTAO8Z"
       },
-      "quickDraw": {
-        "white": "arbisto",
-        "black": "guitarspider",
+      "comebackKing": {
+        "player": "black",
+        "swing": 2000,
+        "evalFrom": "M1",
+        "evalTo": "M0",
+        "evalFromCp": 9990,
+        "evalToCp": -10000,
+        "moveNumber": 85,
+        "white": "cham",
+        "black": "baberle",
+        "gameIndex": 1,
+        "gameId": "bLHyTKX5"
+      },
+      "luckyEscape": {
         "player": "white",
-        "moveNumber": 3,
-        "gameIndex": 0
+        "escapeAmount": 696,
+        "evalBefore": -696,
+        "evalAfter": 0,
+        "moveNumber": 26,
+        "white": "capturingbravo",
+        "black": "hpors",
+        "gameIndex": 42,
+        "gameId": "zzlP6cwc"
       },
-      "longestTension": {
-        "white": "sillydoor",
-        "black": "GoneNowhere",
-        "moves": 41,
-        "squares": "c5-d4",
-        "startMove": 6,
-        "endMove": 47,
-        "gameIndex": 7
+      "lowestACPL": {
+        "player": "black",
+        "acpl": 6.2,
+        "accuracy": 96.5,
+        "white": "GroneN",
+        "black": "AleksanderBerge",
+        "gameIndex": 25,
+        "gameId": "m781JxF7"
+      },
+      "highestACPL": {
+        "player": "white",
+        "acpl": 176.7,
+        "accuracy": 93,
+        "white": "Minot",
+        "black": "sivakumarr",
+        "gameIndex": 32,
+        "gameId": "Aj0rZD7q"
+      },
+      "lowestCombinedACPL": {
+        "combinedACPL": 30.4,
+        "whiteACPL": 15.9,
+        "blackACPL": 14.5,
+        "white": "chatakkuma",
+        "black": "sahkal",
+        "gameIndex": 20,
+        "gameId": "3ixj2ar2"
+      },
+      "highestCombinedACPL": {
+        "combinedACPL": 340.4,
+        "whiteACPL": 176.7,
+        "blackACPL": 163.7,
+        "white": "Minot",
+        "black": "sivakumarr",
+        "gameIndex": 32,
+        "gameId": "Aj0rZD7q"
       }
     }
   }
