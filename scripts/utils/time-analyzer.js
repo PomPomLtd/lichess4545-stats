@@ -153,6 +153,7 @@ function analyzeGameTime(game, increment = 45) {
   const white = headers.White || 'Unknown';
   const black = headers.Black || 'Unknown';
   const gameId = headers.GameId || headers.Site?.split('/').pop() || null;
+  const result = headers.Result || '*';
 
   // Find premoves (moves made in < 0.5 seconds)
   const premoves = moveTimes.filter(m => m.timeSpent < 0.5);
@@ -194,6 +195,7 @@ function analyzeGameTime(game, increment = 45) {
     white,
     black,
     gameId,
+    result,
     premoves: {
       white: whitePremoves,
       black: blackPremoves,
@@ -393,10 +395,25 @@ function analyzeAllGames(games, increment = 45) {
   // 6. 🎯 Sniper - Fastest time to spot and execute checkmate
   const sniperCandidates = [];
   for (const game of gameAnalyses) {
+    // Only consider games that ended in checkmate (not draws)
+    if (game.result !== '1-0' && game.result !== '0-1') {
+      continue;
+    }
+
     // Find checkmate moves (move that results in mate eval)
-    const checkmateMoves = game.moveTimes.filter(m =>
-      m.evalAfter && Math.abs(m.evalAfter) >= 100 && m.evalBefore && Math.abs(m.evalBefore) < 100
-    );
+    // Must match the game result: positive eval for 1-0, negative for 0-1
+    const checkmateMoves = game.moveTimes.filter(m => {
+      if (!m.evalAfter || !m.evalBefore) return false;
+
+      // Check that eval changed to mate
+      if (Math.abs(m.evalAfter) < 100 || Math.abs(m.evalBefore) >= 100) return false;
+
+      // Verify eval direction matches game result
+      if (game.result === '1-0' && m.evalAfter < 0) return false; // White won, so eval should be positive
+      if (game.result === '0-1' && m.evalAfter > 0) return false; // Black won, so eval should be negative
+
+      return true;
+    });
 
     for (const cm of checkmateMoves) {
       sniperCandidates.push({
