@@ -537,7 +537,7 @@ export function FunStats({ funStats }: FunStatsProps) {
         )}
 
         {funStats.crosshairs && (
-          <AwardCard gameId={funStats.longestCheckSequence.gameId} className="bg-orange-50 dark:bg-orange-900/20">
+          <AwardCard gameId={undefined} className="bg-orange-50 dark:bg-orange-900/20">
             <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">🎯 Crosshairs</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.crosshairs.white} black={funStats.crosshairs.black} />
@@ -548,7 +548,7 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {Math.floor((funStats.crosshairs.moveNumber + 1) / 2)}{funStats.crosshairs.moveNumber % 2 === 1 ? '.' : '...'} {funStats.crosshairs.move}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.longestTension && (
@@ -601,7 +601,7 @@ export function FunStats({ funStats }: FunStatsProps) {
               {funStats.sadTimes.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-              Thought for {formatTime(funStats.sadTimes.timeSpent)} at eval {funStats.sadTimes.eval.toFixed(2)}
+              Thought for {formatTime(funStats.sadTimes.timeSpent)} on {Math.floor((funStats.sadTimes.moveNumber + 1) / 2)}{funStats.sadTimes.moveNumber % 2 === 1 ? '.' : '...'} {funStats.sadTimes.move} at eval {funStats.sadTimes.eval.toFixed(2)}
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.sadTimes.white} vs {funStats.sadTimes.black}
@@ -631,7 +631,7 @@ export function FunStats({ funStats }: FunStatsProps) {
               {funStats.longestThink.player}
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-              Spent {formatTime(funStats.longestThink.timeSpent)} on a single move
+              Spent {formatTime(funStats.longestThink.timeSpent)} on {Math.floor((funStats.longestThink.moveNumber + 1) / 2)}{funStats.longestThink.moveNumber % 2 === 1 ? '.' : '...'} {funStats.longestThink.move}
             </div>
             <div className="text-xs text-gray-500 dark:text-gray-500 mt-1">
               {funStats.longestThink.white} vs {funStats.longestThink.black}

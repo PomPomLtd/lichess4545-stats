@@ -213,18 +213,21 @@ interface StatsData {
     fastestQueenTrade: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     slowestQueenTrade: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     longestCaptureSequence: {
       length: number
       gameIndex: number
+      gameId: string | null
       startMove: number
       white: string
       black: string
@@ -232,6 +235,7 @@ interface StatsData {
     longestCheckSequence: {
       length: number
       gameIndex: number
+      gameId: string | null
       startMove: number
       white: string
       black: string
@@ -239,12 +243,14 @@ interface StatsData {
     pawnStorm: {
       count: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     pieceLoyalty: {
       moves: number
       gameIndex: number
+      gameId: string | null
       piece: string
       square: string
       white: string
@@ -253,6 +259,7 @@ interface StatsData {
     squareTourist: {
       squares: number
       gameIndex: number
+      gameId: string | null
       piece: string
       color: string
       startSquare: string
@@ -262,12 +269,14 @@ interface StatsData {
     castlingRace: {
       moves: number
       gameIndex: number
+      gameId: string | null
       winner: string
       white: string
       black: string
     } | null
     openingHipster: {
       gameIndex: number
+      gameId: string | null
       eco: string
       name: string
       moves: string
@@ -277,6 +286,7 @@ interface StatsData {
     dadbodShuffler: {
       moves: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -284,6 +294,7 @@ interface StatsData {
     sportyQueen: {
       distance: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -291,6 +302,7 @@ interface StatsData {
     edgeLord: {
       moves: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -298,6 +310,7 @@ interface StatsData {
     rookLift: {
       moveNumber: number
       gameIndex: number
+      gameId: string | null
       color: string
       rook: string
       square: string
@@ -307,6 +320,7 @@ interface StatsData {
     centerStage: {
       moves: number
       gameIndex: number
+      gameId: string | null
       piece: string
       startSquare: string
       color: string
@@ -316,6 +330,7 @@ interface StatsData {
     darkLord: {
       captures: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -323,6 +338,7 @@ interface StatsData {
     chickenAward: {
       retreats: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
