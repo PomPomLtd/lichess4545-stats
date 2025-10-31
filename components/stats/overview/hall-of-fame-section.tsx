@@ -1,4 +1,4 @@
-import { HallOfFame } from '@/app/stats/overview/types'
+import { HallOfFame } from '@/app/stats/overview-types'
 import { StatCard } from '../stat-card'
 import { PlayerVs, PlayerName } from '../player-name'
 

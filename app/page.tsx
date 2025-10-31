@@ -10,32 +10,20 @@ export default function HomePage() {
         Explore game data, player performance, opening trends, and much more.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="max-w-md">
         <Link
-          href="/stats/46/overview"
-          className="block p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 transition"
+          href="/stats/46"
+          className="block p-8 border-2 border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-colors"
         >
-          <h2 className="text-2xl font-bold mb-2">Season 46</h2>
-          <p className="text-gray-600 dark:text-gray-400">Current Season (In Progress)</p>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">2 rounds completed</p>
-        </Link>
-
-        <Link
-          href="/stats/45/overview"
-          className="block p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 transition"
-        >
-          <h2 className="text-2xl font-bold mb-2">Season 45</h2>
-          <p className="text-gray-600 dark:text-gray-400">Complete</p>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">8 rounds • 1,472 games</p>
-        </Link>
-
-        <Link
-          href="/stats/44/overview"
-          className="block p-6 border border-gray-200 dark:border-gray-700 rounded-lg hover:border-blue-500 transition"
-        >
-          <h2 className="text-2xl font-bold mb-2">Season 44</h2>
-          <p className="text-gray-600 dark:text-gray-400">Complete</p>
-          <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">8 rounds • 1,408 games</p>
+          <h2 className="text-3xl font-bold mb-2">Season 46</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-2">Current Season (In Progress)</p>
+          <p className="text-sm text-gray-500 dark:text-gray-500">2 rounds completed • 316 games analyzed</p>
+          <div className="mt-4 text-blue-600 dark:text-blue-400 flex items-center gap-2">
+            View Statistics
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
         </Link>
       </div>
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { Trends } from '@/app/stats/overview/types'
+import { Trends } from '@/app/stats/overview-types'
 import { StatCard } from '../stat-card'
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 

@@ -1,4 +1,4 @@
-import { Aggregates } from '@/app/stats/overview/types'
+import { Aggregates } from '@/app/stats/overview-types'
 
 interface PieceCemeteryProps {
   aggregates: Aggregates

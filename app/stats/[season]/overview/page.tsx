@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useParams } from 'next/navigation'
 import Link from 'next/link'
-import { SeasonOverview } from './types'
+import { SeasonOverview } from '../../overview-types'
 import { OverviewHero } from '@/components/stats/overview/overview-hero'
 import { PieceCemetery } from '@/components/stats/overview/piece-cemetery'
 import { HallOfFameSection } from '@/components/stats/overview/hall-of-fame-section'
@@ -21,6 +22,8 @@ interface RoundStats {
 }
 
 export default function OverviewPage() {
+  const params = useParams()
+  const season = params.season as string
   const [overview, setOverview] = useState<SeasonOverview | null>(null)
   const [availableRounds, setAvailableRounds] = useState<RoundStats[]>([])
   const [loading, setLoading] = useState(true)
@@ -29,7 +32,7 @@ export default function OverviewPage() {
   useEffect(() => {
     fetchOverview()
     fetchAvailableRounds()
-  }, [])
+  }, [season])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -43,7 +46,7 @@ export default function OverviewPage() {
 
   const fetchOverview = async () => {
     try {
-      const response = await fetch('/stats/season-2-overview.json', {
+      const response = await fetch(`/stats/season-${season}-overview.json`, {
         cache: 'no-store'
       })
 
@@ -63,11 +66,11 @@ export default function OverviewPage() {
   const fetchAvailableRounds = async () => {
     try {
       const rounds: RoundStats[] = []
-      const EXPECTED_GAMES_PER_ROUND = 30
+      const EXPECTED_GAMES_PER_ROUND = 160 // Lichess 4545: ~168 games per round (21 matches × 8 boards)
 
-      for (let roundNum = 1; roundNum <= 7; roundNum++) {
+      for (let roundNum = 1; roundNum <= 8; roundNum++) {
         try {
-          const response = await fetch(`/stats/season-2-round-${roundNum}.json`, {
+          const response = await fetch(`/stats/season-${season}-round-${roundNum}.json`, {
             cache: 'no-store'
           })
           if (response.ok) {
@@ -190,7 +193,7 @@ export default function OverviewPage() {
               {availableRounds.map((round) => (
                 <Link
                   key={round.roundNumber}
-                  href={`/stats/round/${round.roundNumber}`}
+                  href={`/stats/${season}/round/${round.roundNumber}`}
                   className="group"
                 >
                   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg hover:border-indigo-500 dark:hover:border-indigo-400 transition-all">

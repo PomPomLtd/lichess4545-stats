@@ -480,6 +480,7 @@ interface StatsData {
 
 export default function RoundStatsPage() {
   const params = useParams()
+  const season = params.season as string
   const roundNumber = parseInt(params.roundNumber as string)
   const [stats, setStats] = useState<StatsData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -490,11 +491,11 @@ export default function RoundStatsPage() {
     fetchRoundStats()
     checkNextRoundExists()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [roundNumber])
+  }, [roundNumber, season])
 
   const fetchRoundStats = async () => {
     try {
-      const response = await fetch(`/stats/season-2-round-${roundNumber}.json`)
+      const response = await fetch(`/stats/season-${season}-round-${roundNumber}.json`)
       if (!response.ok) {
         throw new Error('Stats not found for this round')
       }
@@ -513,7 +514,7 @@ export default function RoundStatsPage() {
       return
     }
     try {
-      const response = await fetch(`/stats/season-2-round-${roundNumber + 1}.json`, { method: 'HEAD' })
+      const response = await fetch(`/stats/season-${season}-round-${roundNumber + 1}.json`, { method: 'HEAD' })
       setNextRoundExists(response.ok)
     } catch {
       setNextRoundExists(false)
@@ -545,6 +546,7 @@ export default function RoundStatsPage() {
         <div className="space-y-8">
           <RoundHeader
             roundNumber={stats.roundNumber}
+            seasonNumber={stats.seasonNumber}
             generatedAt={stats.generatedAt}
             nextRoundExists={nextRoundExists}
           />

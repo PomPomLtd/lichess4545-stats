@@ -1,0 +1,2733 @@
+{
+  "seasonNumber": 46,
+  "generatedAt": "2025-10-31T09:35:10.151Z",
+  "roundsIncluded": [
+    1,
+    2
+  ],
+  "aggregates": {
+    "totalGames": 222,
+    "totalMoves": 18347,
+    "averageGameLength": 82.6,
+    "totalBlunders": 0,
+    "totalMistakes": 0,
+    "piecesCaptured": {
+      "pawns": 1797,
+      "knights": 720,
+      "bishops": 656,
+      "rooks": 489,
+      "queens": 294,
+      "total": 3956
+    },
+    "totalChecks": 0,
+    "totalEnPassant": 14,
+    "totalPromotions": 0,
+    "totalCastling": 0
+  },
+  "hallOfFame": {
+    "cleanestGame": null,
+    "wildestGame": null,
+    "biggestBlunder": null,
+    "mostAccurate": null,
+    "worstACPL": null,
+    "longestGame": {
+      "round": 1,
+      "moves": 100,
+      "white": "fork2020",
+      "black": "markommbrzi",
+      "result": "0-1"
+    },
+    "shortestGame": {
+      "round": 1,
+      "moves": 10,
+      "white": "Nobyx",
+      "black": "avemanyeg",
+      "result": "0-1"
+    },
+    "sportiestQueen": {
+      "round": 1,
+      "distance": 70,
+      "gameIndex": 35,
+      "color": "White",
+      "white": "ekopp2000",
+      "black": "MarketMike",
+      "distanceCm": 316,
+      "distanceHumanScaleM": 59
+    },
+    "mostRetreats": {
+      "round": 2,
+      "retreats": 32,
+      "gameIndex": 17,
+      "color": "Black",
+      "white": "chatakkuma",
+      "black": "sahkal"
+    },
+    "longestCheckSequence": {
+      "round": 1,
+      "length": 12,
+      "gameIndex": 6,
+      "startMove": 28,
+      "white": "nvasquez",
+      "black": "juandeleon"
+    },
+    "longestCaptureSpree": {
+      "round": 1,
+      "length": 11,
+      "gameIndex": 107,
+      "startMove": 16,
+      "white": "mronemore",
+      "black": "MoonlightAnomaly"
+    },
+    "earliestCastling": {
+      "round": 1,
+      "moves": 4,
+      "gameIndex": 10,
+      "winner": "black",
+      "white": "KingCatChess",
+      "black": "jg777"
+    },
+    "mostObscureOpening": {
+      "round": 1,
+      "gameIndex": 12,
+      "eco": "A36",
+      "name": "English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation",
+      "moves": "c4 c5 Nc3 Nc6 g3 g6",
+      "obscurityScore": 93,
+      "white": "DrRickinCT",
+      "black": "chess131969"
+    },
+    "biggestComeback": null,
+    "luckyEscape": null
+  },
+  "playerStats": {
+    "casual921": {
+      "normalizedName": "casual921",
+      "displayName": "casual921",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Fastest Queen Trade",
+          "details": "6 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "nightsub": {
+      "normalizedName": "nightsub",
+      "displayName": "nightsub",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Fastest Queen Trade",
+          "details": "6 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "ekopp2000": {
+      "normalizedName": "ekopp2000",
+      "displayName": "ekopp2000",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Slowest Queen Trade",
+          "details": "69 moves"
+        },
+        {
+          "round": 1,
+          "award": "Sporty Queen",
+          "details": "70 squares"
+        }
+      ],
+      "awardCount": 2,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "MarketMike": {
+      "normalizedName": "MarketMike",
+      "displayName": "MarketMike",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Slowest Queen Trade",
+          "details": "69 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "mronemore": {
+      "normalizedName": "mronemore",
+      "displayName": "mronemore",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Longest Capture Spree",
+          "details": "11 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "MoonlightAnomaly": {
+      "normalizedName": "MoonlightAnomaly",
+      "displayName": "MoonlightAnomaly",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Longest Capture Spree",
+          "details": "11 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "nvasquez": {
+      "normalizedName": "nvasquez",
+      "displayName": "nvasquez",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Longest King Hunt",
+          "details": "12 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "juandeleon": {
+      "normalizedName": "juandeleon",
+      "displayName": "juandeleon",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Longest King Hunt",
+          "details": "12 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "STCLion": {
+      "normalizedName": "STCLion",
+      "displayName": "STCLion",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Pawn Storm",
+          "details": "14"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "PatchyThePirate": {
+      "normalizedName": "PatchyThePirate",
+      "displayName": "PatchyThePirate",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Pawn Storm",
+          "details": "14"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "abliviax": {
+      "normalizedName": "abliviax",
+      "displayName": "abliviax",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Square Tourist",
+          "details": "24 squares"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "jg777": {
+      "normalizedName": "jg777",
+      "displayName": "jg777",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Castling Race Winner",
+          "details": "4 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "DrRickinCT": {
+      "normalizedName": "DrRickinCT",
+      "displayName": "DrRickinCT",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Opening Hipster",
+          "details": "c4 c5 Nc3 Nc6 g3 g6 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "chess131969": {
+      "normalizedName": "chess131969",
+      "displayName": "chess131969",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Opening Hipster",
+          "details": "c4 c5 Nc3 Nc6 g3 g6 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "fork2020": {
+      "normalizedName": "fork2020",
+      "displayName": "fork2020",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Dadbod Shuffler",
+          "details": "49 moves"
+        },
+        {
+          "round": 1,
+          "award": "Center Stage",
+          "details": "12 moves"
+        },
+        {
+          "round": 1,
+          "award": "Chicken Award",
+          "details": "27 retreats"
+        }
+      ],
+      "awardCount": 3,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "berndwind": {
+      "normalizedName": "berndwind",
+      "displayName": "berndwind",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Professional Edger",
+          "details": "29 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Castling-Companion": {
+      "normalizedName": "Castling-Companion",
+      "displayName": "Castling-Companion",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Rook Lift",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "chatakkuma": {
+      "normalizedName": "chatakkuma",
+      "displayName": "chatakkuma",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "Dark Mode Enthusiast",
+          "details": "11 captures"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "TristanBrown17": {
+      "normalizedName": "TristanBrown17",
+      "displayName": "TristanBrown17",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "bloodbath",
+          "details": "30 captures"
+        },
+        {
+          "round": 2,
+          "award": "Fastest Queen Trade",
+          "details": "8 moves"
+        }
+      ],
+      "awardCount": 2,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "KaiiMate": {
+      "normalizedName": "KaiiMate",
+      "displayName": "KaiiMate",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 1,
+          "award": "bloodbath",
+          "details": "30 captures"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Hesperian": {
+      "normalizedName": "Hesperian",
+      "displayName": "Hesperian",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Fastest Queen Trade",
+          "details": "8 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "sammgus": {
+      "normalizedName": "sammgus",
+      "displayName": "sammgus",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Slowest Queen Trade",
+          "details": "44 moves"
+        },
+        {
+          "round": 2,
+          "award": "Sporty Queen",
+          "details": "64 squares"
+        }
+      ],
+      "awardCount": 2,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "lc69": {
+      "normalizedName": "lc69",
+      "displayName": "lc69",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Slowest Queen Trade",
+          "details": "44 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Scarff": {
+      "normalizedName": "Scarff",
+      "displayName": "Scarff",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Longest Capture Spree",
+          "details": "7 in a row"
+        },
+        {
+          "round": 2,
+          "award": "Rook Lift",
+          "details": ""
+        }
+      ],
+      "awardCount": 2,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "ScotchWhisky": {
+      "normalizedName": "ScotchWhisky",
+      "displayName": "ScotchWhisky",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Longest Capture Spree",
+          "details": "7 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "keeto": {
+      "normalizedName": "keeto",
+      "displayName": "keeto",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Longest King Hunt",
+          "details": "11 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Lexgrad": {
+      "normalizedName": "Lexgrad",
+      "displayName": "Lexgrad",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Longest King Hunt",
+          "details": "11 in a row"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "quirked": {
+      "normalizedName": "quirked",
+      "displayName": "quirked",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Pawn Storm",
+          "details": "12"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "MetropolisOfDesire": {
+      "normalizedName": "MetropolisOfDesire",
+      "displayName": "MetropolisOfDesire",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Pawn Storm",
+          "details": "12"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "cham": {
+      "normalizedName": "cham",
+      "displayName": "cham",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Square Tourist",
+          "details": "23 squares"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "matthewhuber": {
+      "normalizedName": "matthewhuber",
+      "displayName": "matthewhuber",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Castling Race Winner",
+          "details": "4 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "muksia": {
+      "normalizedName": "muksia",
+      "displayName": "muksia",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Opening Hipster",
+          "details": "c4 e5 Nc3 Nf6 g3 Bb4 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "sterpfi": {
+      "normalizedName": "sterpfi",
+      "displayName": "sterpfi",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Opening Hipster",
+          "details": "c4 e5 Nc3 Nf6 g3 Bb4 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "sahkal": {
+      "normalizedName": "sahkal",
+      "displayName": "sahkal",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Dadbod Shuffler",
+          "details": "40 moves"
+        },
+        {
+          "round": 2,
+          "award": "Center Stage",
+          "details": "7 moves"
+        },
+        {
+          "round": 2,
+          "award": "Chicken Award",
+          "details": "32 retreats"
+        }
+      ],
+      "awardCount": 3,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "baberle": {
+      "normalizedName": "baberle",
+      "displayName": "baberle",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Professional Edger",
+          "details": "27 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "KS_Legion_Legionowo": {
+      "normalizedName": "KS_Legion_Legionowo",
+      "displayName": "KS_Legion_Legionowo",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Dark Mode Enthusiast",
+          "details": "11 captures"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Dan-Jon": {
+      "normalizedName": "Dan-Jon",
+      "displayName": "Dan-Jon",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Homeboy",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "Fierolocchio": {
+      "normalizedName": "Fierolocchio",
+      "displayName": "Fierolocchio",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Late Bloomer",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "arbisto": {
+      "normalizedName": "arbisto",
+      "displayName": "arbisto",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Fastest Gun",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "mkubecek": {
+      "normalizedName": "mkubecek",
+      "displayName": "mkubecek",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Crosshairs",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "alexkoj": {
+      "normalizedName": "alexkoj",
+      "displayName": "alexkoj",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Crosshairs",
+          "details": ""
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "sillydoor": {
+      "normalizedName": "sillydoor",
+      "displayName": "sillydoor",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Hypertension Award",
+          "details": "41 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "GoneNowhere": {
+      "normalizedName": "GoneNowhere",
+      "displayName": "GoneNowhere",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "Hypertension Award",
+          "details": "41 moves"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "mekumcu": {
+      "normalizedName": "mekumcu",
+      "displayName": "mekumcu",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "bloodbath",
+          "details": "30 captures"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    },
+    "svidler_simp": {
+      "normalizedName": "svidler_simp",
+      "displayName": "svidler_simp",
+      "gamesPlayed": 0,
+      "gamesAsWhite": 0,
+      "gamesAsBlack": 0,
+      "wins": 0,
+      "losses": 0,
+      "draws": 0,
+      "winRate": 0,
+      "awards": [
+        {
+          "round": 2,
+          "award": "bloodbath",
+          "details": "30 captures"
+        }
+      ],
+      "awardCount": 1,
+      "averageACPL": null,
+      "bestACPL": null,
+      "worstACPL": null,
+      "acplByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "accuracyByRound": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "acplVariance": null,
+      "openingsUsed": [],
+      "openingDiversity": 0,
+      "favoriteOpening": null,
+      "totalBlunders": 0,
+      "totalMistakes": 0
+    }
+  },
+  "leaderboards": {
+    "mostAwards": [
+      {
+        "player": "fork2020",
+        "displayName": "fork2020",
+        "count": 3,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Dadbod Shuffler",
+            "details": "49 moves"
+          },
+          {
+            "round": 1,
+            "award": "Center Stage",
+            "details": "12 moves"
+          },
+          {
+            "round": 1,
+            "award": "Chicken Award",
+            "details": "27 retreats"
+          }
+        ]
+      },
+      {
+        "player": "sahkal",
+        "displayName": "sahkal",
+        "count": 3,
+        "awards": [
+          {
+            "round": 2,
+            "award": "Dadbod Shuffler",
+            "details": "40 moves"
+          },
+          {
+            "round": 2,
+            "award": "Center Stage",
+            "details": "7 moves"
+          },
+          {
+            "round": 2,
+            "award": "Chicken Award",
+            "details": "32 retreats"
+          }
+        ]
+      },
+      {
+        "player": "ekopp2000",
+        "displayName": "ekopp2000",
+        "count": 2,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Slowest Queen Trade",
+            "details": "69 moves"
+          },
+          {
+            "round": 1,
+            "award": "Sporty Queen",
+            "details": "70 squares"
+          }
+        ]
+      },
+      {
+        "player": "TristanBrown17",
+        "displayName": "TristanBrown17",
+        "count": 2,
+        "awards": [
+          {
+            "round": 1,
+            "award": "bloodbath",
+            "details": "30 captures"
+          },
+          {
+            "round": 2,
+            "award": "Fastest Queen Trade",
+            "details": "8 moves"
+          }
+        ]
+      },
+      {
+        "player": "sammgus",
+        "displayName": "sammgus",
+        "count": 2,
+        "awards": [
+          {
+            "round": 2,
+            "award": "Slowest Queen Trade",
+            "details": "44 moves"
+          },
+          {
+            "round": 2,
+            "award": "Sporty Queen",
+            "details": "64 squares"
+          }
+        ]
+      },
+      {
+        "player": "Scarff",
+        "displayName": "Scarff",
+        "count": 2,
+        "awards": [
+          {
+            "round": 2,
+            "award": "Longest Capture Spree",
+            "details": "7 in a row"
+          },
+          {
+            "round": 2,
+            "award": "Rook Lift",
+            "details": ""
+          }
+        ]
+      },
+      {
+        "player": "casual921",
+        "displayName": "casual921",
+        "count": 1,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Fastest Queen Trade",
+            "details": "6 moves"
+          }
+        ]
+      },
+      {
+        "player": "nightsub",
+        "displayName": "nightsub",
+        "count": 1,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Fastest Queen Trade",
+            "details": "6 moves"
+          }
+        ]
+      },
+      {
+        "player": "MarketMike",
+        "displayName": "MarketMike",
+        "count": 1,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Slowest Queen Trade",
+            "details": "69 moves"
+          }
+        ]
+      },
+      {
+        "player": "mronemore",
+        "displayName": "mronemore",
+        "count": 1,
+        "awards": [
+          {
+            "round": 1,
+            "award": "Longest Capture Spree",
+            "details": "11 in a row"
+          }
+        ]
+      }
+    ],
+    "bestAverageACPL": [],
+    "worstAverageACPL": [],
+    "mostImproved": [],
+    "mostGames": [
+      {
+        "player": "casual921",
+        "displayName": "casual921",
+        "games": 0
+      },
+      {
+        "player": "nightsub",
+        "displayName": "nightsub",
+        "games": 0
+      },
+      {
+        "player": "ekopp2000",
+        "displayName": "ekopp2000",
+        "games": 0
+      },
+      {
+        "player": "MarketMike",
+        "displayName": "MarketMike",
+        "games": 0
+      },
+      {
+        "player": "mronemore",
+        "displayName": "mronemore",
+        "games": 0
+      },
+      {
+        "player": "MoonlightAnomaly",
+        "displayName": "MoonlightAnomaly",
+        "games": 0
+      },
+      {
+        "player": "nvasquez",
+        "displayName": "nvasquez",
+        "games": 0
+      },
+      {
+        "player": "juandeleon",
+        "displayName": "juandeleon",
+        "games": 0
+      },
+      {
+        "player": "STCLion",
+        "displayName": "STCLion",
+        "games": 0
+      },
+      {
+        "player": "PatchyThePirate",
+        "displayName": "PatchyThePirate",
+        "games": 0
+      }
+    ],
+    "mostVersatile": [],
+    "mostConsistent": [],
+    "highestWinRate": [],
+    "mostBlunders": [],
+    "fewestBlunders": []
+  },
+  "trends": {
+    "averageACPLByRound": [
+      null,
+      null
+    ],
+    "averageAccuracyByRound": [
+      null,
+      null
+    ],
+    "averageGameLengthByRound": [
+      40.7,
+      42.9
+    ],
+    "e4PercentageByRound": [
+      53.2,
+      48.4
+    ],
+    "d4PercentageByRound": [
+      27.2,
+      37.5
+    ],
+    "drawRateByRound": [
+      17.7,
+      15.6
+    ],
+    "whiteWinRateByRound": [
+      46.8,
+      43.8
+    ],
+    "blackWinRateByRound": [
+      35.4,
+      35.9
+    ],
+    "blundersPerGameByRound": [
+      null,
+      null
+    ],
+    "mistakesPerGameByRound": [
+      null,
+      null
+    ],
+    "avgQueenDistanceByRound": [
+      70,
+      64
+    ]
+  },
+  "awardFrequency": {
+    "frequency": {
+      "fastestQueenTrade": {
+        "displayName": "Fastest Queen Trade",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "slowestQueenTrade": {
+        "displayName": "Slowest Queen Trade",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "longestCaptureSequence": {
+        "displayName": "Longest Capture Spree",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "longestCheckSequence": {
+        "displayName": "Longest King Hunt",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "pawnStorm": {
+        "displayName": "Pawn Storm",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "pieceLoyalty": {
+        "displayName": "Piece Loyalty",
+        "appearances": 0,
+        "percentage": 0
+      },
+      "squareTourist": {
+        "displayName": "Square Tourist",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "castlingRace": {
+        "displayName": "Castling Race",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "openingHipster": {
+        "displayName": "Opening Hipster",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "dadbodShuffler": {
+        "displayName": "Dadbod Shuffler",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "sportyQueen": {
+        "displayName": "Sporty Queen",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "edgeLord": {
+        "displayName": "Professional Edger",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "rookLift": {
+        "displayName": "Rook Lift",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "centerStage": {
+        "displayName": "Center Stage",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "darkLord": {
+        "displayName": "Dark Mode Enthusiast",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "chickenAward": {
+        "displayName": "Chicken Award",
+        "appearances": 2,
+        "percentage": 100
+      },
+      "homebody": {
+        "displayName": "Homeboy",
+        "appearances": 1,
+        "percentage": 50
+      },
+      "lateBloomer": {
+        "displayName": "Late Bloomer",
+        "appearances": 1,
+        "percentage": 50
+      },
+      "quickDraw": {
+        "displayName": "Fastest Gun",
+        "appearances": 1,
+        "percentage": 50
+      },
+      "crosshairs": {
+        "displayName": "Crosshairs",
+        "appearances": 1,
+        "percentage": 50
+      },
+      "longestTension": {
+        "displayName": "Hypertension Award",
+        "appearances": 1,
+        "percentage": 50
+      }
+    },
+    "mostCommon": {
+      "key": "fastestQueenTrade",
+      "displayName": "Fastest Queen Trade",
+      "appearances": 2,
+      "percentage": 100
+    },
+    "leastCommon": {
+      "key": "homebody",
+      "displayName": "Homeboy",
+      "appearances": 1,
+      "percentage": 50
+    },
+    "sortedByFrequency": [
+      {
+        "key": "fastestQueenTrade",
+        "displayName": "Fastest Queen Trade",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "slowestQueenTrade",
+        "displayName": "Slowest Queen Trade",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "longestCaptureSequence",
+        "displayName": "Longest Capture Spree",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "longestCheckSequence",
+        "displayName": "Longest King Hunt",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "pawnStorm",
+        "displayName": "Pawn Storm",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "squareTourist",
+        "displayName": "Square Tourist",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "castlingRace",
+        "displayName": "Castling Race",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "openingHipster",
+        "displayName": "Opening Hipster",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "dadbodShuffler",
+        "displayName": "Dadbod Shuffler",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "sportyQueen",
+        "displayName": "Sporty Queen",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "edgeLord",
+        "displayName": "Professional Edger",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "rookLift",
+        "displayName": "Rook Lift",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "centerStage",
+        "displayName": "Center Stage",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "darkLord",
+        "displayName": "Dark Mode Enthusiast",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "chickenAward",
+        "displayName": "Chicken Award",
+        "appearances": 2,
+        "percentage": 100
+      },
+      {
+        "key": "homebody",
+        "displayName": "Homeboy",
+        "appearances": 1,
+        "percentage": 50
+      },
+      {
+        "key": "lateBloomer",
+        "displayName": "Late Bloomer",
+        "appearances": 1,
+        "percentage": 50
+      },
+      {
+        "key": "quickDraw",
+        "displayName": "Fastest Gun",
+        "appearances": 1,
+        "percentage": 50
+      },
+      {
+        "key": "crosshairs",
+        "displayName": "Crosshairs",
+        "appearances": 1,
+        "percentage": 50
+      },
+      {
+        "key": "longestTension",
+        "displayName": "Hypertension Award",
+        "appearances": 1,
+        "percentage": 50
+      },
+      {
+        "key": "pieceLoyalty",
+        "displayName": "Piece Loyalty",
+        "appearances": 0,
+        "percentage": 0
+      }
+    ]
+  }
+}

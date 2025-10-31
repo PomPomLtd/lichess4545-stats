@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Leaderboards } from '@/app/stats/overview/types'
+import { Leaderboards } from '@/app/stats/overview-types'
 import { StatCard } from '../stat-card'
 import { PlayerName } from '../player-name'
 

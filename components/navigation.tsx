@@ -6,13 +6,7 @@ import { useState, useEffect } from 'react'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
-  { name: 'Register', href: '/players/register', current: false },
-  { name: 'Player Directory', href: '/players', current: false },
-  { name: 'Request Bye', href: '/byes', current: false },
-  { name: 'Submit Result', href: '/submit-result', current: false },
   { name: 'Stats', href: '/stats', current: false },
-  { name: 'Rules', href: '/rules', current: false },
-  { name: 'Tournament Links', href: '/links', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -57,7 +51,7 @@ export function Navigation() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/" className="text-white font-bold text-xl hover:text-gray-300 transition-colors">
-                ♛ K4 Classical League
+                ♞ Lichess 4545 Stats
               </Link>
             </div>
             <div className="hidden lg:block">
