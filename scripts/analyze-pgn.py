@@ -365,8 +365,34 @@ def analyze_game(game, stockfish, depth=15, sample_rate=1):
     black_accuracy = calculate_accuracy_from_win_percentage(black_win_losses)
 
     # Calculate ACPL (actual centipawn loss)
-    white_acpl = sum(white_cp_losses) / len(white_cp_losses) if white_cp_losses else 0
-    black_acpl = sum(black_cp_losses) / len(black_cp_losses) if black_cp_losses else 0
+    # Require at least 10 moves with centipawn evals for reliable ACPL
+    # Otherwise, one outlier move can skew the average dramatically
+    MIN_MOVES_FOR_ACPL = 10
+
+    if len(white_cp_losses) >= MIN_MOVES_FOR_ACPL:
+        white_acpl = sum(white_cp_losses) / len(white_cp_losses)
+    else:
+        # Fallback: estimate ACPL from accuracy using inverse Lichess formula
+        # accuracy ≈ 103.17 * e^(-0.04354 * avg_win_loss) - 3.17
+        # Solving for avg_win_loss: avg_win_loss ≈ -ln((accuracy + 3.17) / 103.17) / 0.04354
+        # Then convert win% loss to rough ACPL estimate: ACPL ≈ avg_win_loss * 3
+        import math
+        if white_accuracy > 0 and white_accuracy < 100:
+            avg_win_loss = -math.log((white_accuracy + 3.1669) / 103.1668) / 0.04354
+            white_acpl = avg_win_loss * 3  # Rough conversion: 1% win loss ≈ 3 centipawns
+        else:
+            white_acpl = 0
+
+    if len(black_cp_losses) >= MIN_MOVES_FOR_ACPL:
+        black_acpl = sum(black_cp_losses) / len(black_cp_losses)
+    else:
+        # Fallback: estimate from accuracy
+        import math
+        if black_accuracy > 0 and black_accuracy < 100:
+            avg_win_loss = -math.log((black_accuracy + 3.1669) / 103.1668) / 0.04354
+            black_acpl = avg_win_loss * 3
+        else:
+            black_acpl = 0
 
     return {
         'whiteACPL': round(white_acpl, 1),
