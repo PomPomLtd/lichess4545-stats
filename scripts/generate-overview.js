@@ -19,6 +19,7 @@ const {
   loadRoundData,
   aggregateTotals,
   findHallOfFame,
+  findTeamHallOfFame,
   trackPlayers,
   calculateTrends,
   analyzeAwardFrequency,
@@ -64,6 +65,9 @@ async function main() {
     console.log('  - Finding Hall of Fame...')
     const hallOfFame = findHallOfFame(rounds)
 
+    console.log('  - Finding Team Hall of Fame...')
+    const teamHallOfFame = findTeamHallOfFame(rounds)
+
     console.log('  - Tracking players...')
     const playerStats = trackPlayers(rounds)
     const playerCount = Object.keys(playerStats).length
@@ -85,6 +89,7 @@ async function main() {
       roundsIncluded: rounds.map(r => r.roundNumber),
       aggregates,
       hallOfFame,
+      teamHallOfFame,
       playerStats,
       leaderboards,
       trends,

@@ -8,7 +8,7 @@
 const { normalizePlayerName, getDisplayName, extractPlayerNames } = require('./player-normalizer')
 const { loadRoundData, getAvailableRounds } = require('./data-loader')
 const { aggregateTotals } = require('./aggregate-totals')
-const { findHallOfFame } = require('./hall-of-fame')
+const { findHallOfFame, findTeamHallOfFame } = require('./hall-of-fame')
 const { trackPlayers } = require('./player-tracker')
 const { calculateTrends } = require('./trends')
 const { analyzeAwardFrequency } = require('./award-frequency')
@@ -27,6 +27,7 @@ module.exports = {
   // Calculators
   aggregateTotals,
   findHallOfFame,
+  findTeamHallOfFame,
   trackPlayers,
   calculateTrends,
   analyzeAwardFrequency,

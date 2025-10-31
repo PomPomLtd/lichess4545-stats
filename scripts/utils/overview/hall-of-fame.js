@@ -165,6 +165,135 @@ function findHallOfFame(rounds) {
   return hallOfFame
 }
 
+/**
+ * Find Team Hall of Fame entries across all rounds
+ * @param {Array<Object>} rounds - Array of round data
+ * @returns {Object} Team Hall of Fame superlatives
+ */
+function findTeamHallOfFame(rounds) {
+  const teamHallOfFame = {
+    bloodthirstyTeam: null,
+    pawnCrackers: null,
+    lateKnightShow: null,
+    castlingSpeed: null,
+    spaceInvaders: null,
+    checkMasters: null,
+    cornerConquerors: null,
+    marathonRunners: null,
+    speedDemons: null,
+    chickenTeam: null,
+    nonChickenTeam: null,
+    promotionParty: null
+  }
+
+  rounds.forEach(round => {
+    const roundNum = round.roundNumber
+
+    if (!round.teams?.awards) return
+
+    const awards = round.teams.awards
+
+    // Bloodthirsty Team (most captures)
+    if (awards.bloodthirstyTeam) {
+      const team = awards.bloodthirstyTeam
+      if (!teamHallOfFame.bloodthirstyTeam || team.totalCaptures > teamHallOfFame.bloodthirstyTeam.totalCaptures) {
+        teamHallOfFame.bloodthirstyTeam = { round: roundNum, ...team }
+      }
+    }
+
+    // Pawn Crackers (most pawn captures)
+    if (awards.pawnCrackers) {
+      const team = awards.pawnCrackers
+      if (!teamHallOfFame.pawnCrackers || team.pawnCaptures > teamHallOfFame.pawnCrackers.pawnCaptures) {
+        teamHallOfFame.pawnCrackers = { round: roundNum, ...team }
+      }
+    }
+
+    // Late Knight Show (knight moves after move 30)
+    if (awards.lateKnightShow) {
+      const team = awards.lateKnightShow
+      if (!teamHallOfFame.lateKnightShow || team.lateKnightMoves > teamHallOfFame.lateKnightShow.lateKnightMoves) {
+        teamHallOfFame.lateKnightShow = { round: roundNum, ...team }
+      }
+    }
+
+    // Castling Speed (earliest average castling)
+    if (awards.castlingSpeed) {
+      const team = awards.castlingSpeed
+      if (!teamHallOfFame.castlingSpeed || parseFloat(team.averageCastlingMove) < parseFloat(teamHallOfFame.castlingSpeed.averageCastlingMove)) {
+        teamHallOfFame.castlingSpeed = { round: roundNum, ...team }
+      }
+    }
+
+    // Space Invaders (most pieces in enemy half)
+    if (awards.spaceInvaders) {
+      const team = awards.spaceInvaders
+      if (!teamHallOfFame.spaceInvaders || team.piecesInEnemyHalf > teamHallOfFame.spaceInvaders.piecesInEnemyHalf) {
+        teamHallOfFame.spaceInvaders = { round: roundNum, ...team }
+      }
+    }
+
+    // Check Masters (most checks delivered)
+    if (awards.checkMasters) {
+      const team = awards.checkMasters
+      if (!teamHallOfFame.checkMasters || team.totalChecks > teamHallOfFame.checkMasters.totalChecks) {
+        teamHallOfFame.checkMasters = { round: roundNum, ...team }
+      }
+    }
+
+    // Corner Conquerors (most corner activity)
+    if (awards.cornerConquerors) {
+      const team = awards.cornerConquerors
+      if (!teamHallOfFame.cornerConquerors || team.cornerActivity > teamHallOfFame.cornerConquerors.cornerActivity) {
+        teamHallOfFame.cornerConquerors = { round: roundNum, ...team }
+      }
+    }
+
+    // Marathon Runners (longest games)
+    if (awards.marathonRunners) {
+      const team = awards.marathonRunners
+      if (!teamHallOfFame.marathonRunners || team.totalMoves > teamHallOfFame.marathonRunners.totalMoves) {
+        teamHallOfFame.marathonRunners = { round: roundNum, ...team }
+      }
+    }
+
+    // Speed Demons (shortest games)
+    if (awards.speedDemons) {
+      const team = awards.speedDemons
+      if (!teamHallOfFame.speedDemons || parseFloat(team.averageGameLength) < parseFloat(teamHallOfFame.speedDemons.averageGameLength)) {
+        teamHallOfFame.speedDemons = { round: roundNum, ...team }
+      }
+    }
+
+    // Chicken Team (most retreating moves)
+    if (awards.chickenTeam) {
+      const team = awards.chickenTeam
+      if (!teamHallOfFame.chickenTeam || team.retreatingMoves > teamHallOfFame.chickenTeam.retreatingMoves) {
+        teamHallOfFame.chickenTeam = { round: roundNum, ...team }
+      }
+    }
+
+    // Non-Chicken Team (fewest retreating moves)
+    if (awards.nonChickenTeam) {
+      const team = awards.nonChickenTeam
+      if (!teamHallOfFame.nonChickenTeam || team.retreatingMoves < teamHallOfFame.nonChickenTeam.retreatingMoves) {
+        teamHallOfFame.nonChickenTeam = { round: roundNum, ...team }
+      }
+    }
+
+    // Promotion Party (most promotions)
+    if (awards.promotionParty) {
+      const team = awards.promotionParty
+      if (!teamHallOfFame.promotionParty || team.totalPromotions > teamHallOfFame.promotionParty.totalPromotions) {
+        teamHallOfFame.promotionParty = { round: roundNum, ...team }
+      }
+    }
+  })
+
+  return teamHallOfFame
+}
+
 module.exports = {
-  findHallOfFame
+  findHallOfFame,
+  findTeamHallOfFame
 }
