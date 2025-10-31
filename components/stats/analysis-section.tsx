@@ -42,6 +42,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     biggestBlunder: {
       moveNumber: number
@@ -51,6 +52,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     lowestACPL: {
       player: string
@@ -59,6 +61,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     highestACPL: {
       player: string
@@ -67,6 +70,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     lowestCombinedACPL: {
       combinedACPL: number
@@ -75,6 +79,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     highestCombinedACPL: {
       combinedACPL: number
@@ -83,6 +88,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     comebackKing: {
       player: string
@@ -93,6 +99,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
     luckyEscape: {
       player: string
@@ -103,6 +110,7 @@ interface AnalysisData {
       white: string
       black: string
       gameIndex: number
+      gameId: string | null
     } | null
   }
 }
@@ -143,6 +151,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             }
             colorScheme="yellow"
             featured
+            gameId={summary.accuracyKing.gameId}
           />
         )}
 
@@ -159,6 +168,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             }
             colorScheme="red"
             featured
+            gameId={summary.biggestBlunder.gameId}
           />
         )}
 
@@ -175,6 +185,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             }
             colorScheme="green"
             featured
+            gameId={summary.comebackKing.gameId}
           />
         )}
 
@@ -191,6 +202,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             }
             colorScheme="indigo"
             featured
+            gameId={summary.luckyEscape.gameId}
           />
         )}
       </div>
@@ -204,6 +216,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             player={<PlayerName name={summary.lowestACPL.player === 'white' ? summary.lowestACPL.white : summary.lowestACPL.black} />}
             details={<>ACPL: <strong>{summary.lowestACPL.acpl}</strong> / Accuracy: <strong>{summary.lowestACPL.accuracy}%</strong></>}
             colorScheme="green"
+            gameId={summary.lowestACPL.gameId}
           />
         )}
 
@@ -214,6 +227,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             player={<PlayerName name={summary.highestACPL.player === 'white' ? summary.highestACPL.white : summary.highestACPL.black} />}
             details={<>ACPL: <strong>{summary.highestACPL.acpl}</strong> / Accuracy: <strong>{summary.highestACPL.accuracy}%</strong></>}
             colorScheme="orange"
+            gameId={summary.highestACPL.gameId}
           />
         )}
 
@@ -224,6 +238,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             player={<PlayerVs white={summary.lowestCombinedACPL.white} black={summary.lowestCombinedACPL.black} />}
             details={<>Combined ACPL: <strong>{summary.lowestCombinedACPL.combinedACPL.toFixed(1)}</strong></>}
             colorScheme="blue"
+            gameId={summary.lowestCombinedACPL.gameId}
           />
         )}
 
@@ -234,6 +249,7 @@ export function AnalysisSection({ analysis }: AnalysisSectionProps) {
             player={<PlayerVs white={summary.highestCombinedACPL.white} black={summary.highestCombinedACPL.black} />}
             details={<>Combined ACPL: <strong>{summary.highestCombinedACPL.combinedACPL.toFixed(1)}</strong></>}
             colorScheme="purple"
+            gameId={summary.highestCombinedACPL.gameId}
           />
         )}
       </div>

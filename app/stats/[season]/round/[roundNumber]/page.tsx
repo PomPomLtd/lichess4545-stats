@@ -524,6 +524,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       biggestBlunder: {
         moveNumber: number
@@ -533,6 +534,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       lowestACPL: {
         player: string
@@ -541,6 +543,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       highestACPL: {
         player: string
@@ -549,6 +552,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       lowestCombinedACPL: {
         combinedACPL: number
@@ -557,6 +561,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       highestCombinedACPL: {
         combinedACPL: number
@@ -565,6 +570,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       comebackKing: {
         player: string
@@ -575,6 +581,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
       luckyEscape: {
         player: string
@@ -585,6 +592,7 @@ interface StatsData {
         white: string
         black: string
         gameIndex: number
+        gameId: string | null
       } | null
     }
   }

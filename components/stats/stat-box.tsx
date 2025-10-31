@@ -7,6 +7,7 @@ interface StatBoxProps {
   details: ReactNode
   colorScheme: 'yellow' | 'red' | 'green' | 'orange' | 'blue' | 'purple' | 'indigo'
   featured?: boolean
+  gameId?: string | null
 }
 
 const colorClasses = {
@@ -54,12 +55,13 @@ const colorClasses = {
   },
 }
 
-export function StatBox({ title, emoji, player, details, colorScheme, featured = false }: StatBoxProps) {
+export function StatBox({ title, emoji, player, details, colorScheme, featured = false, gameId }: StatBoxProps) {
   const colors = colorClasses[colorScheme]
   const borderClass = featured ? `border-2 ${colors.border}` : ''
+  const hoverClass = gameId ? 'cursor-pointer hover:ring-2 hover:ring-gray-400 dark:hover:ring-gray-500 transition-all relative group' : ''
 
-  return (
-    <div className={`p-4 ${colors.bg} rounded-lg ${borderClass}`}>
+  const content = (
+    <>
       <div className={`font-semibold ${colors.title} mb-1`}>
         {emoji && <span className="mr-1">{emoji}</span>}
         {title}
@@ -70,6 +72,32 @@ export function StatBox({ title, emoji, player, details, colorScheme, featured =
       <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
         {details}
       </div>
-    </div>
+      {gameId && (
+        <div className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+          <svg className="w-4 h-4 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </div>
+      )}
+    </>
+  )
+
+  if (!gameId) {
+    return (
+      <div className={`p-4 ${colors.bg} rounded-lg ${borderClass}`}>
+        {content}
+      </div>
+    )
+  }
+
+  return (
+    <a
+      href={`https://lichess.org/${gameId}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`p-4 ${colors.bg} rounded-lg ${borderClass} ${hoverClass} block`}
+    >
+      {content}
+    </a>
   )
 }

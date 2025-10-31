@@ -383,6 +383,12 @@ def main():
         white = game.headers.get('White', 'Unknown')
         black = game.headers.get('Black', 'Unknown')
 
+        # Extract gameId from headers (GameId or Site URL)
+        game_id = game.headers.get('GameId')
+        if not game_id:
+            site = game.headers.get('Site', '')
+            game_id = site.split('/')[-1] if site else None
+
         # Count moves in this game
         board = game.board()
         move_count = 0
@@ -413,6 +419,7 @@ def main():
 
         games_analyzed.append({
             'gameIndex': game_index,
+            'gameId': game_id,
             'white': white,
             'black': black,
             **analysis
@@ -441,7 +448,8 @@ def main():
                 'acpl': game_data['whiteACPL'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check black accuracy
@@ -452,7 +460,8 @@ def main():
                 'acpl': game_data['blackACPL'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check white lowest ACPL
@@ -463,7 +472,8 @@ def main():
                 'accuracy': game_data['whiteAccuracy'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check black lowest ACPL
@@ -474,7 +484,8 @@ def main():
                 'accuracy': game_data['blackAccuracy'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check white highest ACPL
@@ -485,7 +496,8 @@ def main():
                 'accuracy': game_data['whiteAccuracy'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check black highest ACPL
@@ -496,7 +508,8 @@ def main():
                 'accuracy': game_data['blackAccuracy'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check combined ACPL
@@ -509,7 +522,8 @@ def main():
                 'blackACPL': game_data['blackACPL'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         if highest_combined_acpl is None or combined_acpl > highest_combined_acpl['combinedACPL']:
@@ -519,7 +533,8 @@ def main():
                 'blackACPL': game_data['blackACPL'],
                 'white': game_data['white'],
                 'black': game_data['black'],
-                'gameIndex': game_data['gameIndex']
+                'gameIndex': game_data['gameIndex'],
+                'gameId': game_data['gameId']
             }
 
         # Check biggest blunder
@@ -529,7 +544,8 @@ def main():
                     **game_data['biggestBlunder'],
                     'white': game_data['white'],
                     'black': game_data['black'],
-                    'gameIndex': game_data['gameIndex']
+                    'gameIndex': game_data['gameIndex'],
+                    'gameId': game_data['gameId']
                 }
 
         # Check biggest comeback
@@ -539,7 +555,8 @@ def main():
                     **game_data['biggestComeback'],
                     'white': game_data['white'],
                     'black': game_data['black'],
-                    'gameIndex': game_data['gameIndex']
+                    'gameIndex': game_data['gameIndex'],
+                    'gameId': game_data['gameId']
                 }
 
         # Check lucky escape
@@ -549,7 +566,8 @@ def main():
                     **game_data['luckyEscape'],
                     'white': game_data['white'],
                     'black': game_data['black'],
-                    'gameIndex': game_data['gameIndex']
+                    'gameIndex': game_data['gameIndex'],
+                    'gameId': game_data['gameId']
                 }
 
     # Output JSON
