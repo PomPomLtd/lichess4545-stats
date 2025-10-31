@@ -705,7 +705,7 @@ export default function RoundStatsPage() {
   }
 
   const checkNextRoundExists = async () => {
-    if (roundNumber >= 7) {
+    if (roundNumber >= 8) {
       setNextRoundExists(false)
       return
     }
