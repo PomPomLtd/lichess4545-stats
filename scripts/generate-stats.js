@@ -19,6 +19,15 @@ const { execSync } = require('child_process');
 const { parseMultipleGames } = require('./utils/pgn-parser');
 const { calculateStats } = require('./utils/stats-calculator');
 
+// Get Python command (venv if available, otherwise system python3)
+function getPythonCommand() {
+  const venvPython = path.join(__dirname, '..', 'venv', 'bin', 'python');
+  if (fs.existsSync(venvPython)) {
+    return venvPython;
+  }
+  return 'python3';
+}
+
 // Parse command line arguments
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -111,7 +120,7 @@ function analyzeTactics(parsedGames) {
 
     // Run Python tactical analyzer
     const tacticsOutput = execSync(
-      'venv/bin/python scripts/analyze-tactics.py',
+      `${getPythonCommand()} scripts/analyze-tactics.py`,
       {
         input: normalizedPgn,
         encoding: 'utf-8',
@@ -149,7 +158,7 @@ function analyzeGames(parsedGames) {
 
     // Run Python analyzer (depth 15, analyze all moves for maximum accuracy)
     const analysisOutput = execSync(
-      'venv/bin/python scripts/analyze-pgn.py --depth 15 --sample 1',
+      `${getPythonCommand()} scripts/analyze-pgn.py --depth 15 --sample 1`,
       {
         input: normalizedPgn,
         encoding: 'utf-8',
