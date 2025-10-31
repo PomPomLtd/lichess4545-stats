@@ -24,7 +24,7 @@ function parseArgs() {
   const args = process.argv.slice(2);
   const options = {
     round: null,
-    season: 2, // Default to Season 2
+    season: null, // Required parameter
     analyze: false, // Stockfish analysis flag
     help: false
   };
@@ -49,56 +49,51 @@ function parseArgs() {
 // Display help
 function showHelp() {
   console.log(`
-Chess Statistics Generator
+Lichess 4545 League - Statistics Generator
 
 Usage:
-  node scripts/generate-stats.js --round <number> [--season <number>] [--analyze]
+  node scripts/generate-stats.js --round <number> --season <number> [--analyze]
 
 Options:
   --round, -r <number>   Round number to generate stats for (required)
-  --season, -s <number>  Season number (default: 2)
-  --analyze, -a          Run Stockfish analysis (requires venv and stockfish)
+  --season, -s <number>  Season number (required)
+  --analyze, -a          Run Stockfish analysis (optional, requires venv)
   --help, -h             Show this help message
 
 Examples:
-  node scripts/generate-stats.js --round 1
-  node scripts/generate-stats.js --round 1 --analyze
-  node scripts/generate-stats.js --round 2 --season 2 --analyze
+  node scripts/generate-stats.js --round 1 --season 46
+  node scripts/generate-stats.js --round 1 --season 46 --analyze
+
+Workflow:
+  1. Fetch season data:    node scripts/fetch-lichess-season.js --season=46
+  2. Download PGNs:        node scripts/download-pgns.js --season=46 --round=1
+  3. Generate stats:       node scripts/generate-stats.js --round 1 --season 46
+  4. Generate overview:    node scripts/generate-overview.js --season 46
 
 Output:
   Generates JSON file at: public/stats/season-<season>-round-<round>.json
-  Updates overall stats: public/stats/season-<season>-overall.json
 
 Note:
-  --analyze runs Stockfish engine analysis to calculate accuracy, ACPL,
-  and move quality. Requires Python venv and stockfish binary installed.
-  Analysis takes ~5-10 minutes for 20 games.
+  PGNs from Lichess.org already include Stockfish evaluations.
+  The --analyze flag runs additional local analysis (depth 15).
   `);
 }
 
-// Fetch PGN data from stdin or file
+// Fetch PGN data from data directory
 async function fetchPGN(roundNumber, seasonNumber) {
   console.log(`📥 Fetching PGN data for Season ${seasonNumber}, Round ${roundNumber}...`);
 
-  // Check if data is being piped via stdin
-  if (!process.stdin.isTTY) {
-    // Read from stdin
-    let pgnData = '';
-    for await (const chunk of process.stdin) {
-      pgnData += chunk;
-    }
-    console.log(`✅ PGN data loaded (${pgnData.length} bytes)`);
-    return pgnData;
+  // Read from data directory
+  const pgnFile = path.join(__dirname, '..', 'data', `season-${seasonNumber}-round-${roundNumber}.pgn`);
+
+  if (!fs.existsSync(pgnFile)) {
+    throw new Error(
+      `PGN file not found: ${pgnFile}\n` +
+      `Please run: node scripts/download-pgns.js --season=${seasonNumber} --round=${roundNumber}`
+    );
   }
 
-  // Otherwise, try to read from the test file
-  const testFile = '/tmp/round1-fresh.pgn';
-
-  if (!fs.existsSync(testFile)) {
-    throw new Error(`PGN file not found: ${testFile}\nPlease download PGN data or pipe via stdin.`);
-  }
-
-  const pgnData = fs.readFileSync(testFile, 'utf-8');
+  const pgnData = fs.readFileSync(pgnFile, 'utf-8');
   console.log(`✅ PGN data loaded (${pgnData.length} bytes)`);
 
   return pgnData;
@@ -196,13 +191,13 @@ async function main() {
     process.exit(0);
   }
 
-  if (!options.round) {
-    console.error('❌ Error: --round parameter is required\n');
+  if (!options.round || !options.season) {
+    console.error('❌ Error: --round and --season parameters are required\n');
     showHelp();
     process.exit(1);
   }
 
-  console.log('🎯 K4 Classical League - Stats Generator\n');
+  console.log('🎯 Lichess 4545 League - Stats Generator\n');
   console.log(`Season: ${options.season}`);
   console.log(`Round: ${options.round}\n`);
 
@@ -225,9 +220,15 @@ async function main() {
       });
     }
 
-    // Step 3: Run tactical analysis (always - it's fast!)
-    console.log('');
-    const tacticsData = analyzeTactics(parseResults.valid);
+    // Step 3: Run tactical analysis (optional - requires venv)
+    let tacticsData = null;
+    const venvPython = path.join(__dirname, '..', 'venv', 'bin', 'python');
+    if (fs.existsSync(venvPython)) {
+      console.log('');
+      tacticsData = analyzeTactics(parseResults.valid);
+    } else {
+      console.log('\n⚠️  Skipping tactical analysis (venv not found - optional)');
+    }
 
     // Step 4: Run Stockfish analysis (optional - slow!)
     let analysisData = null;

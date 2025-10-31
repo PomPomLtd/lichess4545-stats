@@ -1,0 +1,1125 @@
+{
+  "roundNumber": 1,
+  "seasonNumber": 46,
+  "generatedAt": "2025-10-31T08:53:04.724Z",
+  "overview": {
+    "totalGames": 158,
+    "totalMoves": 12850,
+    "averageGameLength": 40.664556962025316,
+    "longestGame": {
+      "moves": 100,
+      "white": "fork2020",
+      "black": "markommbrzi",
+      "result": "0-1"
+    },
+    "shortestGame": {
+      "moves": 10,
+      "white": "Nobyx",
+      "black": "avemanyeg",
+      "result": "0-1"
+    }
+  },
+  "gamePhases": {
+    "averageOpening": 9.028481012658228,
+    "averageMiddlegame": 15.753164556962025,
+    "averageEndgame": 15.882911392405063,
+    "longestWaitTillCapture": {
+      "moves": 16,
+      "white": "ameyer",
+      "black": "Tigermoth1",
+      "game": "ameyer vs Tigermoth1"
+    },
+    "longestMiddlegame": {
+      "moves": 43,
+      "white": "robertjackson",
+      "black": "MrScribbles",
+      "game": "robertjackson vs MrScribbles"
+    },
+    "longestEndgame": {
+      "moves": 69,
+      "white": "fork2020",
+      "black": "markommbrzi",
+      "game": "fork2020 vs markommbrzi"
+    }
+  },
+  "results": {
+    "whiteWins": 74,
+    "blackWins": 56,
+    "draws": 28,
+    "whiteWinPercentage": 46.835443037974684,
+    "blackWinPercentage": 35.44303797468354,
+    "drawPercentage": 17.72151898734177
+  },
+  "openings": {
+    "firstMoves": {
+      "e4": {
+        "count": 84,
+        "percentage": 53.16455696202531,
+        "winRate": 45.23809523809524
+      },
+      "d4": {
+        "count": 43,
+        "percentage": 27.21518987341772,
+        "winRate": 48.837209302325576
+      },
+      "c4": {
+        "count": 13,
+        "percentage": 8.227848101265822,
+        "winRate": 38.46153846153847
+      },
+      "Nf3": {
+        "count": 12,
+        "percentage": 7.59493670886076,
+        "winRate": 66.66666666666666
+      },
+      "g3": {
+        "count": 1,
+        "percentage": 0.6329113924050633,
+        "winRate": 100
+      },
+      "f4": {
+        "count": 3,
+        "percentage": 1.89873417721519,
+        "winRate": 33.33333333333333
+      },
+      "b3": {
+        "count": 1,
+        "percentage": 0.6329113924050633,
+        "winRate": 0
+      },
+      "c3": {
+        "count": 1,
+        "percentage": 0.6329113924050633,
+        "winRate": 0
+      }
+    },
+    "popularSequences": [
+      {
+        "moves": "e4 c5 Nf3 e6 d4 cxd4",
+        "count": 6,
+        "eco": "B40",
+        "name": "Sicilian Defense: French Variation, Open"
+      },
+      {
+        "moves": "e4 c5 Nf3 d6 d4 cxd4",
+        "count": 6,
+        "eco": "B50",
+        "name": "Sicilian Defense"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nc6 Bb5 a6",
+        "count": 6,
+        "eco": "C70",
+        "name": "Ruy Lopez: Morphy Defense"
+      },
+      {
+        "moves": "e4 c6 d4 d5 e5 c5",
+        "count": 4,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation, Botvinnik-Carls Defense"
+      },
+      {
+        "moves": "d4 Nf6 c4 e6 Nc3 Bb4",
+        "count": 4,
+        "eco": "E20",
+        "name": "Nimzo-Indian Defense"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nc6 d4 exd4",
+        "count": 3,
+        "eco": "C44",
+        "name": "Scotch Game"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+        "count": 3,
+        "eco": "C50",
+        "name": "Italian Game: Giuoco Piano"
+      },
+      {
+        "moves": "d4 d5 c4 c6 Nf3 Nf6",
+        "count": 3,
+        "eco": "D11",
+        "name": "Slav Defense: Modern Line"
+      },
+      {
+        "moves": "c4 Nf6 g3 g6 Bg2 Bg7",
+        "count": 2,
+        "eco": "A15",
+        "name": "English Opening: Anglo-Indian Defense"
+      },
+      {
+        "moves": "e4 d5 exd5 Qxd5 Nc3 Qa5",
+        "count": 2,
+        "eco": "B01",
+        "name": "Scandinavian Defense: Main Line"
+      },
+      {
+        "moves": "e4 c6 d4 d5 Nc3 dxe4",
+        "count": 2,
+        "eco": "B15",
+        "name": "Caro-Kann Defense"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 c3 Nf6",
+        "count": 2,
+        "eco": "B21",
+        "name": "Sicilian Defense: Smith-Morra Gambit Declined, Alapin Formation"
+      },
+      {
+        "moves": "e4 c5 Nf3 Nc6 d4 cxd4",
+        "count": 2,
+        "eco": "B32",
+        "name": "Sicilian Defense: Open"
+      },
+      {
+        "moves": "e4 e6 d4 d5 exd5 exd5",
+        "count": 2,
+        "eco": "C01",
+        "name": "French Defense: Exchange Variation"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nc3 Nf6",
+        "count": 2,
+        "eco": "C11",
+        "name": "French Defense: Classical Variation"
+      },
+      {
+        "moves": "d4 d5 Nc3 Nf6 Bf4 a6",
+        "count": 2,
+        "eco": "D01",
+        "name": "Rapport-Jobava System"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nf3 Nf6",
+        "count": 2,
+        "eco": "D30",
+        "name": "Queen's Gambit Declined"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 h6",
+        "count": 2,
+        "eco": "D31",
+        "name": "Queen's Gambit Declined: Queen's Knight Variation"
+      },
+      {
+        "moves": "d4 Nf6 c4 g6 Nc3 d5",
+        "count": 2,
+        "eco": "D80",
+        "name": "Grünfeld Defense"
+      },
+      {
+        "moves": "d4 Nf6 c4 e6 Nf3 d5",
+        "count": 2,
+        "eco": "E10",
+        "name": "Indian Defense: Anti-Nimzo-Indian"
+      },
+      {
+        "moves": "g3 d5 Bg2 Nf6 d3 e5",
+        "count": 1,
+        "eco": "A00",
+        "name": "Hungarian Opening"
+      },
+      {
+        "moves": "c3 c5 d3 Nc6 Nf3 d5",
+        "count": 1,
+        "eco": "A00",
+        "name": "Saragossa Opening"
+      },
+      {
+        "moves": "b3 d5 Bb2 Bg4 f3 Bf5",
+        "count": 1,
+        "eco": "A01",
+        "name": "Nimzo-Larsen Attack: Classical Variation"
+      },
+      {
+        "moves": "f4 d5 Nf3 Nc6 e3 Bg4",
+        "count": 1,
+        "eco": "A03",
+        "name": "Bird Opening: Dutch Variation"
+      },
+      {
+        "moves": "f4 d5 Nf3 Nf6 e3 Nc6",
+        "count": 1,
+        "eco": "A03",
+        "name": "Bird Opening: Dutch Variation"
+      },
+      {
+        "moves": "f4 d5 Nf3 c5 g3 Nf6",
+        "count": 1,
+        "eco": "A03",
+        "name": "Bird Opening: Dutch Variation"
+      },
+      {
+        "moves": "Nf3 c5 e4 d6 d4 cxd4",
+        "count": 1,
+        "eco": "A04",
+        "name": "Zukertort Opening: Sicilian Invitation"
+      },
+      {
+        "moves": "Nf3 Nf6 e3 c5 d4 d5",
+        "count": 1,
+        "eco": "A05",
+        "name": "Zukertort Opening: Quiet System"
+      },
+      {
+        "moves": "Nf3 Nf6 c4 c5 Nc3 Nc6",
+        "count": 1,
+        "eco": "A05",
+        "name": "Zukertort Opening"
+      },
+      {
+        "moves": "Nf3 Nf6 g3 d5 Bg2 e6",
+        "count": 1,
+        "eco": "A05",
+        "name": "King's Indian Attack"
+      },
+      {
+        "moves": "Nf3 d5 d4 c6 g3 Nf6",
+        "count": 1,
+        "eco": "A06",
+        "name": "Zukertort Opening"
+      },
+      {
+        "moves": "Nf3 d5 d4 Nf6 c4 e6",
+        "count": 1,
+        "eco": "A06",
+        "name": "Zukertort Opening"
+      },
+      {
+        "moves": "Nf3 d5 d4 Nf6 Nbd2 c5",
+        "count": 1,
+        "eco": "A06",
+        "name": "Zukertort Opening"
+      },
+      {
+        "moves": "Nf3 d5 g3 Nf6 Bg2 e6",
+        "count": 1,
+        "eco": "A07",
+        "name": "King's Indian Attack"
+      },
+      {
+        "moves": "Nf3 d5 g3 c6 Bg2 Nf6",
+        "count": 1,
+        "eco": "A07",
+        "name": "King's Indian Attack"
+      },
+      {
+        "moves": "Nf3 d5 g3 Nf6 Bg2 c5",
+        "count": 1,
+        "eco": "A07",
+        "name": "King's Indian Attack"
+      },
+      {
+        "moves": "Nf3 d5 g3 c6 Bg2 Bg4",
+        "count": 1,
+        "eco": "A07",
+        "name": "King's Indian Attack"
+      },
+      {
+        "moves": "Nf3 d5 c4 d4 b4 Nc6",
+        "count": 1,
+        "eco": "A09",
+        "name": "Réti Opening: Advance Variation"
+      },
+      {
+        "moves": "c4 d6 g3 Nf6 Bg2 g6",
+        "count": 1,
+        "eco": "A10",
+        "name": "English Opening"
+      },
+      {
+        "moves": "c4 f5 g3 e5 Bg2 Nf6",
+        "count": 1,
+        "eco": "A10",
+        "name": "English Opening: Anglo-Dutch Defense"
+      },
+      {
+        "moves": "c4 f5 g3 Nf6 Bg2 e5",
+        "count": 1,
+        "eco": "A10",
+        "name": "English Opening: Anglo-Dutch Defense"
+      },
+      {
+        "moves": "c4 Nf6 g3 e5 Bg2 c6",
+        "count": 1,
+        "eco": "A15",
+        "name": "English Opening: Anglo-Indian Defense"
+      },
+      {
+        "moves": "c4 Nf6 g3 e6 Bg2 d5",
+        "count": 1,
+        "eco": "A15",
+        "name": "English Opening: Anglo-Indian Defense"
+      },
+      {
+        "moves": "c4 Nf6 Nc3 b6 e4 Bb7",
+        "count": 1,
+        "eco": "A16",
+        "name": "English Opening: Anglo-Indian Defense, Queen's Knight Variation"
+      },
+      {
+        "moves": "c4 e5 Nc3 Bb4 g3 Bxc3",
+        "count": 1,
+        "eco": "A21",
+        "name": "English Opening: King's English Variation, Kramnik-Shirov Counterattack"
+      },
+      {
+        "moves": "c4 e5 Nc3 Bb4 Nd5 Ba5",
+        "count": 1,
+        "eco": "A21",
+        "name": "English Opening: King's English Variation, Kramnik-Shirov Counterattack"
+      },
+      {
+        "moves": "c4 e5 Nc3 Bb4 e4 Nf6",
+        "count": 1,
+        "eco": "A21",
+        "name": "English Opening: King's English Variation, Kramnik-Shirov Counterattack"
+      },
+      {
+        "moves": "c4 c5 g3 Nc6 Bg2 g6",
+        "count": 1,
+        "eco": "A30",
+        "name": "English Opening: Symmetrical Variation"
+      },
+      {
+        "moves": "c4 c5 Nc3 Nc6 g3 g6",
+        "count": 1,
+        "eco": "A36",
+        "name": "English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation"
+      },
+      {
+        "moves": "d4 g6 Bf4 Bg7 e3 d6",
+        "count": 1,
+        "eco": "A40",
+        "name": "Queen's Pawn Game: Modern Defense"
+      },
+      {
+        "moves": "d4 g6 Nf3 f5 e3 Nf6",
+        "count": 1,
+        "eco": "A40",
+        "name": "Queen's Pawn Game: Modern Defense"
+      },
+      {
+        "moves": "d4 e6 Nf3 f5 g3 Nf6",
+        "count": 1,
+        "eco": "A40",
+        "name": "Horwitz Defense"
+      },
+      {
+        "moves": "d4 e6 Nf3 f5 Bg5 Be7",
+        "count": 1,
+        "eco": "A40",
+        "name": "Horwitz Defense"
+      },
+      {
+        "moves": "d4 d6 e3 Nf6 Bd3 e5",
+        "count": 1,
+        "eco": "A41",
+        "name": "Queen's Pawn Game"
+      },
+      {
+        "moves": "d4 c5 dxc5 Nc6 Nc3 Nf6",
+        "count": 1,
+        "eco": "A43",
+        "name": "Benoni Defense: Benoni Gambit Accepted"
+      },
+      {
+        "moves": "d4 Nf6 Nf3 d5 g3 Bf5",
+        "count": 1,
+        "eco": "A46",
+        "name": "Indian Defense: Knights Variation"
+      },
+      {
+        "moves": "d4 Nf6 Nf3 g6 Bg5 Bg7",
+        "count": 1,
+        "eco": "A48",
+        "name": "Torre Attack: Fianchetto Defense"
+      },
+      {
+        "moves": "d4 Nf6 c4 d5 cxd5 Nxd5",
+        "count": 1,
+        "eco": "A50",
+        "name": "Indian Defense: Normal Variation"
+      },
+      {
+        "moves": "d4 Nf6 c4 e5 dxe5 Ne4",
+        "count": 1,
+        "eco": "A51",
+        "name": "Indian Defense: Budapest Defense, Fajarowicz Variation"
+      },
+      {
+        "moves": "d4 f5 Bg5 Nf6 Bxf6 exf6",
+        "count": 1,
+        "eco": "A80",
+        "name": "Dutch Defense: Hopton Attack"
+      },
+      {
+        "moves": "d4 f5 Bg5 h6 Bh4 g5",
+        "count": 1,
+        "eco": "A80",
+        "name": "Dutch Defense: Hopton Attack"
+      },
+      {
+        "moves": "e4 d6 Nc3 Nf6 Nf3 c6",
+        "count": 1,
+        "eco": "B00",
+        "name": "Pirc Defense"
+      },
+      {
+        "moves": "e4 b6 d4 Bb7 f3 e6",
+        "count": 1,
+        "eco": "B00",
+        "name": "Owen Defense"
+      },
+      {
+        "moves": "e4 d5 exd5 Qxd5 Nc3 Qd6",
+        "count": 1,
+        "eco": "B01",
+        "name": "Scandinavian Defense: Gubinsky-Melts Defense"
+      },
+      {
+        "moves": "e4 d5 exd5 Nf6 d4 Qxd5",
+        "count": 1,
+        "eco": "B01",
+        "name": "Scandinavian Defense: Modern Variation"
+      },
+      {
+        "moves": "e4 Nf6 e5 Nd5 c4 Nb6",
+        "count": 1,
+        "eco": "B02",
+        "name": "Alekhine Defense: Two Pawns Attack"
+      },
+      {
+        "moves": "e4 c6 f4 d5 e5 e6",
+        "count": 1,
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+      },
+      {
+        "moves": "e4 c6 Nf3 d5 exd5 cxd5",
+        "count": 1,
+        "eco": "B10",
+        "name": "Caro-Kann Defense"
+      },
+      {
+        "moves": "e4 c6 d4 d5 e5 e6",
+        "count": 1,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation"
+      },
+      {
+        "moves": "e4 c6 d4 d5 f3 e6",
+        "count": 1,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Maróczy Variation"
+      },
+      {
+        "moves": "e4 c6 d4 d5 f3 Qb6",
+        "count": 1,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Maróczy Variation"
+      },
+      {
+        "moves": "e4 c6 d4 d5 e5 Bf5",
+        "count": 1,
+        "eco": "B12",
+        "name": "Caro-Kann Defense: Advance Variation"
+      },
+      {
+        "moves": "e4 c6 d4 d5 exd5 cxd5",
+        "count": 1,
+        "eco": "B13",
+        "name": "Caro-Kann Defense: Exchange Variation"
+      },
+      {
+        "moves": "e4 c5 Be2 g6 f4 Bg7",
+        "count": 1,
+        "eco": "B20",
+        "name": "Sicilian Defense"
+      },
+      {
+        "moves": "e4 c5 Ne2 e5 Nbc3 Nf6",
+        "count": 1,
+        "eco": "B20",
+        "name": "Sicilian Defense: Keres Variation"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 c3 g6",
+        "count": 1,
+        "eco": "B21",
+        "name": "Sicilian Defense: Smith-Morra Gambit"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 c3 e5",
+        "count": 1,
+        "eco": "B21",
+        "name": "Sicilian Defense: Smith-Morra Gambit Declined, Center Formation"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 c3 d5",
+        "count": 1,
+        "eco": "B21",
+        "name": "Sicilian Defense: Smith-Morra Gambit Declined, Scandinavian Formation"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 c3 dxc3",
+        "count": 1,
+        "eco": "B21",
+        "name": "Sicilian Defense: Smith-Morra Gambit Accepted"
+      },
+      {
+        "moves": "e4 c5 d4 cxd4 Nf3 Nc6",
+        "count": 1,
+        "eco": "B21",
+        "name": "Sicilian Defense: Morphy Gambit"
+      },
+      {
+        "moves": "e4 c5 c3 Nf6 e5 Nd5",
+        "count": 1,
+        "eco": "B22",
+        "name": "Sicilian Defense: Alapin Variation"
+      },
+      {
+        "moves": "e4 c5 c3 d5 exd5 Qxd5",
+        "count": 1,
+        "eco": "B22",
+        "name": "Sicilian Defense: Alapin Variation, Barmen Defense"
+      },
+      {
+        "moves": "e4 c5 Nc3 d6 g3 Nc6",
+        "count": 1,
+        "eco": "B23",
+        "name": "Sicilian Defense: Closed"
+      },
+      {
+        "moves": "e4 c5 Nc3 a6 g3 b5",
+        "count": 1,
+        "eco": "B23",
+        "name": "Sicilian Defense: Closed"
+      },
+      {
+        "moves": "e4 c5 Nc3 Nc6 d3 g6",
+        "count": 1,
+        "eco": "B23",
+        "name": "Sicilian Defense: Closed, Traditional"
+      },
+      {
+        "moves": "e4 c5 Nf3 Nf6 Bd3 Nc6",
+        "count": 1,
+        "eco": "B29",
+        "name": "Sicilian Defense: Nimzowitsch Variation"
+      },
+      {
+        "moves": "e4 c5 Nf3 Nc6 Bb5 Nf6",
+        "count": 1,
+        "eco": "B30",
+        "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack"
+      },
+      {
+        "moves": "e4 c5 Nf3 Nc6 Bb5 g6",
+        "count": 1,
+        "eco": "B31",
+        "name": "Sicilian Defense: Nyezhmetdinov-Rossolimo Attack, Fianchetto Variation"
+      },
+      {
+        "moves": "e4 c5 Nf3 e6 c3 d5",
+        "count": 1,
+        "eco": "B40",
+        "name": "Sicilian Defense: Delayed Alapin Variation, with e6"
+      },
+      {
+        "moves": "e4 c5 Nf3 d6 c3 Nf6",
+        "count": 1,
+        "eco": "B50",
+        "name": "Sicilian Defense: Delayed Alapin Variation, with d6"
+      },
+      {
+        "moves": "e4 e6 Nf3 c5 d4 cxd4",
+        "count": 1,
+        "eco": "C00",
+        "name": "French Defense: Knight Variation"
+      },
+      {
+        "moves": "e4 e6 b3 d5 Bb2 dxe4",
+        "count": 1,
+        "eco": "C00",
+        "name": "French Defense: Horwitz Attack, Papa-Ticulat Gambit"
+      },
+      {
+        "moves": "e4 e6 d4 d5 e5 c5",
+        "count": 1,
+        "eco": "C02",
+        "name": "French Defense: Advance Variation"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nd2 dxe4",
+        "count": 1,
+        "eco": "C03",
+        "name": "French Defense: Tarrasch Variation"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nd2 Bb4",
+        "count": 1,
+        "eco": "C03",
+        "name": "French Defense: Tarrasch Variation"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nd2 Nf6",
+        "count": 1,
+        "eco": "C05",
+        "name": "French Defense: Tarrasch Variation, Closed Variation"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nd2 c5",
+        "count": 1,
+        "eco": "C07",
+        "name": "French Defense: Tarrasch Variation, Open System"
+      },
+      {
+        "moves": "e4 e6 d4 d5 Nc3 Bb4",
+        "count": 1,
+        "eco": "C15",
+        "name": "French Defense: Winawer Variation"
+      },
+      {
+        "moves": "e4 e5 Bc4 Nf6 Nf3 Nc6",
+        "count": 1,
+        "eco": "C24",
+        "name": "Bishop's Opening: Berlin Defense"
+      },
+      {
+        "moves": "e4 e5 f4 exf4 Bc4 Qh4+",
+        "count": 1,
+        "eco": "C33",
+        "name": "King's Gambit Accepted: Bishop's Gambit"
+      },
+      {
+        "moves": "e4 e5 Nf3 d5 Nc3 dxe4",
+        "count": 1,
+        "eco": "C40",
+        "name": "Elephant Gambit"
+      },
+      {
+        "moves": "e4 e5 Nf3 d6 h3 Nc6",
+        "count": 1,
+        "eco": "C41",
+        "name": "Philidor Defense"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nf6 Nxe5 d6",
+        "count": 1,
+        "eco": "C42",
+        "name": "Petrov's Defense"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nf6 d4 Nxe4",
+        "count": 1,
+        "eco": "C43",
+        "name": "Petrov's Defense: Modern Attack"
+      },
+      {
+        "moves": "e4 e5 Nf3 Nc6 Bc4 Nf6",
+        "count": 1,
+        "eco": "C55",
+        "name": "Italian Game: Two Knights Defense"
+      },
+      {
+        "moves": "d4 d5 Bf4 Nf6 e3 e6",
+        "count": 1,
+        "eco": "D00",
+        "name": "Queen's Pawn Game: Accelerated London System"
+      },
+      {
+        "moves": "d4 d5 Bf4 e6 e3 Bd6",
+        "count": 1,
+        "eco": "D00",
+        "name": "Queen's Pawn Game: Accelerated London System"
+      },
+      {
+        "moves": "d4 d5 Bf4 e6 e3 Nf6",
+        "count": 1,
+        "eco": "D00",
+        "name": "Queen's Pawn Game: Accelerated London System"
+      },
+      {
+        "moves": "d4 d5 Bf4 c5 c3 cxd4",
+        "count": 1,
+        "eco": "D00",
+        "name": "Queen's Pawn Game: Accelerated London System, Steinitz Countergambit"
+      },
+      {
+        "moves": "d4 d5 Nc3 Nf6 Bf4 e6",
+        "count": 1,
+        "eco": "D01",
+        "name": "Rapport-Jobava System"
+      },
+      {
+        "moves": "d4 d5 Nf3 Bf5 e3 Nf6",
+        "count": 1,
+        "eco": "D02",
+        "name": "Queen's Pawn Game: Zukertort Variation"
+      },
+      {
+        "moves": "d4 d5 Nf3 Nf6 Bf4 e6",
+        "count": 1,
+        "eco": "D02",
+        "name": "Queen's Pawn Game: London System"
+      },
+      {
+        "moves": "d4 d5 Nf3 Nf6 e3 a6",
+        "count": 1,
+        "eco": "D04",
+        "name": "Queen's Pawn Game: Colle System"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nf3 Nd7",
+        "count": 1,
+        "eco": "D30",
+        "name": "Queen's Gambit Declined"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 c6",
+        "count": 1,
+        "eco": "D31",
+        "name": "Semi-Slav Defense: Accelerated Move Order"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 Bb4",
+        "count": 1,
+        "eco": "D31",
+        "name": "Queen's Gambit Declined: Queen's Knight Variation"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 c5",
+        "count": 1,
+        "eco": "D32",
+        "name": "Tarrasch Defense"
+      },
+      {
+        "moves": "d4 d5 c4 e6 Nc3 Nf6",
+        "count": 1,
+        "eco": "D35",
+        "name": "Queen's Gambit Declined: Normal Defense"
+      },
+      {
+        "moves": "d4 Nf6 c4 g6 Nc3 Bg7",
+        "count": 1,
+        "eco": "E61",
+        "name": "King's Indian Defense"
+      }
+    ]
+  },
+  "tactics": {
+    "totalCaptures": 2833,
+    "enPassantGames": [
+      {
+        "white": "Hesperian",
+        "black": "Zanderqfb",
+        "count": 1
+      },
+      {
+        "white": "cjsailer",
+        "black": "RBorja1980",
+        "count": 1
+      },
+      {
+        "white": "HamSamisch",
+        "black": "phibbitts",
+        "count": 1
+      },
+      {
+        "white": "metalpawn",
+        "black": "JZTrain",
+        "count": 1
+      },
+      {
+        "white": "udaysatya",
+        "black": "mkubecek",
+        "count": 1
+      },
+      {
+        "white": "Chesilly",
+        "black": "Bpack",
+        "count": 1
+      },
+      {
+        "white": "bestpilotever",
+        "black": "aldric123",
+        "count": 1
+      },
+      {
+        "white": "Zubenelgenubi",
+        "black": "GlennJamesMax",
+        "count": 1
+      }
+    ],
+    "promotions": 18,
+    "castling": {
+      "kingside": 242,
+      "queenside": 30
+    },
+    "bloodiestGame": {
+      "captures": 30,
+      "gameIndex": 68,
+      "white": "TristanBrown17",
+      "black": "KaiiMate"
+    },
+    "quietestGame": {
+      "captures": 2,
+      "gameIndex": 14,
+      "white": "firestar2202",
+      "black": "okady"
+    },
+    "longestNonCaptureStreak": {
+      "moves": 67,
+      "gameIndex": 9,
+      "white": "Kluddiron",
+      "black": "sussasun"
+    },
+    "totalUnderpromotions": 0,
+    "underpromotions": []
+  },
+  "pieces": {
+    "activity": {
+      "pawns": 3412,
+      "knights": 2082,
+      "bishops": 1938,
+      "rooks": 2084,
+      "queens": 1515,
+      "kings": 1819
+    },
+    "captured": {
+      "pawns": 1277,
+      "knights": 525,
+      "bishops": 469,
+      "rooks": 353,
+      "queens": 209
+    },
+    "survivalRate": {
+      "rooks": 0.44145569620253167,
+      "queens": 0.39556962025316456,
+      "bishops": 0.2579113924050633,
+      "knights": 0.16930379746835442
+    }
+  },
+  "checkmates": {
+    "byPiece": {
+      "queen": 7,
+      "rook": 9,
+      "bishop": 2,
+      "knight": 1,
+      "pawn": 1
+    },
+    "fastest": {
+      "moves": 26,
+      "gameIndex": 121,
+      "white": "JohnJPershing",
+      "black": "Simpformyqueen",
+      "winner": "Black"
+    }
+  },
+  "boardHeatmap": {
+    "bloodiestSquare": {
+      "square": "d5",
+      "captures": 219,
+      "description": "d5 saw 219 captures"
+    },
+    "mostPopularSquare": {
+      "square": "d4",
+      "visits": 490,
+      "description": "d4 was visited 490 times"
+    },
+    "leastPopularSquare": {
+      "square": "a1",
+      "visits": 42,
+      "description": "a1 was only visited 42 times"
+    },
+    "quietestSquares": [],
+    "top5Bloodiest": [
+      {
+        "square": "d5",
+        "captures": 219
+      },
+      {
+        "square": "d4",
+        "captures": 214
+      },
+      {
+        "square": "e4",
+        "captures": 152
+      },
+      {
+        "square": "e5",
+        "captures": 147
+      },
+      {
+        "square": "f6",
+        "captures": 114
+      }
+    ],
+    "top5Popular": [
+      {
+        "square": "d4",
+        "visits": 490
+      },
+      {
+        "square": "d5",
+        "visits": 482
+      },
+      {
+        "square": "e4",
+        "visits": 443
+      },
+      {
+        "square": "f6",
+        "visits": 427
+      },
+      {
+        "square": "e5",
+        "visits": 426
+      }
+    ]
+  },
+  "awards": {
+    "bloodbath": {
+      "white": "TristanBrown17",
+      "black": "KaiiMate",
+      "captures": 30
+    },
+    "pacifist": {
+      "white": "firestar2202",
+      "black": "okady",
+      "captures": 2
+    },
+    "speedDemon": {
+      "white": "JohnJPershing",
+      "black": "Simpformyqueen",
+      "moves": 26,
+      "winner": "Black"
+    },
+    "endgameWizard": {
+      "white": "fork2020",
+      "black": "markommbrzi",
+      "endgameMoves": 69
+    },
+    "openingSprinter": {
+      "white": "bobsouzabr",
+      "black": "ysgwydd",
+      "openingMoves": 5
+    }
+  },
+  "funStats": {
+    "fastestQueenTrade": {
+      "moves": 6,
+      "gameIndex": 45,
+      "white": "casual921",
+      "black": "nightsub"
+    },
+    "slowestQueenTrade": {
+      "moves": 69,
+      "gameIndex": 35,
+      "white": "ekopp2000",
+      "black": "MarketMike"
+    },
+    "longestCaptureSequence": {
+      "length": 11,
+      "gameIndex": 107,
+      "startMove": 16,
+      "white": "mronemore",
+      "black": "MoonlightAnomaly"
+    },
+    "longestCheckSequence": {
+      "length": 12,
+      "gameIndex": 6,
+      "startMove": 28,
+      "white": "nvasquez",
+      "black": "juandeleon"
+    },
+    "pawnStorm": {
+      "count": 14,
+      "gameIndex": 146,
+      "white": "STCLion",
+      "black": "PatchyThePirate"
+    },
+    "pieceLoyalty": null,
+    "squareTourist": {
+      "squares": 24,
+      "gameIndex": 7,
+      "piece": "Rook",
+      "color": "Black",
+      "startSquare": "a8",
+      "white": "somerapidplayer",
+      "black": "abliviax"
+    },
+    "castlingRace": {
+      "moves": 4,
+      "gameIndex": 10,
+      "winner": "black",
+      "white": "KingCatChess",
+      "black": "jg777"
+    },
+    "openingHipster": {
+      "gameIndex": 12,
+      "eco": "A36",
+      "name": "English Opening: Symmetrical Variation, Two Knights, Fianchetto Variation",
+      "moves": "c4 c5 Nc3 Nc6 g3 g6",
+      "obscurityScore": 93,
+      "white": "DrRickinCT",
+      "black": "chess131969"
+    },
+    "dadbodShuffler": {
+      "moves": 49,
+      "gameIndex": 17,
+      "color": "White",
+      "white": "fork2020",
+      "black": "markommbrzi"
+    },
+    "sportyQueen": {
+      "distance": 70,
+      "gameIndex": 35,
+      "color": "White",
+      "white": "ekopp2000",
+      "black": "MarketMike"
+    },
+    "edgeLord": {
+      "moves": 29,
+      "gameIndex": 36,
+      "color": "White",
+      "white": "berndwind",
+      "black": "nerja25390"
+    },
+    "rookLift": {
+      "moveNumber": 9,
+      "gameIndex": 131,
+      "color": "White",
+      "rook": "White's h1 Rook",
+      "square": "h1",
+      "white": "Castling-Companion",
+      "black": "KonrDer"
+    },
+    "centerStage": {
+      "moves": 12,
+      "gameIndex": 17,
+      "piece": "White's f4 King",
+      "startSquare": "f4",
+      "color": "White",
+      "white": "fork2020",
+      "black": "markommbrzi"
+    },
+    "darkLord": {
+      "captures": 11,
+      "gameIndex": 148,
+      "color": "Black",
+      "white": "EvilNalu",
+      "black": "chatakkuma"
+    },
+    "chickenAward": {
+      "retreats": 27,
+      "gameIndex": 17,
+      "color": "White",
+      "white": "fork2020",
+      "black": "markommbrzi"
+    }
+  }
+}
