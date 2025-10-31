@@ -55,9 +55,11 @@ function calculatePieceLoyalty(games) {
       if (movesOnStart > pieceLoyalty.moves) {
         const [, piece] = pieceKey.split('_');
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         pieceLoyalty = {
           moves: movesOnStart,
           gameIndex: idx,
+          gameId,
           piece: PIECE_NAMES[piece] || piece,
           square: startSquare,
           white: players.white,

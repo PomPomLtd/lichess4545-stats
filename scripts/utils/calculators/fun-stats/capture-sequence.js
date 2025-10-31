@@ -40,9 +40,11 @@ function calculateCaptureSequence(games) {
     // Update longest capture sequence across all games
     if (maxCaptureSequence > longestCaptureSequence.length) {
       const players = getPlayerNames(game);
+      const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
       longestCaptureSequence = {
         length: maxCaptureSequence,
         gameIndex: idx,
+        gameId,
         startMove: Math.floor(captureSequenceStart / 2) + 1, // Full move number
         white: players.white,
         black: players.black

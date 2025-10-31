@@ -32,10 +32,12 @@ function calculateDarkLord(games) {
 
     // Check if this game has the most dark square captures
     const players = getPlayerNames(game);
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
     if (whiteDarkCaptures > darkLord.captures) {
       darkLord = {
         captures: whiteDarkCaptures,
         gameIndex: idx,
+        gameId,
         color: 'White',
         white: players.white,
         black: players.black
@@ -46,6 +48,7 @@ function calculateDarkLord(games) {
       darkLord = {
         captures: blackDarkCaptures,
         gameIndex: idx,
+        gameId,
         color: 'Black',
         white: players.white,
         black: players.black

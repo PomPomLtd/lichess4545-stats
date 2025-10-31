@@ -60,9 +60,11 @@ function calculateCheckSequence(games) {
     // Update longest check sequence across all games
     if (maxCheckSequence > longestCheckSequence.length) {
       const players = getPlayerNames(game);
+      const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
       longestCheckSequence = {
         length: maxCheckSequence,
         gameIndex: idx,
+        gameId,
         startMove: Math.floor(checkSequenceStart / 2) + 1, // Full move number
         white: players.white,
         black: players.black

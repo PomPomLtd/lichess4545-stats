@@ -34,10 +34,12 @@ function calculateSportyQueen(games) {
 
     // Check if this game has the most active queen
     const players = getPlayerNames(game);
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
     if (whiteQueenDistance > sportyQueen.distance) {
       sportyQueen = {
         distance: whiteQueenDistance,
         gameIndex: idx,
+        gameId,
         color: 'White',
         white: players.white,
         black: players.black
@@ -48,6 +50,7 @@ function calculateSportyQueen(games) {
       sportyQueen = {
         distance: blackQueenDistance,
         gameIndex: idx,
+        gameId,
         color: 'Black',
         white: players.white,
         black: players.black

@@ -42,10 +42,12 @@ function calculateChickenAward(games) {
 
     // Check if this game has the most retreats
     const players = getPlayerNames(game);
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
     if (whiteRetreats > chickenAward.retreats) {
       chickenAward = {
         retreats: whiteRetreats,
         gameIndex: idx,
+        gameId,
         color: 'White',
         white: players.white,
         black: players.black
@@ -56,6 +58,7 @@ function calculateChickenAward(games) {
       chickenAward = {
         retreats: blackRetreats,
         gameIndex: idx,
+        gameId,
         color: 'Black',
         white: players.white,
         black: players.black

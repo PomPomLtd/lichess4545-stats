@@ -32,8 +32,10 @@ function calculateOpeningHipster(games) {
 
         if (obscurityScore > openingHipster.obscurityScore) {
           const players = getPlayerNames(game);
+          const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
           openingHipster = {
             gameIndex: idx,
+            gameId,
             eco: opening.eco,
             name: opening.name,
             moves: sequence,

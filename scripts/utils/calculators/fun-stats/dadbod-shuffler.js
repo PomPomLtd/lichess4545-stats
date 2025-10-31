@@ -32,10 +32,12 @@ function calculateDadbodShuffler(games) {
 
     // Check if this game has the most king moves
     const players = getPlayerNames(game);
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
     if (whiteKingMoves > dadbodShuffler.moves) {
       dadbodShuffler = {
         moves: whiteKingMoves,
         gameIndex: idx,
+        gameId,
         color: 'White',
         white: players.white,
         black: players.black
@@ -46,6 +48,7 @@ function calculateDadbodShuffler(games) {
       dadbodShuffler = {
         moves: blackKingMoves,
         gameIndex: idx,
+        gameId,
         color: 'Black',
         white: players.white,
         black: players.black

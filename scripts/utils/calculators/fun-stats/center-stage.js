@@ -70,9 +70,11 @@ function calculateCenterStage(games) {
       if (data.moves > centerStage.moves) {
         const colorName = data.color === 'w' ? 'White' : 'Black';
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         centerStage = {
           moves: data.moves,
           gameIndex: idx,
+          gameId,
           piece: `${colorName}'s ${data.startSquare} ${PIECE_NAMES[data.piece]}`,
           startSquare: data.startSquare,
           color: colorName,

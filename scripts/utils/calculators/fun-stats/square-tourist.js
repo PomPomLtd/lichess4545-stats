@@ -51,9 +51,11 @@ function calculateSquareTourist(games) {
         const [color, piece, startSquare] = pieceKey.split('_');
         const colorName = color === 'w' ? 'White' : 'Black';
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         squareTourist = {
           squares: uniqueSquares,
           gameIndex: idx,
+          gameId,
           piece: PIECE_NAMES[piece] || piece,
           color: colorName,
           startSquare: startSquare,

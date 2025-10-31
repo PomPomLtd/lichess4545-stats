@@ -29,9 +29,11 @@ function calculatePawnStorm(games) {
 
     if (openingPawnMoves > pawnStorm.count) {
       const players = getPlayerNames(game);
+      const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
       pawnStorm = {
         count: openingPawnMoves,
         gameIndex: idx,
+        gameId,
         white: players.white,
         black: players.black
       };

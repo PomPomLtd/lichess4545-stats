@@ -34,10 +34,12 @@ function calculateEdgeLord(games) {
 
     // Check if this game has the most edge moves
     const players = getPlayerNames(game);
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
     if (whiteEdgeMoves > edgeLord.moves) {
       edgeLord = {
         moves: whiteEdgeMoves,
         gameIndex: idx,
+        gameId,
         color: 'White',
         white: players.white,
         black: players.black
@@ -48,6 +50,7 @@ function calculateEdgeLord(games) {
       edgeLord = {
         moves: blackEdgeMoves,
         gameIndex: idx,
+        gameId,
         color: 'Black',
         white: players.white,
         black: players.black

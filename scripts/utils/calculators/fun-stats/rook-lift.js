@@ -34,9 +34,11 @@ function calculateRookLift(games) {
           if (!whiteRookLifted[startSquare] && firstRookLift === null) {
             whiteRookLifted[startSquare] = true;
             const players = getPlayerNames(game);
+            const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
             firstRookLift = {
               moveNumber: Math.ceil((moveIdx + 1) / 2),
               gameIndex: idx,
+              gameId,
               color: 'White',
               rook: `White's ${startSquare} Rook`,
               square: startSquare,
@@ -52,9 +54,11 @@ function calculateRookLift(games) {
           if (!blackRookLifted[startSquare] && firstRookLift === null) {
             blackRookLifted[startSquare] = true;
             const players = getPlayerNames(game);
+            const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
             firstRookLift = {
               moveNumber: Math.ceil((moveIdx + 1) / 2),
               gameIndex: idx,
+              gameId,
               color: 'Black',
               rook: `Black's ${startSquare} Rook`,
               square: startSquare,

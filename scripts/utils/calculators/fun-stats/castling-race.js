@@ -44,9 +44,11 @@ function calculateCastlingRace(games) {
     if (whiteCastled && blackCastled && firstCastleMove !== null) {
       if (firstCastleMove < castlingRace.moves) {
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         castlingRace = {
           moves: firstCastleMove,
           gameIndex: idx,
+          gameId,
           winner: firstCastleColor,
           white: players.white,
           black: players.black

@@ -44,9 +44,11 @@ function calculateQueenTrades(games) {
     if (queenTradeMoveNumber !== null) {
       if (queenTradeMoveNumber < fastestQueenTrade.moves) {
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         fastestQueenTrade = {
           moves: queenTradeMoveNumber,
           gameIndex: idx,
+          gameId,
           white: players.white,
           black: players.black
         };
@@ -54,9 +56,11 @@ function calculateQueenTrades(games) {
 
       if (queenTradeMoveNumber > slowestQueenTrade.moves) {
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         slowestQueenTrade = {
           moves: queenTradeMoveNumber,
           gameIndex: idx,
+          gameId,
           white: players.white,
           black: players.black
         };
