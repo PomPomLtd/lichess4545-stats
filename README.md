@@ -29,6 +29,13 @@ Comprehensive statistics and analysis platform for the Lichess 4545 Team League.
   - Parse and analyze games with chess.js
   - Generate comprehensive statistics
 
+- **Remote Analysis**: GitHub Actions workflows for Stockfish analysis
+  - Fully automated cloud-based analysis
+  - Downloads PGNs automatically
+  - Runs Stockfish analysis (depth 15)
+  - Auto-commits results and triggers Vercel deployment
+  - Free tier: 2,000 minutes/month
+
 ## Tech Stack
 
 - **Frontend:** Next.js 15 (App Router), React 19, TailwindCSS 4
@@ -46,7 +53,30 @@ npm install
 
 ### Data Pipeline
 
-Complete workflow for generating statistics:
+#### Option 1: Remote Analysis (Recommended) ⭐
+
+Use GitHub Actions for hands-free cloud analysis:
+
+```bash
+# Trigger remote Stockfish analysis (runs in cloud, ~1-2 hours)
+gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
+
+# When complete, pull the results
+git pull
+
+# Generate season overview (local, fast)
+node scripts/generate-overview.js --season 46
+```
+
+**Benefits:**
+- No need to download PGNs manually
+- No need to keep laptop running
+- Automatic commit and Vercel deployment
+- See **REMOTE_ANALYSIS.md** for details
+
+#### Option 2: Local Analysis
+
+Complete workflow for generating statistics locally:
 
 ```bash
 # 1. Fetch season data from Lichess 4545
@@ -55,8 +85,9 @@ node scripts/fetch-lichess-season.js --season=46
 # 2. Download PGNs for a round
 node scripts/download-pgns.js --season=46 --round=1
 
-# 3. Generate round statistics
-node scripts/generate-stats.js --round 1 --season 46
+# 3. Generate round statistics (with Stockfish analysis)
+cat data/season-46-round-1.pgn | \
+  node scripts/generate-stats.js --round 1 --season 46 --analyze --depth 15
 
 # 4. Generate season overview (after 2+ rounds)
 node scripts/generate-overview.js --season 46

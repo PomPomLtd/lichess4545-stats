@@ -113,9 +113,47 @@ npm run build  # Always run before committing to verify TypeScript
 - TypeScript interfaces in `app/stats/[season]/round/[roundNumber]/page.tsx` must match component interfaces
 - All fun stats must have consistent interface structure across calculators and UI components
 
+## Remote Analysis (GitHub Actions)
+
+**Workflows:**
+- `.github/workflows/analyze-round.yml` - Single round Stockfish analysis
+- `.github/workflows/analyze-multiple-rounds.yml` - Parallel batch analysis (up to 3 rounds)
+
+**Usage:**
+```bash
+# Trigger remote analysis (recommended)
+gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
+
+# Monitor progress
+gh run watch
+
+# When complete, pull results
+git pull
+```
+
+**Features:**
+- Automatically downloads PGNs from lichess4545.com API
+- Runs Stockfish analysis on GitHub runners (Intel Xeon CPUs)
+- Auto-detects Python and Stockfish paths (works on Ubuntu)
+- Commits results and triggers Vercel deployment
+- Takes ~1-2 hours per round (slower than Apple Silicon, but hands-free!)
+
+**Key Files:**
+- `scripts/fetch-lichess-season.js` - Fetches game data from API
+- `scripts/download-pgns.js` - Downloads PGNs from Lichess.org
+- `scripts/generate-stats.js` - Generates statistics with optional Stockfish analysis
+- `scripts/analyze-pgn.py` - Python Stockfish analyzer
+
+**Path Detection:**
+- `getPythonCommand()` in generate-stats.js - Detects venv or system python3
+- `find_stockfish_path()` in analyze-pgn.py - Auto-detects Stockfish binary location
+
+See **REMOTE_ANALYSIS.md** for complete documentation.
+
 ## Important Notes
 
-- Statistics generation can take 30-45s for basic stats, 7-15min with Stockfish analysis
+- Statistics generation can take 30-45s for basic stats, 7-15min locally with Stockfish
+- Remote analysis via GitHub Actions takes 1-2 hours but runs hands-free in the cloud
 - Always run stats generation in a separate terminal window (user's responsibility)
 - The application uses static JSON files for fast page loads
 - Game links use Lichess game IDs extracted from PGN headers

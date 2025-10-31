@@ -27,26 +27,36 @@ This document provides solutions for running analysis on more powerful remote se
 
 GitHub Actions provides free CI/CD runners that are perfect for this task:
 - **Free Tier**: 2,000 minutes/month (public repos)
-- **Specs**: 2-core CPU, 7GB RAM, Ubuntu 22.04
-- **Benefits**: Fully automated, results auto-committed, no local resources used
+- **Specs**: 2-core Intel Xeon CPU, 7GB RAM, Ubuntu 22.04
+- **Benefits**: Fully automated, PGNs downloaded automatically, results auto-committed, no local resources used
 
 ### Performance Estimate
 
-- **Round analysis (31 games)**: ~5-8 minutes
-- **Full season (200 games)**: ~30-50 minutes
-- **Parallel rounds**: Can analyze multiple rounds simultaneously
+**Note**: GitHub Actions uses Intel CPUs which are slower than Apple Silicon Macs for Stockfish analysis.
+
+- **Round analysis (31 games)**: ~1-2 hours with depth 15
+- **Full season (200 games)**: ~6-12 hours
+- **Parallel rounds**: Can analyze up to 3 rounds simultaneously
+
+Despite being slower than local analysis, the key advantage is that it runs hands-free in the cloud!
 
 ### Setup Instructions
 
-#### Step 1: Create Workflow Directory
+✅ **Already completed!** The workflows are set up and ready to use.
 
-```bash
-mkdir -p .github/workflows
-```
+The following files have been created:
+- `.github/workflows/analyze-round.yml` - Single round analysis
+- `.github/workflows/analyze-multiple-rounds.yml` - Parallel batch analysis
 
-#### Step 2: Create Workflow File
+#### Workflow Configuration
 
-Create `.github/workflows/analyze-round.yml`:
+The workflows include automatic:
+- **PGN download** from lichess4545.com API (no need to commit PGNs!)
+- **Python/Stockfish path detection** (works on both macOS and Linux)
+- **Results commit** and push to main branch
+- **Vercel auto-deployment** triggered by the commit
+
+Key features of `.github/workflows/analyze-round.yml`:
 
 ```yaml
 name: Analyze Chess Round with Stockfish
@@ -239,26 +249,32 @@ git push
 
 #### Single Round Analysis
 
-1. Go to your GitHub repository
-2. Click **Actions** tab
-3. Select **"Analyze Chess Round with Stockfish"** workflow
-4. Click **"Run workflow"** dropdown
-5. Fill in parameters:
+**Via GitHub CLI** (recommended):
+```bash
+gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
+```
+
+**Via GitHub Web UI**:
+1. Go to https://github.com/PomPomLtd/lichess4545-stats/actions
+2. Click **"Analyze Chess Round with Stockfish"** workflow
+3. Click **"Run workflow"** dropdown
+4. Fill in parameters:
    - Round: `1`
    - Season: `46`
    - Depth: `15` (optional, defaults to 15)
-6. Click **"Run workflow"**
-7. Wait 5-15 minutes
-8. Results automatically committed to `main` branch
+5. Click **"Run workflow"**
+6. Wait 1-2 hours (runs automatically in the cloud!)
+7. Results automatically committed to `main` branch
+8. Vercel auto-deploys your updated site
 9. Pull changes locally: `git pull`
 
 #### Multiple Rounds (Parallel)
 
-1. Actions tab → **"Analyze Multiple Rounds"**
-2. Enter:
-   - Season: `46`
-   - Rounds: `1,2,3`
-3. Will analyze 3 rounds in parallel (~15-20 minutes total)
+```bash
+gh workflow run analyze-multiple-rounds.yml -f season=46 -f rounds=1,2,3 -f depth=15
+```
+
+Will analyze 3 rounds simultaneously (~1-2 hours total, vs 3-6 hours sequentially)
 
 ### Monitoring Progress
 
@@ -269,13 +285,16 @@ git push
 ### Troubleshooting
 
 **Issue**: Workflow times out after 2 hours
-- **Solution**: Split into multiple jobs or reduce depth to 12-13
+- **Solution**: This is the GitHub Actions limit. For longer analysis, use parallel workflows or reduce depth to 12-13
 
-**Issue**: PGN file not found
-- **Solution**: Ensure PGN is committed to repo in `data/` folder
+**Issue**: Stockfish path not found
+- **Solution**: Already fixed! The script auto-detects Stockfish in common locations
+
+**Issue**: Python venv not found
+- **Solution**: Already fixed! The script uses system python3 when venv is unavailable
 
 **Issue**: Permission denied on git push
-- **Solution**: Check repo Settings → Actions → Workflow permissions → Enable "Read and write permissions"
+- **Solution**: ✅ Already configured! The workflows have `permissions: contents: write`
 
 ---
 
@@ -476,27 +495,28 @@ For **200 games** (full season):
 
 ### Regular Season Analysis (GitHub Actions)
 
-1. **After each round**:
-   ```bash
-   # Download PGN from Lichess
-   curl "https://lichess.org/api/broadcast/round/xxx/pgn" > data/season-46-round-1.pgn
+✨ **Super simple!** Just one command per round:
 
-   # Commit to repo
-   git add data/season-46-round-1.pgn
-   git commit -m "Add Round 1 PGN data"
-   git push
+```bash
+# After each round completes, trigger analysis:
+gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
 
-   # Trigger GitHub Action (via web UI)
-   # OR use GitHub CLI:
-   gh workflow run analyze-round.yml -f round=1 -f season=46
+# The workflow will:
+# 1. Download PGNs from lichess4545.com automatically
+# 2. Run Stockfish analysis (1-2 hours, hands-free!)
+# 3. Commit results to your repo
+# 4. Trigger Vercel auto-deploy
+# 5. Your stats page updates automatically!
 
-   # Wait 5-10 minutes
+# When complete, pull the changes:
+git pull
+```
 
-   # Pull results
-   git pull
-   ```
-
-2. **View results**: Visit your stats page
+**No need to:**
+- Download PGNs manually
+- Keep your laptop running
+- Commit large PGN files
+- Manually deploy
 
 ### Batch Analysis (Oracle Cloud)
 
@@ -594,16 +614,24 @@ Download analysis files without committing:
 
 ## Getting Started Checklist
 
-- [ ] Commit `.github/workflows/analyze-round.yml` to repo
-- [ ] Push to GitHub
-- [ ] Go to repo Settings → Actions → Enable workflows
-- [ ] Go to repo Settings → Actions → Workflow permissions → Enable "Read and write permissions"
-- [ ] Upload PGN file to `data/` folder
-- [ ] Commit and push PGN file
-- [ ] Go to Actions tab → Run workflow
-- [ ] Wait 5-10 minutes
-- [ ] Pull results: `git pull`
-- [ ] View stats page
+✅ **Setup Complete!** Everything is ready to use.
+
+**To run analysis:**
+
+1. Trigger workflow:
+   ```bash
+   gh workflow run analyze-round.yml -f round=1 -f season=46 -f depth=15
+   ```
+
+2. Monitor progress:
+   - Visit https://github.com/PomPomLtd/lichess4545-stats/actions
+   - Click on the running workflow to see live logs
+
+3. When complete (1-2 hours):
+   - Results auto-committed to main branch
+   - Vercel auto-deploys updated site
+   - Pull changes: `git pull`
+   - View stats at your site!
 
 ---
 
