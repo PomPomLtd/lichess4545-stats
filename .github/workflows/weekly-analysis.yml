@@ -1,0 +1,183 @@
+name: Weekly Round Analysis
+
+on:
+  schedule:
+    # Run every Monday at 12:00 UTC (noon)
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season number (defaults to current season)'
+        required: false
+        type: number
+      round:
+        description: 'Round number (defaults to auto-detect)'
+        required: false
+        type: number
+      depth:
+        description: 'Stockfish depth (default: 15)'
+        required: false
+        default: '15'
+        type: number
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Determine season and round
+        id: detect
+        run: |
+          # Default to current season (Season 46)
+          SEASON="${{ github.event.inputs.season }}"
+          if [ -z "$SEASON" ]; then
+            SEASON=46
+          fi
+          echo "season=$SEASON" >> $GITHUB_OUTPUT
+
+          # Auto-detect next round to analyze
+          ROUND="${{ github.event.inputs.round }}"
+          if [ -z "$ROUND" ]; then
+            # Find the highest existing round number
+            LATEST_ROUND=0
+            for file in public/stats/season-${SEASON}-round-*.json; do
+              if [ -f "$file" ]; then
+                NUM=$(echo "$file" | grep -oP 'round-\K\d+')
+                if [ "$NUM" -gt "$LATEST_ROUND" ]; then
+                  LATEST_ROUND=$NUM
+                fi
+              fi
+            done
+
+            # Next round is latest + 1 (max 7 rounds)
+            ROUND=$((LATEST_ROUND + 1))
+
+            if [ "$ROUND" -gt 7 ]; then
+              echo "All rounds for Season $SEASON have been analyzed (rounds 1-7)"
+              exit 0
+            fi
+          fi
+          echo "round=$ROUND" >> $GITHUB_OUTPUT
+
+          echo "Will analyze Season $SEASON Round $ROUND"
+
+      - name: Install Stockfish
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y stockfish
+          stockfish --version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Python dependencies
+        run: |
+          pip3 install python-chess stockfish
+
+      - name: Download season games and PGNs
+        id: download
+        continue-on-error: true
+        run: |
+          SEASON="${{ steps.detect.outputs.season }}"
+          ROUND="${{ steps.detect.outputs.round }}"
+
+          echo "Fetching Season $SEASON data from Lichess 4545..."
+          node scripts/fetch-lichess-season.js --season=$SEASON
+
+          echo "Downloading Round $ROUND PGNs from Lichess.org..."
+          node scripts/download-pgns.js --season=$SEASON --round=$ROUND
+
+          if [ ! -f "data/season-${SEASON}-round-${ROUND}.pgn" ]; then
+            echo "PGN file not found - round may not be available yet"
+            echo "available=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+          echo "PGN file ready:"
+          wc -l "data/season-${SEASON}-round-${ROUND}.pgn"
+          echo "available=true" >> $GITHUB_OUTPUT
+
+      - name: Run Stockfish Analysis
+        if: steps.download.outputs.available == 'true'
+        run: |
+          SEASON="${{ steps.detect.outputs.season }}"
+          ROUND="${{ steps.detect.outputs.round }}"
+          DEPTH="${{ github.event.inputs.depth || 15 }}"
+
+          echo "Starting analysis for Season $SEASON Round $ROUND"
+          echo "Depth: $DEPTH"
+          echo "Start time: $(date)"
+
+          cat data/season-${SEASON}-round-${ROUND}.pgn | \
+            node scripts/generate-stats.js \
+              --round $ROUND \
+              --season $SEASON \
+              --analyze \
+              --depth $DEPTH
+
+          echo "End time: $(date)"
+
+      - name: Verify output
+        if: steps.download.outputs.available == 'true'
+        run: |
+          SEASON="${{ steps.detect.outputs.season }}"
+          ROUND="${{ steps.detect.outputs.round }}"
+          OUTPUT_FILE="public/stats/season-${SEASON}-round-${ROUND}.json"
+
+          if [ ! -f "$OUTPUT_FILE" ]; then
+            echo "Error: Stats file not generated at $OUTPUT_FILE"
+            exit 1
+          fi
+          echo "Generated stats file:"
+          ls -lh "$OUTPUT_FILE"
+          echo "File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
+
+      - name: Commit and push results
+        if: steps.download.outputs.available == 'true'
+        run: |
+          SEASON="${{ steps.detect.outputs.season }}"
+          ROUND="${{ steps.detect.outputs.round }}"
+          DEPTH="${{ github.event.inputs.depth || 15 }}"
+
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add public/stats/season-${SEASON}-round-${ROUND}.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "$(cat <<EOF
+          Add Stockfish analysis for Season $SEASON Round $ROUND
+
+          Analyzed with depth $DEPTH
+          Auto-generated by weekly schedule
+          EOF
+          )"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          SEASON="${{ steps.detect.outputs.season }}"
+          ROUND="${{ steps.detect.outputs.round }}"
+          AVAILABLE="${{ steps.download.outputs.available }}"
+
+          if [ "$AVAILABLE" = "true" ]; then
+            echo "✅ Successfully analyzed Season $SEASON Round $ROUND"
+          else
+            echo "⏸️  Round $ROUND not available yet - will retry next Monday"
+          fi
