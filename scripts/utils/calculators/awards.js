@@ -32,30 +32,43 @@ function calculateAwards(games) {
     return phase.opening < shortest.moves ? { moves: phase.opening, gameIndex: idx } : shortest;
   }, { moves: Infinity, gameIndex: 0 });
 
+  // Extract gameIds for endgameWizard and openingSprinter
+  const endgameGame = gamesWithMoves[longestEndgame.gameIndex];
+  const endgameGameId = endgameGame.headers?.GameId || endgameGame.headers?.Site?.split('/').pop() || null;
+
+  const openingGameId = shortestOpening.moves !== Infinity
+    ? (gamesWithMoves[shortestOpening.gameIndex].headers?.GameId || gamesWithMoves[shortestOpening.gameIndex].headers?.Site?.split('/').pop() || null)
+    : null;
+
   return {
     bloodbath: {
       white: tactics.bloodiestGame.white,
       black: tactics.bloodiestGame.black,
-      captures: tactics.bloodiestGame.captures
+      captures: tactics.bloodiestGame.captures,
+      gameId: tactics.bloodiestGame.gameId
     },
     pacifist: {
       white: tactics.quietestGame.white,
       black: tactics.quietestGame.black,
-      captures: tactics.quietestGame.captures
+      captures: tactics.quietestGame.captures,
+      gameId: tactics.quietestGame.gameId
     },
     speedDemon: checkmates.fastest ? {
       white: checkmates.fastest.white,
       black: checkmates.fastest.black,
       moves: checkmates.fastest.moves,
-      winner: checkmates.fastest.winner
+      winner: checkmates.fastest.winner,
+      gameId: checkmates.fastest.gameId
     } : null,
     endgameWizard: {
-      ...getPlayerNames(gamesWithMoves[longestEndgame.gameIndex]),
-      endgameMoves: toFullMoves(longestEndgame.moves)
+      ...getPlayerNames(endgameGame),
+      endgameMoves: toFullMoves(longestEndgame.moves),
+      gameId: endgameGameId
     },
     openingSprinter: shortestOpening.moves !== Infinity ? {
       ...getPlayerNames(gamesWithMoves[shortestOpening.gameIndex]),
-      openingMoves: toFullMoves(shortestOpening.moves)
+      openingMoves: toFullMoves(shortestOpening.moves),
+      gameId: openingGameId
     } : null
   };
 }

@@ -31,24 +31,37 @@ function calculateGamePhases(games) {
     }
   });
 
+  // Extract gameIds
+  const waitGame = gamesWithMoves[longestWaitTillCapture.gameIndex];
+  const waitGameId = waitGame.headers?.GameId || waitGame.headers?.Site?.split('/').pop() || null;
+
+  const middleGame = gamesWithMoves[phaseStats.longestMiddlegame.gameIndex];
+  const middleGameId = middleGame.headers?.GameId || middleGame.headers?.Site?.split('/').pop() || null;
+
+  const endGame = gamesWithMoves[phaseStats.longestEndgame.gameIndex];
+  const endGameId = endGame.headers?.GameId || endGame.headers?.Site?.split('/').pop() || null;
+
   return {
     averageOpening: phaseStats.averageOpening / 2,
     averageMiddlegame: phaseStats.averageMiddlegame / 2,
     averageEndgame: phaseStats.averageEndgame / 2,
     longestWaitTillCapture: {
       moves: toFullMoves(longestWaitTillCapture.moves),
-      ...getPlayerNames(gamesWithMoves[longestWaitTillCapture.gameIndex]),
-      game: `${gamesWithMoves[longestWaitTillCapture.gameIndex].headers.White} vs ${gamesWithMoves[longestWaitTillCapture.gameIndex].headers.Black}`
+      ...getPlayerNames(waitGame),
+      game: `${waitGame.headers.White} vs ${waitGame.headers.Black}`,
+      gameId: waitGameId
     },
     longestMiddlegame: {
       moves: toFullMoves(phaseStats.longestMiddlegame.moves),
-      ...getPlayerNames(gamesWithMoves[phaseStats.longestMiddlegame.gameIndex]),
-      game: `${gamesWithMoves[phaseStats.longestMiddlegame.gameIndex].headers.White} vs ${gamesWithMoves[phaseStats.longestMiddlegame.gameIndex].headers.Black}`
+      ...getPlayerNames(middleGame),
+      game: `${middleGame.headers.White} vs ${middleGame.headers.Black}`,
+      gameId: middleGameId
     },
     longestEndgame: {
       moves: toFullMoves(phaseStats.longestEndgame.moves),
-      ...getPlayerNames(gamesWithMoves[phaseStats.longestEndgame.gameIndex]),
-      game: `${gamesWithMoves[phaseStats.longestEndgame.gameIndex].headers.White} vs ${gamesWithMoves[phaseStats.longestEndgame.gameIndex].headers.Black}`
+      ...getPlayerNames(endGame),
+      game: `${endGame.headers.White} vs ${endGame.headers.Black}`,
+      gameId: endGameId
     }
   };
 }

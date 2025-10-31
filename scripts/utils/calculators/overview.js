@@ -33,6 +33,10 @@ function calculateOverview(games) {
   const longestPlayers = getPlayerNames(longestGame.game);
   const shortestPlayers = getPlayerNames(shortestGame.game);
 
+  // Extract gameIds
+  const longestGameId = longestGame.game.headers?.GameId || longestGame.game.headers?.Site?.split('/').pop() || null;
+  const shortestGameId = shortestGame.game.headers?.GameId || shortestGame.game.headers?.Site?.split('/').pop() || null;
+
   return {
     totalGames: games.length, // Count all games including forfeits
     totalMoves,
@@ -41,13 +45,15 @@ function calculateOverview(games) {
       moves: toFullMoves(longestGame.moves),
       white: longestPlayers.white,
       black: longestPlayers.black,
-      result: longestGame.game.result
+      result: longestGame.game.result,
+      gameId: longestGameId
     },
     shortestGame: {
       moves: toFullMoves(shortestGame.moves),
       white: shortestPlayers.white,
       black: shortestPlayers.black,
-      result: shortestGame.game.result
+      result: shortestGame.game.result,
+      gameId: shortestGameId
     }
   };
 }

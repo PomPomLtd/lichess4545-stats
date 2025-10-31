@@ -57,12 +57,14 @@ function calculateTactics(games) {
       }
     });
 
+    const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
+
     if (sm.totalCaptures > bloodiestGame.captures) {
-      bloodiestGame = { captures: sm.totalCaptures, gameIndex: idx, ...players };
+      bloodiestGame = { captures: sm.totalCaptures, gameIndex: idx, gameId, ...players };
     }
 
     if (sm.totalCaptures < quietestGame.captures) {
-      quietestGame = { captures: sm.totalCaptures, gameIndex: idx, ...players };
+      quietestGame = { captures: sm.totalCaptures, gameIndex: idx, gameId, ...players };
     }
 
     // Find longest non-capture streak
@@ -78,7 +80,7 @@ function calculateTactics(games) {
     });
 
     if (maxStreak > longestNonCaptureStreak.moves) {
-      longestNonCaptureStreak = { moves: maxStreak, gameIndex: idx, ...players };
+      longestNonCaptureStreak = { moves: maxStreak, gameIndex: idx, gameId, ...players };
     }
   });
 

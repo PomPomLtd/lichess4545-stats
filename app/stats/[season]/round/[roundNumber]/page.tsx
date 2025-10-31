@@ -29,12 +29,14 @@ interface StatsData {
       white: string
       black: string
       result: string
+      gameId: string | null
     }
     shortestGame: {
       moves: number
       white: string
       black: string
       result: string
+      gameId: string | null
     }
   }
   gamePhases: {
@@ -46,18 +48,21 @@ interface StatsData {
       white: string
       black: string
       game: string
+      gameId: string | null
     }
     longestMiddlegame: {
       moves: number
       white: string
       black: string
       game: string
+      gameId: string | null
     }
     longestEndgame: {
       moves: number
       white: string
       black: string
       game: string
+      gameId: string | null
     }
   }
   results: {
@@ -108,6 +113,7 @@ interface StatsData {
     longestNonCaptureStreak: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     }
@@ -150,6 +156,7 @@ interface StatsData {
     fastest: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
       winner: string
@@ -186,27 +193,32 @@ interface StatsData {
       white: string
       black: string
       captures: number
+      gameId: string | null
     }
     pacifist: {
       white: string
       black: string
       captures: number
+      gameId: string | null
     }
     speedDemon: {
       white: string
       black: string
       moves: number
       winner: string
+      gameId: string | null
     } | null
     endgameWizard: {
       white: string
       black: string
       endgameMoves: number
+      gameId: string | null
     }
     openingSprinter: {
       white: string
       black: string
       openingMoves: number
+      gameId: string | null
     } | null
   }
   funStats?: {

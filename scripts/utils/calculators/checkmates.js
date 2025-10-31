@@ -42,9 +42,11 @@ function calculateCheckmates(games) {
 
       if (mate.moveNumber < fastestMate.moves) {
         const players = getPlayerNames(game);
+        const gameId = game.headers?.GameId || game.headers?.Site?.split('/').pop() || null;
         fastestMate = {
           moves: mate.moveNumber, // Already in full moves from PGN parser
           gameIndex: idx,
+          gameId,
           white: players.white,
           black: players.black,
           winner: mate.color === 'w' ? 'White' : 'Black'
