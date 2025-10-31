@@ -118,8 +118,15 @@ function calculateMoveTimes(clockTimes, increment = 45) {
     // Time spent = (previous clock + increment) - current clock
     const timeSpent = (prevSamePlayer.clockTime + increment) - curr.clockTime;
 
+    // Convert full move number to ply (half-move number)
+    // White move N = ply (N * 2 - 1)
+    // Black move N = ply (N * 2)
+    const ply = curr.color === 'white'
+      ? curr.moveNumber * 2 - 1
+      : curr.moveNumber * 2;
+
     moveTimes.push({
-      moveNumber: curr.moveNumber,
+      moveNumber: ply, // Store ply number for consistency
       color: curr.color,
       move: curr.move,
       timeSpent: Math.max(0, timeSpent), // Ensure non-negative

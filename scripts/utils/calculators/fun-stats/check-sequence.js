@@ -65,7 +65,7 @@ function calculateCheckSequence(games) {
         length: maxCheckSequence,
         gameIndex: idx,
         gameId,
-        startMove: Math.floor(checkSequenceStart / 2) + 1, // Full move number
+        startMove: checkSequenceStart + 1, // Ply number (moveIdx + 1)
         white: players.white,
         black: players.black
       };

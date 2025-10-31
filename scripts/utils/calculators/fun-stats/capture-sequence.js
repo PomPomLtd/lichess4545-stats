@@ -45,7 +45,7 @@ function calculateCaptureSequence(games) {
         length: maxCaptureSequence,
         gameIndex: idx,
         gameId,
-        startMove: Math.floor(captureSequenceStart / 2) + 1, // Full move number
+        startMove: captureSequenceStart + 1, // Ply number (moveIdx + 1)
         white: players.white,
         black: players.black
       };
