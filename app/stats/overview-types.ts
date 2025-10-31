@@ -8,6 +8,7 @@ export interface SeasonOverview {
   roundsIncluded: number[]
   aggregates: Aggregates
   hallOfFame: HallOfFame
+  teamHallOfFame: TeamHallOfFame
   playerStats: Record<string, PlayerStats>
   leaderboards: Leaderboards
   trends: Trends
@@ -297,4 +298,25 @@ export interface AwardFrequencyEntry {
   displayName: string
   appearances: number
   percentage: number
+}
+
+export interface TeamHallOfFame {
+  bloodthirstyTeam: TeamAward | null
+  pawnCrackers: TeamAward | null
+  lateKnightShow: TeamAward | null
+  castlingSpeed: TeamAward | null
+  spaceInvaders: TeamAward | null
+  checkMasters: TeamAward | null
+  cornerConquerors: TeamAward | null
+  marathonRunners: TeamAward | null
+  speedDemons: TeamAward | null
+  chickenTeam: TeamAward | null
+  nonChickenTeam: TeamAward | null
+  promotionParty: TeamAward | null
+}
+
+export interface TeamAward {
+  round: number
+  name: string
+  [key: string]: any  // Allow additional fields specific to each award
 }

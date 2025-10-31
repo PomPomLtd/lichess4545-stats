@@ -7,6 +7,7 @@ import { SeasonOverview } from '../../overview-types'
 import { OverviewHero } from '@/components/stats/overview/overview-hero'
 import { PieceCemetery } from '@/components/stats/overview/piece-cemetery'
 import { HallOfFameSection } from '@/components/stats/overview/hall-of-fame-section'
+import { TeamHallOfFameSection } from '@/components/stats/overview/team-hall-of-fame-section'
 import { TrendsSection } from '@/components/stats/overview/trends-section'
 import { LeaderboardsSection } from '@/components/stats/overview/leaderboards-section'
 
@@ -163,6 +164,11 @@ export default function OverviewPage() {
 
         {/* Hall of Fame */}
         <HallOfFameSection hallOfFame={overview.hallOfFame} />
+
+        {/* Team Hall of Fame */}
+        {overview.teamHallOfFame && (
+          <TeamHallOfFameSection teamHallOfFame={overview.teamHallOfFame} />
+        )}
 
         {/* Leaderboards */}
         <LeaderboardsSection leaderboards={overview.leaderboards} />
