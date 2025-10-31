@@ -318,5 +318,5 @@ export interface TeamHallOfFame {
 export interface TeamAward {
   round: number
   name: string
-  [key: string]: any  // Allow additional fields specific to each award
+  [key: string]: string | number  // Allow additional fields specific to each award
 }

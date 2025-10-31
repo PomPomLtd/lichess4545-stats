@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Footer } from "@/components/footer";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
@@ -76,8 +76,8 @@ export default function RootLayout({
           <main className="flex-grow pb-10">
             {children}
           </main>
+          <Footer />
         </div>
-        <SpeedInsights />
       </body>
     </html>
   );

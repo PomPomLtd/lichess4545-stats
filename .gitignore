@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# build info (generated at build time)
+/public/build-info.json
+
 # data files (PGNs and raw game data)
 /data/
 !data/.gitkeep
