@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       round:
-        description: 'Round number (1-8)'
+        description: 'Round number 1-8'
         required: true
         type: number
       season:
