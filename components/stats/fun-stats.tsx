@@ -6,18 +6,21 @@ interface FunStatsProps {
     fastestQueenTrade: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     slowestQueenTrade: {
       moves: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     longestCaptureSequence: {
       length: number
       gameIndex: number
+      gameId: string | null
       startMove: number
       white: string
       black: string
@@ -25,6 +28,7 @@ interface FunStatsProps {
     longestCheckSequence: {
       length: number
       gameIndex: number
+      gameId: string | null
       startMove: number
       white: string
       black: string
@@ -32,12 +36,14 @@ interface FunStatsProps {
     pawnStorm: {
       count: number
       gameIndex: number
+      gameId: string | null
       white: string
       black: string
     } | null
     pieceLoyalty: {
       moves: number
       gameIndex: number
+      gameId: string | null
       piece: string
       square: string
       white: string
@@ -46,6 +52,7 @@ interface FunStatsProps {
     squareTourist: {
       squares: number
       gameIndex: number
+      gameId: string | null
       piece: string
       color: string
       startSquare: string
@@ -55,12 +62,14 @@ interface FunStatsProps {
     castlingRace: {
       moves: number
       gameIndex: number
+      gameId: string | null
       winner: string
       white: string
       black: string
     } | null
     openingHipster: {
       gameIndex: number
+      gameId: string | null
       eco: string
       name: string
       moves: string
@@ -70,6 +79,7 @@ interface FunStatsProps {
     dadbodShuffler: {
       moves: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -77,6 +87,7 @@ interface FunStatsProps {
     sportyQueen: {
       distance: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -84,6 +95,7 @@ interface FunStatsProps {
     edgeLord: {
       moves: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -91,6 +103,7 @@ interface FunStatsProps {
     rookLift: {
       moveNumber: number
       gameIndex: number
+      gameId: string | null
       color: string
       rook: string
       square: string
@@ -100,6 +113,7 @@ interface FunStatsProps {
     centerStage: {
       moves: number
       gameIndex: number
+      gameId: string | null
       piece: string
       startSquare: string
       color: string
@@ -109,6 +123,7 @@ interface FunStatsProps {
     darkLord: {
       captures: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -116,6 +131,7 @@ interface FunStatsProps {
     chickenAward: {
       retreats: number
       gameIndex: number
+      gameId: string | null
       color: string
       white: string
       black: string
@@ -293,7 +309,7 @@ export function FunStats({ funStats }: FunStatsProps) {
     <StatCard title="🎉 Fun Stats">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {funStats.fastestQueenTrade && (
-          <div className="p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
+          <AwardCard gameId={funStats.fastestQueenTrade.gameId} className="bg-pink-50 dark:bg-pink-900/20">
             <div className="font-semibold text-pink-900 dark:text-pink-300 mb-1">⚡ Fastest Queen Trade</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.fastestQueenTrade.white} black={funStats.fastestQueenTrade.black} />
@@ -301,11 +317,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Queens traded by move {funStats.fastestQueenTrade.moves}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.slowestQueenTrade && (
-          <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
+          <AwardCard gameId={funStats.slowestQueenTrade.gameId} className="bg-amber-50 dark:bg-amber-900/20">
             <div className="font-semibold text-amber-900 dark:text-amber-300 mb-1">🐌 Slowest Queen Trade</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.slowestQueenTrade.white} black={funStats.slowestQueenTrade.black} />
@@ -313,11 +329,11 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               Queens kept until move {funStats.slowestQueenTrade.moves}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.longestCaptureSequence && (
-          <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+          <AwardCard gameId={funStats.longestCaptureSequence.gameId} className="bg-red-50 dark:bg-red-900/20">
             <div className="font-semibold text-red-900 dark:text-red-300 mb-1">🔪 Longest Capture Spree</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.longestCaptureSequence.white} black={funStats.longestCaptureSequence.black} />
@@ -325,15 +341,15 @@ export function FunStats({ funStats }: FunStatsProps) {
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.longestCaptureSequence.length} consecutive captures starting move {funStats.longestCaptureSequence.startMove}
             </div>
-          </div>
+          </AwardCard>
         )}
 
         {funStats.longestCheckSequence && (
-          <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-            <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">👑 Longest King Hunt</div>
+          <AwardCard gameId={funStats.longestCheckSequence.gameId} className="bg-orange-50 dark:bg-orange-900/20">
+            <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">👑 Longest King Hunt</AwardCard>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.longestCheckSequence.white} black={funStats.longestCheckSequence.black} />
-            </div>
+            </AwardCard>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.longestCheckSequence.length} checks by one side starting move {funStats.longestCheckSequence.startMove}
             </div>
@@ -521,7 +537,7 @@ export function FunStats({ funStats }: FunStatsProps) {
         )}
 
         {funStats.crosshairs && (
-          <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+          <AwardCard gameId={funStats.longestCheckSequence.gameId} className="bg-orange-50 dark:bg-orange-900/20">
             <div className="font-semibold text-orange-900 dark:text-orange-300 mb-1">🎯 Crosshairs</div>
             <div className="text-sm text-gray-700 dark:text-gray-300">
               <PlayerVs white={funStats.crosshairs.white} black={funStats.crosshairs.black} />
