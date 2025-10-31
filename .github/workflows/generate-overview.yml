@@ -1,6 +1,9 @@
 name: Generate Season Overview
 
 on:
+  schedule:
+    # Run every Monday at 14:00 UTC (2pm)
+    - cron: '0 14 * * 1'
   workflow_dispatch:
     inputs:
       season:
