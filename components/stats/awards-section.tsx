@@ -1,4 +1,6 @@
 import { PlayerVs } from './player-name'
+import { StatCard } from './stat-card'
+import { AwardCard } from './award-card'
 
 interface AwardsSectionProps {
   awards: {
@@ -36,73 +38,44 @@ interface AwardsSectionProps {
   }
 }
 
-function AwardCard({ gameId, children }: { gameId?: string | null, children: React.ReactNode }) {
-  const cardClasses = `${gameId ? 'cursor-pointer hover:ring-2 hover:ring-white/50 transition-all relative group' : ''}`
-
-  if (!gameId) {
-    return <div>{children}</div>
-  }
-
-  return (
-    <a href={`https://lichess.org/${gameId}`} target="_blank" rel="noopener noreferrer" className={cardClasses}>
-      {children}
-      <div className="absolute bottom-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity">
-        <svg className="w-4 h-4 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-        </svg>
-      </div>
-    </a>
-  )
-}
-
 export function AwardsSection({ awards }: AwardsSectionProps) {
   return (
-    <div className="bg-gradient-to-br from-yellow-400 to-orange-500 dark:from-yellow-900 dark:to-orange-900 rounded-lg shadow-xl p-8 text-white">
-      <h2 className="text-2xl font-bold mb-6">🏆 Round Awards</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Original Awards */}
-        <AwardCard gameId={awards.bloodbath.gameId}>
-          <div>
-            <div className="text-lg font-semibold mb-2">🩸 Bloodbath Award</div>
-            <div className="text-yellow-100 dark:text-yellow-200">
-              <PlayerVs white={awards.bloodbath.white} black={awards.bloodbath.black} />
-            </div>
-            <div className="text-sm text-yellow-200 dark:text-yellow-300 mt-1">{awards.bloodbath.captures} captures!</div>
+    <StatCard title="🏆 Round Awards">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <AwardCard gameId={awards.bloodbath.gameId} className="bg-red-50 dark:bg-red-900/20">
+          <div className="font-semibold text-red-900 dark:text-red-300 mb-1">🩸 Bloodbath Award</div>
+          <div className="text-sm text-gray-700 dark:text-gray-300">
+            <PlayerVs white={awards.bloodbath.white} black={awards.bloodbath.black} />
           </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{awards.bloodbath.captures} captures!</div>
         </AwardCard>
 
-        <AwardCard gameId={awards.pacifist.gameId}>
-          <div>
-            <div className="text-lg font-semibold mb-2">🕊️ Pacifist Award</div>
-            <div className="text-yellow-100 dark:text-yellow-200">
-              <PlayerVs white={awards.pacifist.white} black={awards.pacifist.black} />
-            </div>
-            <div className="text-sm text-yellow-200 dark:text-yellow-300 mt-1">{awards.pacifist.captures} captures</div>
+        <AwardCard gameId={awards.pacifist.gameId} className="bg-green-50 dark:bg-green-900/20">
+          <div className="font-semibold text-green-900 dark:text-green-300 mb-1">🕊️ Pacifist Award</div>
+          <div className="text-sm text-gray-700 dark:text-gray-300">
+            <PlayerVs white={awards.pacifist.white} black={awards.pacifist.black} />
           </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{awards.pacifist.captures} captures</div>
         </AwardCard>
 
         {awards.speedDemon && (
-          <AwardCard gameId={awards.speedDemon.gameId}>
-            <div>
-              <div className="text-lg font-semibold mb-2">⚡ Speed Demon</div>
-              <div className="text-yellow-100 dark:text-yellow-200">
-                <PlayerVs white={awards.speedDemon.white} black={awards.speedDemon.black} />
-              </div>
-              <div className="text-sm text-yellow-200 dark:text-yellow-300 mt-1">Mate in {awards.speedDemon.moves} moves</div>
+          <AwardCard gameId={awards.speedDemon.gameId} className="bg-yellow-50 dark:bg-yellow-900/20">
+            <div className="font-semibold text-yellow-900 dark:text-yellow-300 mb-1">⚡ Speed Demon</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={awards.speedDemon.white} black={awards.speedDemon.black} />
             </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">Mate in {awards.speedDemon.moves} moves</div>
           </AwardCard>
         )}
 
-        <AwardCard gameId={awards.endgameWizard.gameId}>
-          <div>
-            <div className="text-lg font-semibold mb-2">🧙 Endgame Wizard</div>
-            <div className="text-yellow-100 dark:text-yellow-200">
-              <PlayerVs white={awards.endgameWizard.white} black={awards.endgameWizard.black} />
-            </div>
-            <div className="text-sm text-yellow-200 dark:text-yellow-300 mt-1">{awards.endgameWizard.endgameMoves} endgame moves!</div>
+        <AwardCard gameId={awards.endgameWizard.gameId} className="bg-purple-50 dark:bg-purple-900/20">
+          <div className="font-semibold text-purple-900 dark:text-purple-300 mb-1">🧙 Endgame Wizard</div>
+          <div className="text-sm text-gray-700 dark:text-gray-300">
+            <PlayerVs white={awards.endgameWizard.white} black={awards.endgameWizard.black} />
           </div>
+          <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">{awards.endgameWizard.endgameMoves} endgame moves!</div>
         </AwardCard>
       </div>
-    </div>
+    </StatCard>
   )
 }
