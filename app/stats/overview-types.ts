@@ -61,6 +61,7 @@ export interface GameSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface BlunderSuperlative {
@@ -72,6 +73,7 @@ export interface BlunderSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface PerformanceSuperlative {
@@ -82,6 +84,7 @@ export interface PerformanceSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface BasicGameSuperlative {
@@ -90,6 +93,7 @@ export interface BasicGameSuperlative {
   white: string
   black: string
   result: string
+  gameId?: string
 }
 
 export interface QueenSuperlative {
@@ -101,6 +105,7 @@ export interface QueenSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface RetreatsSuperlative {
@@ -110,6 +115,7 @@ export interface RetreatsSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface SequenceSuperlative {
@@ -119,6 +125,7 @@ export interface SequenceSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface CastlingSuperlative {
@@ -128,6 +135,7 @@ export interface CastlingSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface OpeningSuperlative {
@@ -138,6 +146,7 @@ export interface OpeningSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface ComebackSuperlative {
@@ -150,6 +159,7 @@ export interface ComebackSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface EscapeSuperlative {
@@ -162,6 +172,7 @@ export interface EscapeSuperlative {
   white: string
   black: string
   gameIndex: number
+  gameId?: string
 }
 
 export interface PlayerStats {
