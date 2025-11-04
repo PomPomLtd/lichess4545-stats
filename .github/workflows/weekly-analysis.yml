@@ -80,7 +80,7 @@ jobs:
               EXPECTED_GAMES=$(node -e "
                 const fs = require('fs');
                 const data = JSON.parse(fs.readFileSync('data/season-${SEASON}-games.json', 'utf8'));
-                const roundGames = data.games.filter(g => g.round === ${LATEST_ROUND});
+                const roundGames = data.rounds['${LATEST_ROUND}'] || [];
                 console.log(roundGames.length);
               ")
 
