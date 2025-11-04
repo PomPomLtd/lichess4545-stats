@@ -67,7 +67,7 @@ Usage:
 Options:
   --round, -r <number>   Round number to generate stats for (required)
   --season, -s <number>  Season number (required)
-  --analyze, -a          Run Stockfish analysis (optional, requires venv)
+  --analyze, -a          Run Stockfish analysis (optional, requires python-chess)
   --help, -h             Show this help message
 
 Examples:
@@ -230,14 +230,14 @@ async function main() {
       });
     }
 
-    // Step 3: Run tactical analysis (optional - requires venv)
+    // Step 3: Run tactical analysis (optional - requires python-chess)
     let tacticsData = null;
-    const venvPython = path.join(__dirname, '..', 'venv', 'bin', 'python');
-    if (fs.existsSync(venvPython)) {
+    try {
       console.log('');
       tacticsData = analyzeTactics(parseResults.valid);
-    } else {
-      console.log('\n⚠️  Skipping tactical analysis (venv not found - optional)');
+    } catch (error) {
+      console.log('\n⚠️  Skipping tactical analysis (python-chess not available - optional)');
+      console.log(`   Error: ${error.message}`);
     }
 
     // Step 4: Run Stockfish analysis (optional - slow!)
