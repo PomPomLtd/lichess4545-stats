@@ -1,7 +1,7 @@
 {
   "roundNumber": 1,
   "seasonNumber": 46,
-  "generatedAt": "2025-11-04T13:55:51.048Z",
+  "generatedAt": "2025-11-06T12:01:47.410Z",
   "overview": {
     "totalGames": 158,
     "totalMoves": 12850,
@@ -1150,6 +1150,41 @@
       "white": "fork2020",
       "black": "markommbrzi"
     },
+    "slowestCastling": {
+      "moves": 26,
+      "gameIndex": 51,
+      "gameId": null,
+      "color": "black",
+      "white": "Tellerwascher",
+      "black": "DiegoAlatriste"
+    },
+    "pawnCaptures": {
+      "captures": 7,
+      "gameIndex": 72,
+      "gameId": null,
+      "color": "white",
+      "white": "Le_Merovingien",
+      "black": "dmrgn155"
+    },
+    "antiOrthogonal": {
+      "moves": 29,
+      "gameIndex": 131,
+      "gameId": null,
+      "color": "black",
+      "white": "Castling-Companion",
+      "black": "KonrDer"
+    },
+    "comfortZone": {
+      "percentage": 67,
+      "pieceType": "queen",
+      "moves": 4,
+      "totalNonPawnMoves": 6,
+      "gameIndex": 16,
+      "gameId": null,
+      "color": "black",
+      "white": "stefan15sds",
+      "black": "GravellyPoint"
+    },
     "homebody": {
       "white": "firestar2202",
       "black": "okady",
@@ -1293,13 +1328,13 @@
         "name": "Pawn Crackers",
         "checksDelivered": 42,
         "averagePerGame": "5.3",
-        "playerCount": 10
+        "playerCount": 11
       },
       "cornerConquerors": {
         "name": "Nakamura Airlines — King Flight Safety Briefing",
         "cornerMoves": 27,
         "averagePerGame": "3.0",
-        "playerCount": 11
+        "playerCount": 12
       },
       "marathonRunners": {
         "name": "Too OTH for OTB",
@@ -2678,7 +2713,7 @@
         },
         "longestTension": {
           "moves": 7,
-          "squares": "d4-e6",
+          "squares": "c6-d4",
           "startMove": 10,
           "endMove": 17
         },
@@ -3328,7 +3363,7 @@
         },
         "longestTension": {
           "moves": 7,
-          "squares": "g4-h4",
+          "squares": "f2-g4",
           "startMove": 29,
           "endMove": 36
         },
@@ -3828,7 +3863,7 @@
         },
         "longestTension": {
           "moves": 8,
-          "squares": "a7-d4",
+          "squares": "d4-e5",
           "startMove": 33,
           "endMove": 41
         },
@@ -3903,7 +3938,7 @@
         },
         "longestTension": {
           "moves": 9,
-          "squares": "c7-d5",
+          "squares": "d5-f6",
           "startMove": 19,
           "endMove": 28
         },
@@ -3978,7 +4013,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "d4-f6",
+          "squares": "d5-f6",
           "startMove": 17,
           "endMove": 21
         },
@@ -4053,7 +4088,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "e6-g5",
+          "squares": "f7-g5",
           "startMove": 45,
           "endMove": 55
         },
@@ -4953,7 +4988,7 @@
         },
         "longestTension": {
           "moves": 13,
-          "squares": "c3-e4",
+          "squares": "c3-d5",
           "startMove": 17,
           "endMove": 30
         },
@@ -5078,7 +5113,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "c6-e5",
+          "squares": "c6-d4",
           "startMove": 23,
           "endMove": 28
         },
@@ -5103,7 +5138,7 @@
         },
         "longestTension": {
           "moves": 7,
-          "squares": "d4-e6",
+          "squares": "c6-d4",
           "startMove": 8,
           "endMove": 15
         },
@@ -5178,7 +5213,7 @@
         },
         "longestTension": {
           "moves": 13,
-          "squares": "f4-g2",
+          "squares": "f4-h3",
           "startMove": 43,
           "endMove": 56
         },
@@ -5370,6 +5405,8 @@
           "good": 6,
           "excellent": 36
         },
+        "whiteEngineMoves": 32,
+        "blackEngineMoves": 36,
         "biggestBlunder": {
           "moveNumber": 24,
           "player": "white",
@@ -5406,6 +5443,8 @@
           "good": 4,
           "excellent": 27
         },
+        "whiteEngineMoves": 31,
+        "blackEngineMoves": 27,
         "biggestBlunder": {
           "moveNumber": 8,
           "player": "black",
@@ -5456,6 +5495,8 @@
           "good": 5,
           "excellent": 10
         },
+        "whiteEngineMoves": 12,
+        "blackEngineMoves": 10,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -5483,6 +5524,8 @@
           "good": 7,
           "excellent": 12
         },
+        "whiteEngineMoves": 8,
+        "blackEngineMoves": 12,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -5525,6 +5568,8 @@
           "good": 8,
           "excellent": 24
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 37,
           "player": "white",
@@ -5561,6 +5606,8 @@
           "good": 3,
           "excellent": 21
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 21,
         "biggestBlunder": {
           "moveNumber": 16,
           "player": "black",
@@ -5611,6 +5658,8 @@
           "good": 8,
           "excellent": 27
         },
+        "whiteEngineMoves": 26,
+        "blackEngineMoves": 27,
         "biggestBlunder": {
           "moveNumber": 27,
           "player": "white",
@@ -5653,6 +5702,8 @@
           "good": 7,
           "excellent": 67
         },
+        "whiteEngineMoves": 66,
+        "blackEngineMoves": 67,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -5680,6 +5731,8 @@
           "good": 5,
           "excellent": 28
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 28,
         "biggestBlunder": {
           "moveNumber": 34,
           "player": "black",
@@ -5730,6 +5783,8 @@
           "good": 16,
           "excellent": 43
         },
+        "whiteEngineMoves": 48,
+        "blackEngineMoves": 43,
         "biggestBlunder": {
           "moveNumber": 67,
           "player": "white",
@@ -5766,6 +5821,8 @@
           "good": 9,
           "excellent": 14
         },
+        "whiteEngineMoves": 17,
+        "blackEngineMoves": 14,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "black",
@@ -5802,6 +5859,8 @@
           "good": 13,
           "excellent": 38
         },
+        "whiteEngineMoves": 45,
+        "blackEngineMoves": 38,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -5844,6 +5903,8 @@
           "good": 3,
           "excellent": 42
         },
+        "whiteEngineMoves": 35,
+        "blackEngineMoves": 42,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -5871,6 +5932,8 @@
           "good": 7,
           "excellent": 23
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 23,
         "biggestBlunder": {
           "moveNumber": 25,
           "player": "black",
@@ -5907,6 +5970,8 @@
           "good": 3,
           "excellent": 7
         },
+        "whiteEngineMoves": 8,
+        "blackEngineMoves": 7,
         "biggestBlunder": {
           "moveNumber": 11,
           "player": "black",
@@ -5943,6 +6008,8 @@
           "good": 9,
           "excellent": 18
         },
+        "whiteEngineMoves": 19,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 19,
           "player": "black",
@@ -5979,6 +6046,8 @@
           "good": 3,
           "excellent": 3
         },
+        "whiteEngineMoves": 7,
+        "blackEngineMoves": 3,
         "biggestBlunder": {
           "moveNumber": 6,
           "player": "black",
@@ -6021,6 +6090,8 @@
           "good": 11,
           "excellent": 72
         },
+        "whiteEngineMoves": 64,
+        "blackEngineMoves": 72,
         "biggestBlunder": {
           "moveNumber": 68,
           "player": "white",
@@ -6063,6 +6134,8 @@
           "good": 8,
           "excellent": 29
         },
+        "whiteEngineMoves": 30,
+        "blackEngineMoves": 29,
         "biggestBlunder": {
           "moveNumber": 26,
           "player": "black",
@@ -6105,6 +6178,8 @@
           "good": 4,
           "excellent": 33
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 33,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6132,6 +6207,8 @@
           "good": 8,
           "excellent": 39
         },
+        "whiteEngineMoves": 42,
+        "blackEngineMoves": 39,
         "biggestBlunder": {
           "moveNumber": 47,
           "player": "white",
@@ -6168,6 +6245,8 @@
           "good": 10,
           "excellent": 18
         },
+        "whiteEngineMoves": 24,
+        "blackEngineMoves": 18,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6195,6 +6274,8 @@
           "good": 8,
           "excellent": 29
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 29,
         "biggestBlunder": {
           "moveNumber": 27,
           "player": "white",
@@ -6237,6 +6318,8 @@
           "good": 7,
           "excellent": 15
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 15,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6264,6 +6347,8 @@
           "good": 6,
           "excellent": 13
         },
+        "whiteEngineMoves": 18,
+        "blackEngineMoves": 13,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6291,6 +6376,8 @@
           "good": 8,
           "excellent": 41
         },
+        "whiteEngineMoves": 44,
+        "blackEngineMoves": 41,
         "biggestBlunder": {
           "moveNumber": 42,
           "player": "black",
@@ -6341,6 +6428,8 @@
           "good": 7,
           "excellent": 26
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 26,
         "biggestBlunder": {
           "moveNumber": 40,
           "player": "white",
@@ -6383,6 +6472,8 @@
           "good": 8,
           "excellent": 23
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 23,
         "biggestBlunder": {
           "moveNumber": 29,
           "player": "white",
@@ -6425,6 +6516,8 @@
           "good": 5,
           "excellent": 36
         },
+        "whiteEngineMoves": 33,
+        "blackEngineMoves": 36,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6452,6 +6545,8 @@
           "good": 6,
           "excellent": 30
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 30,
         "biggestBlunder": {
           "moveNumber": 22,
           "player": "black",
@@ -6502,6 +6597,8 @@
           "good": 9,
           "excellent": 24
         },
+        "whiteEngineMoves": 26,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -6544,6 +6641,8 @@
           "good": 5,
           "excellent": 24
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 14,
           "player": "black",
@@ -6580,6 +6679,8 @@
           "good": 6,
           "excellent": 15
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 15,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6607,6 +6708,8 @@
           "good": 8,
           "excellent": 24
         },
+        "whiteEngineMoves": 31,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -6643,6 +6746,8 @@
           "good": 10,
           "excellent": 16
         },
+        "whiteEngineMoves": 14,
+        "blackEngineMoves": 16,
         "biggestBlunder": {
           "moveNumber": 29,
           "player": "black",
@@ -6679,6 +6784,8 @@
           "good": 13,
           "excellent": 40
         },
+        "whiteEngineMoves": 40,
+        "blackEngineMoves": 40,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -6715,6 +6822,8 @@
           "good": 13,
           "excellent": 41
         },
+        "whiteEngineMoves": 38,
+        "blackEngineMoves": 41,
         "biggestBlunder": {
           "moveNumber": 73,
           "player": "black",
@@ -6765,6 +6874,8 @@
           "good": 6,
           "excellent": 50
         },
+        "whiteEngineMoves": 48,
+        "blackEngineMoves": 50,
         "biggestBlunder": {
           "moveNumber": 27,
           "player": "white",
@@ -6801,6 +6912,8 @@
           "good": 5,
           "excellent": 14
         },
+        "whiteEngineMoves": 13,
+        "blackEngineMoves": 14,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "white",
@@ -6837,6 +6950,8 @@
           "good": 13,
           "excellent": 10
         },
+        "whiteEngineMoves": 16,
+        "blackEngineMoves": 10,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -6864,6 +6979,8 @@
           "good": 3,
           "excellent": 33
         },
+        "whiteEngineMoves": 28,
+        "blackEngineMoves": 33,
         "biggestBlunder": {
           "moveNumber": 9,
           "player": "white",
@@ -6900,6 +7017,8 @@
           "good": 0,
           "excellent": 46
         },
+        "whiteEngineMoves": 38,
+        "blackEngineMoves": 46,
         "biggestBlunder": {
           "moveNumber": 17,
           "player": "black",
@@ -6942,6 +7061,8 @@
           "good": 3,
           "excellent": 18
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "white",
@@ -6978,6 +7099,8 @@
           "good": 8,
           "excellent": 28
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 28,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7005,6 +7128,8 @@
           "good": 5,
           "excellent": 34
         },
+        "whiteEngineMoves": 30,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 11,
           "player": "black",
@@ -7041,6 +7166,8 @@
           "good": 7,
           "excellent": 27
         },
+        "whiteEngineMoves": 31,
+        "blackEngineMoves": 27,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7068,6 +7195,8 @@
           "good": 3,
           "excellent": 21
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 21,
         "biggestBlunder": {
           "moveNumber": 12,
           "player": "white",
@@ -7104,6 +7233,8 @@
           "good": 8,
           "excellent": 27
         },
+        "whiteEngineMoves": 26,
+        "blackEngineMoves": 27,
         "biggestBlunder": {
           "moveNumber": 43,
           "player": "white",
@@ -7148,6 +7279,8 @@
           "good": 3,
           "excellent": 22
         },
+        "whiteEngineMoves": 26,
+        "blackEngineMoves": 22,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7175,6 +7308,8 @@
           "good": 8,
           "excellent": 42
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 42,
         "biggestBlunder": {
           "moveNumber": 44,
           "player": "white",
@@ -7211,6 +7346,8 @@
           "good": 10,
           "excellent": 24
         },
+        "whiteEngineMoves": 24,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 6,
           "player": "black",
@@ -7261,6 +7398,8 @@
           "good": 9,
           "excellent": 18
         },
+        "whiteEngineMoves": 19,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "white",
@@ -7297,6 +7436,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 25,
           "player": "black",
@@ -7333,6 +7474,8 @@
           "good": 7,
           "excellent": 15
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 15,
         "biggestBlunder": {
           "moveNumber": 13,
           "player": "white",
@@ -7369,6 +7512,8 @@
           "good": 7,
           "excellent": 42
         },
+        "whiteEngineMoves": 42,
+        "blackEngineMoves": 42,
         "biggestBlunder": {
           "moveNumber": 27,
           "player": "white",
@@ -7411,6 +7556,8 @@
           "good": 7,
           "excellent": 18
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 22,
           "player": "white",
@@ -7447,6 +7594,8 @@
           "good": 9,
           "excellent": 18
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 11,
           "player": "white",
@@ -7497,6 +7646,8 @@
           "good": 7,
           "excellent": 26
         },
+        "whiteEngineMoves": 28,
+        "blackEngineMoves": 26,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7524,6 +7675,8 @@
           "good": 9,
           "excellent": 19
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 19,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7551,6 +7704,8 @@
           "good": 6,
           "excellent": 13
         },
+        "whiteEngineMoves": 17,
+        "blackEngineMoves": 13,
         "biggestBlunder": {
           "moveNumber": 24,
           "player": "black",
@@ -7587,6 +7742,8 @@
           "good": 10,
           "excellent": 29
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 29,
         "biggestBlunder": {
           "moveNumber": 15,
           "player": "white",
@@ -7623,6 +7780,8 @@
           "good": 12,
           "excellent": 56
         },
+        "whiteEngineMoves": 50,
+        "blackEngineMoves": 56,
         "biggestBlunder": {
           "moveNumber": 70,
           "player": "white",
@@ -7659,6 +7818,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 22,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "white",
@@ -7695,6 +7856,8 @@
           "good": 8,
           "excellent": 38
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 38,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7722,6 +7885,8 @@
           "good": 5,
           "excellent": 46
         },
+        "whiteEngineMoves": 45,
+        "blackEngineMoves": 46,
         "biggestBlunder": {
           "moveNumber": 8,
           "player": "white",
@@ -7758,6 +7923,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 24,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7785,6 +7952,8 @@
           "good": 9,
           "excellent": 23
         },
+        "whiteEngineMoves": 17,
+        "blackEngineMoves": 23,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -7812,6 +7981,8 @@
           "good": 4,
           "excellent": 13
         },
+        "whiteEngineMoves": 10,
+        "blackEngineMoves": 13,
         "biggestBlunder": {
           "moveNumber": 18,
           "player": "white",
@@ -7848,6 +8019,8 @@
           "good": 13,
           "excellent": 43
         },
+        "whiteEngineMoves": 48,
+        "blackEngineMoves": 43,
         "biggestBlunder": {
           "moveNumber": 47,
           "player": "black",
@@ -7890,6 +8063,8 @@
           "good": 5,
           "excellent": 29
         },
+        "whiteEngineMoves": 33,
+        "blackEngineMoves": 29,
         "biggestBlunder": {
           "moveNumber": 11,
           "player": "black",
@@ -7940,6 +8115,8 @@
           "good": 6,
           "excellent": 46
         },
+        "whiteEngineMoves": 45,
+        "blackEngineMoves": 46,
         "biggestBlunder": {
           "moveNumber": 12,
           "player": "black",
@@ -7976,6 +8153,8 @@
           "good": 7,
           "excellent": 20
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 20,
         "biggestBlunder": {
           "moveNumber": 18,
           "player": "white",
@@ -8018,6 +8197,8 @@
           "good": 5,
           "excellent": 58
         },
+        "whiteEngineMoves": 55,
+        "blackEngineMoves": 58,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -8045,6 +8226,8 @@
           "good": 5,
           "excellent": 35
         },
+        "whiteEngineMoves": 30,
+        "blackEngineMoves": 35,
         "biggestBlunder": {
           "moveNumber": 24,
           "player": "white",
@@ -8089,6 +8272,8 @@
           "good": 6,
           "excellent": 30
         },
+        "whiteEngineMoves": 28,
+        "blackEngineMoves": 30,
         "biggestBlunder": {
           "moveNumber": 41,
           "player": "white",
@@ -8125,6 +8310,8 @@
           "good": 8,
           "excellent": 32
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 32,
         "biggestBlunder": {
           "moveNumber": 42,
           "player": "black",
@@ -8167,6 +8354,8 @@
           "good": 13,
           "excellent": 36
         },
+        "whiteEngineMoves": 40,
+        "blackEngineMoves": 36,
         "biggestBlunder": {
           "moveNumber": 55,
           "player": "white",
@@ -8209,6 +8398,8 @@
           "good": 6,
           "excellent": 19
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 19,
         "biggestBlunder": {
           "moveNumber": 34,
           "player": "white",
@@ -8259,6 +8450,8 @@
           "good": 8,
           "excellent": 14
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 14,
         "biggestBlunder": {
           "moveNumber": 15,
           "player": "black",
@@ -8295,6 +8488,8 @@
           "good": 3,
           "excellent": 28
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 28,
         "biggestBlunder": {
           "moveNumber": 10,
           "player": "black",
@@ -8331,6 +8526,8 @@
           "good": 10,
           "excellent": 21
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 21,
         "biggestBlunder": {
           "moveNumber": 35,
           "player": "black",
@@ -8367,6 +8564,8 @@
           "good": 10,
           "excellent": 35
         },
+        "whiteEngineMoves": 34,
+        "blackEngineMoves": 35,
         "biggestBlunder": {
           "moveNumber": 21,
           "player": "black",
@@ -8409,6 +8608,8 @@
           "good": 11,
           "excellent": 18
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 18,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -8436,6 +8637,8 @@
           "good": 5,
           "excellent": 24
         },
+        "whiteEngineMoves": 24,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 24,
           "player": "black",
@@ -8486,6 +8689,8 @@
           "good": 5,
           "excellent": 24
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 19,
           "player": "black",
@@ -8528,6 +8733,8 @@
           "good": 12,
           "excellent": 17
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 17,
         "biggestBlunder": {
           "moveNumber": 28,
           "player": "white",
@@ -8570,6 +8777,8 @@
           "good": 7,
           "excellent": 23
         },
+        "whiteEngineMoves": 17,
+        "blackEngineMoves": 23,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -8597,6 +8806,8 @@
           "good": 2,
           "excellent": 34
         },
+        "whiteEngineMoves": 34,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 8,
           "player": "black",
@@ -8633,6 +8844,8 @@
           "good": 6,
           "excellent": 28
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 28,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -8660,6 +8873,8 @@
           "good": 7,
           "excellent": 19
         },
+        "whiteEngineMoves": 22,
+        "blackEngineMoves": 19,
         "biggestBlunder": {
           "moveNumber": 26,
           "player": "black",
@@ -8702,6 +8917,8 @@
           "good": 6,
           "excellent": 22
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 22,
         "biggestBlunder": {
           "moveNumber": 6,
           "player": "white",
@@ -8738,6 +8955,8 @@
           "good": 11,
           "excellent": 31
         },
+        "whiteEngineMoves": 37,
+        "blackEngineMoves": 31,
         "biggestBlunder": {
           "moveNumber": 27,
           "player": "white",
@@ -8780,6 +8999,8 @@
           "good": 6,
           "excellent": 42
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 42,
         "biggestBlunder": {
           "moveNumber": 37,
           "player": "black",
@@ -8822,6 +9043,8 @@
           "good": 4,
           "excellent": 30
         },
+        "whiteEngineMoves": 33,
+        "blackEngineMoves": 30,
         "biggestBlunder": {
           "moveNumber": 19,
           "player": "black",
@@ -8858,6 +9081,8 @@
           "good": 10,
           "excellent": 34
         },
+        "whiteEngineMoves": 40,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 37,
           "player": "black",
@@ -8900,6 +9125,8 @@
           "good": 5,
           "excellent": 39
         },
+        "whiteEngineMoves": 38,
+        "blackEngineMoves": 39,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "black",
@@ -8936,6 +9163,8 @@
           "good": 0,
           "excellent": 10
         },
+        "whiteEngineMoves": 7,
+        "blackEngineMoves": 10,
         "biggestBlunder": {
           "moveNumber": 9,
           "player": "white",
@@ -8972,6 +9201,8 @@
           "good": 8,
           "excellent": 39
         },
+        "whiteEngineMoves": 41,
+        "blackEngineMoves": 39,
         "biggestBlunder": {
           "moveNumber": 11,
           "player": "white",
@@ -9014,6 +9245,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 17,
           "player": "white",
@@ -9050,6 +9283,8 @@
           "good": 9,
           "excellent": 34
         },
+        "whiteEngineMoves": 39,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 24,
           "player": "black",
@@ -9086,6 +9321,8 @@
           "good": 8,
           "excellent": 36
         },
+        "whiteEngineMoves": 37,
+        "blackEngineMoves": 36,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "white",
@@ -9122,6 +9359,8 @@
           "good": 6,
           "excellent": 38
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 38,
         "biggestBlunder": {
           "moveNumber": 19,
           "player": "white",
@@ -9158,6 +9397,8 @@
           "good": 6,
           "excellent": 21
         },
+        "whiteEngineMoves": 22,
+        "blackEngineMoves": 21,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9185,6 +9426,8 @@
           "good": 5,
           "excellent": 20
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 20,
         "biggestBlunder": {
           "moveNumber": 28,
           "player": "black",
@@ -9227,6 +9470,8 @@
           "good": 4,
           "excellent": 9
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 9,
         "biggestBlunder": {
           "moveNumber": 15,
           "player": "black",
@@ -9263,6 +9508,8 @@
           "good": 2,
           "excellent": 11
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 11,
         "biggestBlunder": {
           "moveNumber": 4,
           "player": "black",
@@ -9299,6 +9546,8 @@
           "good": 6,
           "excellent": 32
         },
+        "whiteEngineMoves": 31,
+        "blackEngineMoves": 32,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9326,6 +9575,8 @@
           "good": 3,
           "excellent": 38
         },
+        "whiteEngineMoves": 33,
+        "blackEngineMoves": 38,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9353,6 +9604,8 @@
           "good": 10,
           "excellent": 36
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 36,
         "biggestBlunder": {
           "moveNumber": 23,
           "player": "black",
@@ -9389,6 +9642,8 @@
           "good": 1,
           "excellent": 22
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 22,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "black",
@@ -9425,6 +9680,8 @@
           "good": 6,
           "excellent": 8
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 8,
         "biggestBlunder": {
           "moveNumber": 16,
           "player": "black",
@@ -9461,6 +9718,8 @@
           "good": 5,
           "excellent": 37
         },
+        "whiteEngineMoves": 32,
+        "blackEngineMoves": 37,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9488,6 +9747,8 @@
           "good": 9,
           "excellent": 9
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 9,
         "biggestBlunder": {
           "moveNumber": 23,
           "player": "white",
@@ -9530,6 +9791,8 @@
           "good": 4,
           "excellent": 22
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 22,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9557,6 +9820,8 @@
           "good": 8,
           "excellent": 34
         },
+        "whiteEngineMoves": 30,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 33,
           "player": "white",
@@ -9607,6 +9872,8 @@
           "good": 7,
           "excellent": 31
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 31,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -9634,6 +9901,8 @@
           "good": 8,
           "excellent": 26
         },
+        "whiteEngineMoves": 26,
+        "blackEngineMoves": 26,
         "biggestBlunder": {
           "moveNumber": 36,
           "player": "white",
@@ -9670,6 +9939,8 @@
           "good": 6,
           "excellent": 24
         },
+        "whiteEngineMoves": 25,
+        "blackEngineMoves": 24,
         "biggestBlunder": null,
         "biggestComeback": {
           "player": "black",
@@ -9711,6 +9982,8 @@
           "good": 4,
           "excellent": 18
         },
+        "whiteEngineMoves": 21,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 10,
           "player": "black",
@@ -9761,6 +10034,8 @@
           "good": 4,
           "excellent": 42
         },
+        "whiteEngineMoves": 35,
+        "blackEngineMoves": 42,
         "biggestBlunder": {
           "moveNumber": 33,
           "player": "black",
@@ -9803,6 +10078,8 @@
           "good": 1,
           "excellent": 5
         },
+        "whiteEngineMoves": 7,
+        "blackEngineMoves": 5,
         "biggestBlunder": {
           "moveNumber": 9,
           "player": "black",
@@ -9845,6 +10122,8 @@
           "good": 6,
           "excellent": 13
         },
+        "whiteEngineMoves": 13,
+        "blackEngineMoves": 13,
         "biggestBlunder": {
           "moveNumber": 25,
           "player": "white",
@@ -9881,6 +10160,8 @@
           "good": 5,
           "excellent": 29
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 29,
         "biggestBlunder": {
           "moveNumber": 28,
           "player": "black",
@@ -9917,6 +10198,8 @@
           "good": 6,
           "excellent": 39
         },
+        "whiteEngineMoves": 34,
+        "blackEngineMoves": 39,
         "biggestBlunder": {
           "moveNumber": 31,
           "player": "white",
@@ -9953,6 +10236,8 @@
           "good": 7,
           "excellent": 27
         },
+        "whiteEngineMoves": 31,
+        "blackEngineMoves": 27,
         "biggestBlunder": {
           "moveNumber": 18,
           "player": "black",
@@ -9989,6 +10274,8 @@
           "good": 7,
           "excellent": 38
         },
+        "whiteEngineMoves": 37,
+        "blackEngineMoves": 38,
         "biggestBlunder": {
           "moveNumber": 22,
           "player": "black",
@@ -10025,6 +10312,8 @@
           "good": 6,
           "excellent": 34
         },
+        "whiteEngineMoves": 29,
+        "blackEngineMoves": 34,
         "biggestBlunder": {
           "moveNumber": 15,
           "player": "white",
@@ -10061,6 +10350,8 @@
           "good": 5,
           "excellent": 16
         },
+        "whiteEngineMoves": 20,
+        "blackEngineMoves": 16,
         "biggestBlunder": {
           "moveNumber": 23,
           "player": "black",
@@ -10097,6 +10388,8 @@
           "good": 7,
           "excellent": 13
         },
+        "whiteEngineMoves": 19,
+        "blackEngineMoves": 13,
         "biggestBlunder": {
           "moveNumber": 6,
           "player": "black",
@@ -10133,6 +10426,8 @@
           "good": 4,
           "excellent": 32
         },
+        "whiteEngineMoves": 34,
+        "blackEngineMoves": 32,
         "biggestBlunder": {
           "moveNumber": 12,
           "player": "black",
@@ -10169,6 +10464,8 @@
           "good": 4,
           "excellent": 26
         },
+        "whiteEngineMoves": 28,
+        "blackEngineMoves": 26,
         "biggestBlunder": {
           "moveNumber": 7,
           "player": "white",
@@ -10205,6 +10502,8 @@
           "good": 9,
           "excellent": 46
         },
+        "whiteEngineMoves": 40,
+        "blackEngineMoves": 46,
         "biggestBlunder": {
           "moveNumber": 39,
           "player": "black",
@@ -10247,6 +10546,8 @@
           "good": 3,
           "excellent": 15
         },
+        "whiteEngineMoves": 22,
+        "blackEngineMoves": 15,
         "biggestBlunder": {
           "moveNumber": 10,
           "player": "white",
@@ -10289,6 +10590,8 @@
           "good": 3,
           "excellent": 8
         },
+        "whiteEngineMoves": 9,
+        "blackEngineMoves": 8,
         "biggestBlunder": {
           "moveNumber": 18,
           "player": "black",
@@ -10331,6 +10634,8 @@
           "good": 7,
           "excellent": 47
         },
+        "whiteEngineMoves": 43,
+        "blackEngineMoves": 47,
         "biggestBlunder": {
           "moveNumber": 42,
           "player": "white",
@@ -10367,6 +10672,8 @@
           "good": 7,
           "excellent": 23
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 23,
         "biggestBlunder": {
           "moveNumber": 25,
           "player": "black",
@@ -10403,6 +10710,8 @@
           "good": 7,
           "excellent": 37
         },
+        "whiteEngineMoves": 47,
+        "blackEngineMoves": 37,
         "biggestBlunder": {
           "moveNumber": 26,
           "player": "white",
@@ -10445,6 +10754,8 @@
           "good": 8,
           "excellent": 41
         },
+        "whiteEngineMoves": 43,
+        "blackEngineMoves": 41,
         "biggestBlunder": {
           "moveNumber": 62,
           "player": "black",
@@ -10487,6 +10798,8 @@
           "good": 5,
           "excellent": 31
         },
+        "whiteEngineMoves": 36,
+        "blackEngineMoves": 31,
         "biggestBlunder": {
           "moveNumber": 14,
           "player": "white",
@@ -10529,6 +10842,8 @@
           "good": 4,
           "excellent": 39
         },
+        "whiteEngineMoves": 38,
+        "blackEngineMoves": 39,
         "biggestBlunder": {
           "moveNumber": 26,
           "player": "black",
@@ -10579,6 +10894,8 @@
           "good": 10,
           "excellent": 20
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 20,
         "biggestBlunder": {
           "moveNumber": 43,
           "player": "black",
@@ -10629,6 +10946,8 @@
           "good": 11,
           "excellent": 38
         },
+        "whiteEngineMoves": 39,
+        "blackEngineMoves": 38,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -10656,6 +10975,8 @@
           "good": 4,
           "excellent": 14
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 14,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -10683,6 +11004,8 @@
           "good": 5,
           "excellent": 9
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 9,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -10710,6 +11033,8 @@
           "good": 4,
           "excellent": 14
         },
+        "whiteEngineMoves": 14,
+        "blackEngineMoves": 14,
         "biggestBlunder": {
           "moveNumber": 13,
           "player": "white",
@@ -10746,6 +11071,8 @@
           "good": 4,
           "excellent": 7
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 7,
         "biggestBlunder": {
           "moveNumber": 13,
           "player": "black",
@@ -10782,6 +11109,8 @@
           "good": 10,
           "excellent": 43
         },
+        "whiteEngineMoves": 42,
+        "blackEngineMoves": 43,
         "biggestBlunder": {
           "moveNumber": 33,
           "player": "black",
@@ -10824,6 +11153,8 @@
           "good": 7,
           "excellent": 12
         },
+        "whiteEngineMoves": 19,
+        "blackEngineMoves": 12,
         "biggestBlunder": {
           "moveNumber": 13,
           "player": "black",
@@ -10860,6 +11191,8 @@
           "good": 12,
           "excellent": 41
         },
+        "whiteEngineMoves": 43,
+        "blackEngineMoves": 41,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -10887,6 +11220,8 @@
           "good": 3,
           "excellent": 13
         },
+        "whiteEngineMoves": 11,
+        "blackEngineMoves": 13,
         "biggestBlunder": {
           "moveNumber": 13,
           "player": "white",
@@ -10923,6 +11258,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 23,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 20,
           "player": "black",
@@ -10959,6 +11296,8 @@
           "good": 2,
           "excellent": 20
         },
+        "whiteEngineMoves": 15,
+        "blackEngineMoves": 20,
         "biggestBlunder": {
           "moveNumber": 15,
           "player": "white",
@@ -10995,6 +11334,8 @@
           "good": 3,
           "excellent": 42
         },
+        "whiteEngineMoves": 40,
+        "blackEngineMoves": 42,
         "biggestBlunder": {
           "moveNumber": 10,
           "player": "black",
@@ -11037,6 +11378,8 @@
           "good": 11,
           "excellent": 21
         },
+        "whiteEngineMoves": 16,
+        "blackEngineMoves": 21,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -11064,6 +11407,8 @@
           "good": 7,
           "excellent": 24
         },
+        "whiteEngineMoves": 17,
+        "blackEngineMoves": 24,
         "biggestBlunder": {
           "moveNumber": 8,
           "player": "black",
@@ -11100,6 +11445,8 @@
           "good": 3,
           "excellent": 27
         },
+        "whiteEngineMoves": 22,
+        "blackEngineMoves": 27,
         "biggestBlunder": {
           "moveNumber": 31,
           "player": "black",
@@ -11150,6 +11497,8 @@
           "good": 5,
           "excellent": 18
         },
+        "whiteEngineMoves": 14,
+        "blackEngineMoves": 18,
         "biggestBlunder": {
           "moveNumber": 25,
           "player": "black",
@@ -11200,6 +11549,8 @@
           "good": 6,
           "excellent": 26
         },
+        "whiteEngineMoves": 27,
+        "blackEngineMoves": 26,
         "biggestBlunder": null,
         "biggestComeback": null,
         "luckyEscape": null
@@ -11252,6 +11603,25 @@
         "black": "keeto",
         "gameIndex": 56,
         "gameId": "OHomch0i"
+      },
+      "stockfishBuddy": {
+        "player": "black",
+        "engineMoves": 72,
+        "totalMoves": 100,
+        "percentage": 72,
+        "white": "fork2020",
+        "black": "markommbrzi",
+        "gameIndex": 17,
+        "gameId": "Y66zPJoZ"
+      },
+      "inaccuracyKing": {
+        "player": "white",
+        "inaccuracies": 13,
+        "totalMoves": 75,
+        "white": "berndwind",
+        "black": "nerja25390",
+        "gameIndex": 36,
+        "gameId": "k6uGhRxB"
       },
       "lowestACPL": {
         "player": "black",
