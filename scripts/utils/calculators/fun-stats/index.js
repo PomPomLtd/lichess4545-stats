@@ -20,6 +20,8 @@ const { calculateRookLift } = require('./rook-lift');
 const { calculateCenterStage } = require('./center-stage');
 const { calculateDarkLord } = require('./dark-lord');
 const { calculateChickenAward } = require('./chicken-award');
+const { calculateSlowestCastling } = require('./slowest-castling');
+const { calculatePawnCaptures } = require('./pawn-captures');
 const { filterGamesWithMoves } = require('../helpers');
 const { analyzeAllGames } = require('../../time-analyzer');
 
@@ -54,7 +56,9 @@ function calculateFunStats(games, tacticalPatterns = null) {
     rookLift: calculateRookLift(gamesWithMoves),
     centerStage: calculateCenterStage(gamesWithMoves),
     darkLord: calculateDarkLord(gamesWithMoves),
-    chickenAward: calculateChickenAward(gamesWithMoves)
+    chickenAward: calculateChickenAward(gamesWithMoves),
+    slowestCastling: calculateSlowestCastling(gamesWithMoves),
+    pawnCaptures: calculatePawnCaptures(gamesWithMoves)
   };
 
   // Add chicken awards if available

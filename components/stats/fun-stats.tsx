@@ -136,6 +136,22 @@ interface FunStatsProps {
       white: string
       black: string
     } | null
+    slowestCastling: {
+      moves: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
+    pawnCaptures: {
+      captures: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
     homebody?: {
       white: string
       black: string
@@ -496,6 +512,30 @@ export function FunStats({ funStats }: FunStatsProps) {
             </div>
             <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
               {funStats.chickenAward.color} made {funStats.chickenAward.retreats} retreating moves
+            </div>
+          </AwardCard>
+        )}
+
+        {funStats.slowestCastling && (
+          <AwardCard gameId={funStats.slowestCastling.gameId} className="bg-slate-50 dark:bg-slate-900/20">
+            <div className="font-semibold text-slate-900 dark:text-slate-300 mb-1">🏰 Castle Commitment Issues</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={funStats.slowestCastling.white} black={funStats.slowestCastling.black} />
+            </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+              {funStats.slowestCastling.color} castled on move {funStats.slowestCastling.moves}
+            </div>
+          </AwardCard>
+        )}
+
+        {funStats.pawnCaptures && (
+          <AwardCard gameId={funStats.pawnCaptures.gameId} className="bg-red-50 dark:bg-red-900/20">
+            <div className="font-semibold text-red-900 dark:text-red-300 mb-1">🏴 Peasant Uprising Award</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={funStats.pawnCaptures.white} black={funStats.pawnCaptures.black} />
+            </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+              {funStats.pawnCaptures.color} pawns captured {funStats.pawnCaptures.captures} {funStats.pawnCaptures.captures === 1 ? 'piece' : 'pieces'}
             </div>
           </AwardCard>
         )}
