@@ -22,6 +22,8 @@ const { calculateDarkLord } = require('./dark-lord');
 const { calculateChickenAward } = require('./chicken-award');
 const { calculateSlowestCastling } = require('./slowest-castling');
 const { calculatePawnCaptures } = require('./pawn-captures');
+const { calculateAntiOrthogonal } = require('./anti-orthogonal');
+const { calculateComfortZone } = require('./comfort-zone');
 const { filterGamesWithMoves } = require('../helpers');
 const { analyzeAllGames } = require('../../time-analyzer');
 
@@ -58,7 +60,9 @@ function calculateFunStats(games, tacticalPatterns = null) {
     darkLord: calculateDarkLord(gamesWithMoves),
     chickenAward: calculateChickenAward(gamesWithMoves),
     slowestCastling: calculateSlowestCastling(gamesWithMoves),
-    pawnCaptures: calculatePawnCaptures(gamesWithMoves)
+    pawnCaptures: calculatePawnCaptures(gamesWithMoves),
+    antiOrthogonal: calculateAntiOrthogonal(gamesWithMoves),
+    comfortZone: calculateComfortZone(gamesWithMoves)
   };
 
   // Add chicken awards if available

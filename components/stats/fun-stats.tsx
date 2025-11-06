@@ -280,6 +280,25 @@ interface FunStatsProps {
       avgTime: number
       moveCount: number
     }
+    antiOrthogonal: {
+      moves: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
+    comfortZone: {
+      percentage: number
+      pieceType: string
+      moves: number
+      totalNonPawnMoves: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
   }
 }
 
@@ -601,6 +620,30 @@ export function FunStats({ funStats }: FunStatsProps) {
               {funStats.longestTension.squares} faced off for {funStats.longestTension.moves} moves
             </div>
           </div>
+        )}
+
+        {funStats.antiOrthogonal && (
+          <AwardCard gameId={funStats.antiOrthogonal.gameId} className="bg-purple-50 dark:bg-purple-900/20">
+            <div className="font-semibold text-purple-900 dark:text-purple-300 mb-1">✖️ Anti-Orthogonal Activist</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={funStats.antiOrthogonal.white} black={funStats.antiOrthogonal.black} />
+            </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+              {funStats.antiOrthogonal.color} made {funStats.antiOrthogonal.moves} diagonal {funStats.antiOrthogonal.moves === 1 ? 'move' : 'moves'}
+            </div>
+          </AwardCard>
+        )}
+
+        {funStats.comfortZone && (
+          <AwardCard gameId={funStats.comfortZone.gameId} className="bg-cyan-50 dark:bg-cyan-900/20">
+            <div className="font-semibold text-cyan-900 dark:text-cyan-300 mb-1">✨ Comfort Zone Champion</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={funStats.comfortZone.white} black={funStats.comfortZone.black} />
+            </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+              {funStats.comfortZone.color} used {funStats.comfortZone.pieceType} for {funStats.comfortZone.percentage}% of non-pawn moves ({funStats.comfortZone.moves}/{funStats.comfortZone.totalNonPawnMoves})
+            </div>
+          </AwardCard>
         )}
 
         {/* Time-based awards */}
