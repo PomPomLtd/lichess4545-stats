@@ -348,6 +348,14 @@ interface StatsData {
       white: string
       black: string
     } | null
+    sunglasses: {
+      captures: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
     chickenAward: {
       retreats: number
       gameIndex: number

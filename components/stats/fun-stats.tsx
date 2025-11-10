@@ -128,6 +128,14 @@ interface FunStatsProps {
       white: string
       black: string
     } | null
+    sunglasses: {
+      captures: number
+      gameIndex: number
+      gameId: string | null
+      color: string
+      white: string
+      black: string
+    } | null
     chickenAward: {
       retreats: number
       gameIndex: number
@@ -519,6 +527,18 @@ export function FunStats({ funStats }: FunStatsProps) {
             </div>
             <div className="text-xs text-gray-300 dark:text-gray-400 mt-1">
               {funStats.darkLord.color} captured {funStats.darkLord.captures} pieces on dark squares
+            </div>
+          </AwardCard>
+        )}
+
+        {funStats.sunglasses && (
+          <AwardCard gameId={funStats.sunglasses.gameId} className="bg-yellow-50 dark:bg-yellow-900/20">
+            <div className="font-semibold text-yellow-900 dark:text-yellow-300 mb-1">😎 Wears Sunglasses</div>
+            <div className="text-sm text-gray-700 dark:text-gray-300">
+              <PlayerVs white={funStats.sunglasses.white} black={funStats.sunglasses.black} />
+            </div>
+            <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+              {funStats.sunglasses.color} captured {funStats.sunglasses.captures} pieces on light squares
             </div>
           </AwardCard>
         )}
