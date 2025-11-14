@@ -38,7 +38,7 @@ function calculateDistance(from, to) {
 function isDarkSquare(square) {
   const file = square.charCodeAt(0) - 'a'.charCodeAt(0); // 0-7
   const rank = parseInt(square[1]) - 1; // 0-7
-  return (file + rank) % 2 === 1; // Dark squares have odd sum
+  return (file + rank) % 2 === 0; // Dark squares have even sum
 }
 
 /**
