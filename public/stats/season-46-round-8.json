@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2025-12-25T12:19:49.341Z",
+  "generatedAt": "2026-01-01T12:20:38.058Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -1284,68 +1284,68 @@
   "teams": {
     "awards": {
       "bloodthirstyTeam": {
-        "name": "Doomsday Hedgehogs",
-        "totalCaptures": 84,
-        "averagePerGame": "8.4",
+        "name": "Under Cover of Knight",
+        "totalCaptures": 103,
+        "averagePerGame": "10.3",
         "playerCount": 12
       },
       "lateKnightShow": {
         "name": "Mate in 6/7",
-        "lateKnightMoves": 40,
-        "averagePerGame": "6.7",
+        "lateKnightMoves": 56,
+        "averagePerGame": "7.0",
         "playerCount": 11
       },
       "pawnCrackers": {
-        "name": "Underpromotion Overachievers",
-        "pawnCaptures": 26,
-        "averagePerGame": "3.7",
-        "playerCount": 9
+        "name": "Nakamura Airlines — King Flight Safety Briefing",
+        "pawnCaptures": 31,
+        "averagePerGame": "3.1",
+        "playerCount": 15
       },
       "castlingSpeed": {
-        "name": "Sahkal of the Rainbow & The Lords of the 7 Colors",
-        "averageCastlingMove": "6.7",
-        "castlingGames": 7,
-        "playerCount": 8
+        "name": "The Late Knight Show",
+        "averageCastlingMove": "6.5",
+        "castlingGames": 4,
+        "playerCount": 13
       },
       "spaceInvaders": {
-        "name": "Doomsday Hedgehogs",
-        "invasionMoves": 122,
-        "averagePerGame": "12.2",
+        "name": "Under Cover of Knight",
+        "invasionMoves": 132,
+        "averagePerGame": "13.2",
         "playerCount": 12
       },
       "checkMasters": {
         "name": "I'm ready, promotion",
-        "checksDelivered": 36,
-        "averagePerGame": "12.0",
+        "checksDelivered": 45,
+        "averagePerGame": "9.0",
         "playerCount": 16
       },
       "cornerConquerors": {
-        "name": "Unstoppable Stalemate Threats",
-        "cornerMoves": 20,
-        "averagePerGame": "2.5",
-        "playerCount": 13
+        "name": "Under Cover of Knight",
+        "cornerMoves": 26,
+        "averagePerGame": "2.6",
+        "playerCount": 12
       },
       "marathonRunners": {
-        "name": "Mate in 6/7",
-        "averageGameLength": "52.7",
-        "playerCount": 11
+        "name": "A Simple Name",
+        "averageGameLength": "58.3",
+        "playerCount": 21
       },
       "speedDemons": {
-        "name": "Regicide Squad",
-        "averageGameLength": "25.3",
+        "name": "The Wide Peepos",
+        "averageGameLength": "25.5",
         "playerCount": 14
       },
       "chickenTeam": {
-        "name": "Doomsday Hedgehogs",
-        "retreatingMoves": 65,
-        "averagePerGame": "6.5",
+        "name": "Under Cover of Knight",
+        "retreatingMoves": 77,
+        "averagePerGame": "7.7",
         "playerCount": 12
       },
       "nonChickenTeam": {
-        "name": "A maltopia of rookie mistakes",
-        "retreatingMoves": 8,
+        "name": "The Wide Peepos",
+        "retreatingMoves": 12,
         "averagePerGame": "2.0",
-        "playerCount": 16
+        "playerCount": 14
       },
       "promotionParty": {
         "name": "Unstoppable Stalemate Threats",
@@ -1777,7 +1777,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "f2-g4",
+          "squares": "g4-h2",
           "startMove": 31,
           "endMove": 37
         },
@@ -1827,7 +1827,7 @@
         },
         "longestTension": {
           "moves": 11,
-          "squares": "f4-g6",
+          "squares": "f4-h5",
           "startMove": 38,
           "endMove": 49
         },
@@ -2652,7 +2652,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "b5-c4",
+          "squares": "c4-d5",
           "startMove": 21,
           "endMove": 24
         },
@@ -3127,7 +3127,7 @@
         },
         "longestTension": {
           "moves": 15,
-          "squares": "e5-f7",
+          "squares": "e5-g6",
           "startMove": 31,
           "endMove": 46
         },
@@ -3722,7 +3722,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "b7-c5",
+          "squares": "c5-d7",
           "startMove": 42,
           "endMove": 48
         },
@@ -4297,7 +4297,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "b2-f2",
+          "squares": "b2-c3",
           "startMove": 31,
           "endMove": 34
         },
@@ -4447,7 +4447,7 @@
         },
         "longestTension": {
           "moves": 8,
-          "squares": "c5-e5",
+          "squares": "c5-c6",
           "startMove": 53,
           "endMove": 61
         },
@@ -4747,7 +4747,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "d5-e6",
+          "squares": "c6-d5",
           "startMove": 49,
           "endMove": 55
         },
