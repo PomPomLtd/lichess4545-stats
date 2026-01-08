@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2026-01-01T12:20:38.058Z",
+  "generatedAt": "2026-01-08T12:22:14.384Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -1552,7 +1552,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "e4-g3",
+          "squares": "c3-e4",
           "startMove": 42,
           "endMove": 46
         },
@@ -1577,7 +1577,7 @@
         },
         "longestTension": {
           "moves": 20,
-          "squares": "e5-f7",
+          "squares": "c6-e5",
           "startMove": 13,
           "endMove": 33
         },
@@ -1827,7 +1827,7 @@
         },
         "longestTension": {
           "moves": 11,
-          "squares": "f4-h5",
+          "squares": "f4-g6",
           "startMove": 38,
           "endMove": 49
         },
@@ -2177,7 +2177,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "e4-h7",
+          "squares": "b7-e4",
           "startMove": 14,
           "endMove": 17
         },
@@ -2652,7 +2652,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "c4-d5",
+          "squares": "b5-c4",
           "startMove": 21,
           "endMove": 24
         },
@@ -3527,7 +3527,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "d3-h7",
+          "squares": "a6-d3",
           "startMove": 20,
           "endMove": 30
         },
@@ -3722,7 +3722,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "c5-d7",
+          "squares": "c5-e6",
           "startMove": 42,
           "endMove": 48
         },
@@ -4297,7 +4297,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "b2-c3",
+          "squares": "b2-f2",
           "startMove": 31,
           "endMove": 34
         },
