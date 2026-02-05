@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2026-01-29T12:29:14.983Z",
+  "generatedAt": "2026-02-05T12:32:43.450Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -815,7 +815,7 @@
     },
     "longestNonCaptureStreak": {
       "moves": 50,
-      "gameIndex": 128,
+      "gameIndex": 127,
       "gameId": "0sxhwn1j",
       "white": "mopitup",
       "black": "Tranzoo"
@@ -902,7 +902,7 @@
     },
     "fastest": {
       "moves": 18,
-      "gameIndex": 117,
+      "gameIndex": 116,
       "gameId": "THrorjlG",
       "white": "ysgwydd",
       "black": "greysensei",
@@ -1273,7 +1273,7 @@
     "bulletSpeed": {
       "white": "mopitup",
       "black": "Tranzoo",
-      "gameIndex": 128,
+      "gameIndex": 127,
       "gameId": "0sxhwn1j",
       "player": "mopitup",
       "color": "white",
@@ -1284,68 +1284,68 @@
   "teams": {
     "awards": {
       "bloodthirstyTeam": {
-        "name": "Doomsday Hedgehogs",
-        "totalCaptures": 84,
-        "averagePerGame": "8.4",
+        "name": "Under Cover of Knight",
+        "totalCaptures": 103,
+        "averagePerGame": "10.3",
         "playerCount": 12
       },
       "lateKnightShow": {
         "name": "Mate in 6/7",
-        "lateKnightMoves": 40,
-        "averagePerGame": "6.7",
+        "lateKnightMoves": 56,
+        "averagePerGame": "7.0",
         "playerCount": 11
       },
       "pawnCrackers": {
-        "name": "Underpromotion Overachievers",
-        "pawnCaptures": 26,
-        "averagePerGame": "3.7",
-        "playerCount": 9
+        "name": "Nakamura Airlines — King Flight Safety Briefing",
+        "pawnCaptures": 31,
+        "averagePerGame": "3.1",
+        "playerCount": 15
       },
       "castlingSpeed": {
-        "name": "Sahkal of the Rainbow & The Lords of the 7 Colors",
-        "averageCastlingMove": "6.7",
-        "castlingGames": 7,
-        "playerCount": 8
+        "name": "The Late Knight Show",
+        "averageCastlingMove": "6.5",
+        "castlingGames": 4,
+        "playerCount": 13
       },
       "spaceInvaders": {
-        "name": "Doomsday Hedgehogs",
-        "invasionMoves": 122,
-        "averagePerGame": "12.2",
+        "name": "Under Cover of Knight",
+        "invasionMoves": 132,
+        "averagePerGame": "13.2",
         "playerCount": 12
       },
       "checkMasters": {
         "name": "I'm ready, promotion",
-        "checksDelivered": 36,
-        "averagePerGame": "12.0",
+        "checksDelivered": 45,
+        "averagePerGame": "9.0",
         "playerCount": 16
       },
       "cornerConquerors": {
-        "name": "Unstoppable Stalemate Threats",
-        "cornerMoves": 20,
-        "averagePerGame": "2.5",
-        "playerCount": 13
+        "name": "Under Cover of Knight",
+        "cornerMoves": 26,
+        "averagePerGame": "2.6",
+        "playerCount": 12
       },
       "marathonRunners": {
-        "name": "Mate in 6/7",
-        "averageGameLength": "52.7",
-        "playerCount": 11
+        "name": "A Simple Name",
+        "averageGameLength": "58.3",
+        "playerCount": 21
       },
       "speedDemons": {
-        "name": "Regicide Squad",
-        "averageGameLength": "25.3",
+        "name": "The Wide Peepos",
+        "averageGameLength": "25.5",
         "playerCount": 14
       },
       "chickenTeam": {
-        "name": "Doomsday Hedgehogs",
-        "retreatingMoves": 65,
-        "averagePerGame": "6.5",
+        "name": "Under Cover of Knight",
+        "retreatingMoves": 77,
+        "averagePerGame": "7.7",
         "playerCount": 12
       },
       "nonChickenTeam": {
-        "name": "A maltopia of rookie mistakes",
-        "retreatingMoves": 8,
+        "name": "The Wide Peepos",
+        "retreatingMoves": 12,
         "averagePerGame": "2.0",
-        "playerCount": 16
+        "playerCount": 14
       },
       "promotionParty": {
         "name": "Unstoppable Stalemate Threats",
@@ -1477,7 +1477,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "d5-f6",
+          "squares": "e4-f6",
           "startMove": 35,
           "endMove": 40
         },
@@ -3527,7 +3527,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "d3-h7",
+          "squares": "a6-d3",
           "startMove": 20,
           "endMove": 30
         },
@@ -4254,31 +4254,6 @@
         "gameIndex": 115
       },
       {
-        "white": "Strategic_Nonsense",
-        "black": "oOoSHONUFFoOo",
-        "enemyTerritory": {
-          "whitePiecesInEnemy": 5,
-          "blackPiecesInEnemy": 2,
-          "whiteFirstInvasion": 5,
-          "blackFirstInvasion": 8
-        },
-        "mostAttackedSquare": {
-          "square": "d7",
-          "attackers": 5,
-          "whiteAttackers": 0,
-          "blackAttackers": 5,
-          "moveNumber": 4,
-          "move": "Nf6"
-        },
-        "longestTension": {
-          "moves": 13,
-          "squares": "c3-d4",
-          "startMove": 8,
-          "endMove": 21
-        },
-        "gameIndex": 116
-      },
-      {
         "white": "ysgwydd",
         "black": "greysensei",
         "enemyTerritory": {
@@ -4301,7 +4276,7 @@
           "startMove": 31,
           "endMove": 34
         },
-        "gameIndex": 117
+        "gameIndex": 116
       },
       {
         "white": "dmrgn155",
@@ -4326,7 +4301,7 @@
           "startMove": 45,
           "endMove": 59
         },
-        "gameIndex": 118
+        "gameIndex": 117
       },
       {
         "white": "p_s_q",
@@ -4351,7 +4326,7 @@
           "startMove": 65,
           "endMove": 70
         },
-        "gameIndex": 119
+        "gameIndex": 118
       },
       {
         "white": "williewipeout",
@@ -4376,7 +4351,7 @@
           "startMove": 4,
           "endMove": 19
         },
-        "gameIndex": 120
+        "gameIndex": 119
       },
       {
         "white": "aloo_bhaloo",
@@ -4401,7 +4376,7 @@
           "startMove": 14,
           "endMove": 22
         },
-        "gameIndex": 121
+        "gameIndex": 120
       },
       {
         "white": "Lou-E",
@@ -4426,7 +4401,7 @@
           "startMove": 12,
           "endMove": 25
         },
-        "gameIndex": 122
+        "gameIndex": 121
       },
       {
         "white": "bufferunderrun",
@@ -4451,7 +4426,7 @@
           "startMove": 53,
           "endMove": 61
         },
-        "gameIndex": 123
+        "gameIndex": 122
       },
       {
         "white": "SChessNewbie",
@@ -4476,7 +4451,7 @@
           "startMove": 59,
           "endMove": 69
         },
-        "gameIndex": 124
+        "gameIndex": 123
       },
       {
         "white": "leosiu",
@@ -4501,7 +4476,7 @@
           "startMove": 4,
           "endMove": 12
         },
-        "gameIndex": 125
+        "gameIndex": 124
       },
       {
         "white": "sahkal",
@@ -4526,7 +4501,7 @@
           "startMove": 15,
           "endMove": 25
         },
-        "gameIndex": 126
+        "gameIndex": 125
       },
       {
         "white": "sideshow_bob",
@@ -4551,7 +4526,7 @@
           "startMove": 35,
           "endMove": 43
         },
-        "gameIndex": 127
+        "gameIndex": 126
       },
       {
         "white": "mopitup",
@@ -4576,7 +4551,7 @@
           "startMove": 112,
           "endMove": 119
         },
-        "gameIndex": 128
+        "gameIndex": 127
       },
       {
         "white": "iceonmars",
@@ -4601,7 +4576,7 @@
           "startMove": 6,
           "endMove": 30
         },
-        "gameIndex": 129
+        "gameIndex": 128
       },
       {
         "white": "MoonlightAnomaly",
@@ -4626,7 +4601,7 @@
           "startMove": 15,
           "endMove": 47
         },
-        "gameIndex": 130
+        "gameIndex": 129
       },
       {
         "white": "littleejohny",
@@ -4651,7 +4626,7 @@
           "startMove": 28,
           "endMove": 36
         },
-        "gameIndex": 131
+        "gameIndex": 130
       },
       {
         "white": "hpors",
@@ -4676,7 +4651,7 @@
           "startMove": 24,
           "endMove": 27
         },
-        "gameIndex": 132
+        "gameIndex": 131
       },
       {
         "white": "topspin15",
@@ -4701,7 +4676,7 @@
           "startMove": 40,
           "endMove": 47
         },
-        "gameIndex": 133
+        "gameIndex": 132
       },
       {
         "white": "chatakkuma",
@@ -4726,7 +4701,7 @@
           "startMove": 3,
           "endMove": 22
         },
-        "gameIndex": 134
+        "gameIndex": 133
       },
       {
         "white": "Rperez46",
@@ -4747,11 +4722,11 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "d5-e6",
+          "squares": "c6-d5",
           "startMove": 49,
           "endMove": 55
         },
-        "gameIndex": 135
+        "gameIndex": 134
       },
       {
         "white": "goirish",
@@ -4776,7 +4751,7 @@
           "startMove": 24,
           "endMove": 33
         },
-        "gameIndex": 136
+        "gameIndex": 135
       },
       {
         "white": "juliochobo",
@@ -4801,7 +4776,7 @@
           "startMove": 43,
           "endMove": 49
         },
-        "gameIndex": 137
+        "gameIndex": 136
       },
       {
         "white": "Drotciv",
@@ -4826,7 +4801,7 @@
           "startMove": 38,
           "endMove": 48
         },
-        "gameIndex": 138
+        "gameIndex": 137
       },
       {
         "white": "Rufelos",
@@ -4851,7 +4826,7 @@
           "startMove": 6,
           "endMove": 37
         },
-        "gameIndex": 139
+        "gameIndex": 138
       },
       {
         "white": "mqll",
@@ -4875,6 +4850,31 @@
           "squares": "b6-e3",
           "startMove": 58,
           "endMove": 65
+        },
+        "gameIndex": 139
+      },
+      {
+        "white": "Strategic_Nonsense",
+        "black": "oOoSHONUFFoOo",
+        "enemyTerritory": {
+          "whitePiecesInEnemy": 5,
+          "blackPiecesInEnemy": 2,
+          "whiteFirstInvasion": 5,
+          "blackFirstInvasion": 8
+        },
+        "mostAttackedSquare": {
+          "square": "d7",
+          "attackers": 5,
+          "whiteAttackers": 0,
+          "blackAttackers": 5,
+          "moveNumber": 4,
+          "move": "Nf6"
+        },
+        "longestTension": {
+          "moves": 13,
+          "squares": "c3-d4",
+          "startMove": 8,
+          "endMove": 21
         },
         "gameIndex": 140
       },
@@ -5060,7 +5060,7 @@
         "squares": "a5-b6",
         "startMove": 15,
         "endMove": 47,
-        "gameIndex": 130
+        "gameIndex": 129
       }
     }
   }
