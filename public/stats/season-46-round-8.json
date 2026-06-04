@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2026-05-28T15:01:15.324Z",
+  "generatedAt": "2026-06-04T14:28:34.015Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -1477,7 +1477,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "d5-f6",
+          "squares": "e4-f6",
           "startMove": 35,
           "endMove": 40
         },
@@ -1552,7 +1552,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "c3-e4",
+          "squares": "e4-g3",
           "startMove": 42,
           "endMove": 46
         },
@@ -1577,7 +1577,7 @@
         },
         "longestTension": {
           "moves": 20,
-          "squares": "c6-e5",
+          "squares": "e5-f7",
           "startMove": 13,
           "endMove": 33
         },
@@ -1777,7 +1777,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "f2-g4",
+          "squares": "g4-h2",
           "startMove": 31,
           "endMove": 37
         },
@@ -1977,7 +1977,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "b3-c5",
+          "squares": "c5-e4",
           "startMove": 30,
           "endMove": 34
         },
@@ -2177,7 +2177,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "e4-h7",
+          "squares": "b7-e4",
           "startMove": 14,
           "endMove": 17
         },
@@ -3102,7 +3102,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "f6-g5",
+          "squares": "b5-g5",
           "startMove": 28,
           "endMove": 32
         },
@@ -3527,7 +3527,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "a6-d3",
+          "squares": "d3-h7",
           "startMove": 20,
           "endMove": 30
         },
@@ -3722,7 +3722,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "b7-c5",
+          "squares": "c5-d7",
           "startMove": 42,
           "endMove": 48
         },
@@ -4422,7 +4422,7 @@
         },
         "longestTension": {
           "moves": 8,
-          "squares": "c5-e5",
+          "squares": "c5-c6",
           "startMove": 53,
           "endMove": 61
         },
