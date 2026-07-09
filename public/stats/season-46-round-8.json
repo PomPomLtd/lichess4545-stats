@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2026-07-02T13:25:08.900Z",
+  "generatedAt": "2026-07-09T14:24:44.218Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -1291,8 +1291,8 @@
       },
       "lateKnightShow": {
         "name": "Mate in 6/7",
-        "lateKnightMoves": 40,
-        "averagePerGame": "6.7",
+        "lateKnightMoves": 56,
+        "averagePerGame": "7.0",
         "playerCount": 11
       },
       "pawnCrackers": {
@@ -1477,7 +1477,7 @@
         },
         "longestTension": {
           "moves": 5,
-          "squares": "e4-f6",
+          "squares": "d5-f6",
           "startMove": 35,
           "endMove": 40
         },
@@ -1552,7 +1552,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "c3-e4",
+          "squares": "e4-g3",
           "startMove": 42,
           "endMove": 46
         },
@@ -1827,7 +1827,7 @@
         },
         "longestTension": {
           "moves": 11,
-          "squares": "f4-g6",
+          "squares": "f4-h5",
           "startMove": 38,
           "endMove": 49
         },
@@ -2177,7 +2177,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "e4-h7",
+          "squares": "b7-e4",
           "startMove": 14,
           "endMove": 17
         },
@@ -2277,7 +2277,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "f5-h6",
+          "squares": "f5-g7",
           "startMove": 37,
           "endMove": 43
         },
@@ -3102,7 +3102,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "f6-g5",
+          "squares": "b5-g5",
           "startMove": 28,
           "endMove": 32
         },
@@ -3527,7 +3527,7 @@
         },
         "longestTension": {
           "moves": 10,
-          "squares": "d3-h7",
+          "squares": "a6-d3",
           "startMove": 20,
           "endMove": 30
         },
