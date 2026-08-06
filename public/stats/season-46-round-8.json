@@ -1,7 +1,7 @@
 {
   "roundNumber": 8,
   "seasonNumber": 46,
-  "generatedAt": "2026-07-30T13:21:55.534Z",
+  "generatedAt": "2026-08-06T13:28:52.539Z",
   "overview": {
     "totalGames": 146,
     "totalMoves": 11341,
@@ -1777,7 +1777,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "g4-h2",
+          "squares": "f2-g4",
           "startMove": 31,
           "endMove": 37
         },
@@ -1827,7 +1827,7 @@
         },
         "longestTension": {
           "moves": 11,
-          "squares": "f4-g6",
+          "squares": "f4-h5",
           "startMove": 38,
           "endMove": 49
         },
@@ -1977,7 +1977,7 @@
         },
         "longestTension": {
           "moves": 4,
-          "squares": "b3-c5",
+          "squares": "c5-e4",
           "startMove": 30,
           "endMove": 34
         },
@@ -2652,7 +2652,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "b5-c4",
+          "squares": "c4-d5",
           "startMove": 21,
           "endMove": 24
         },
@@ -3127,7 +3127,7 @@
         },
         "longestTension": {
           "moves": 15,
-          "squares": "e5-g6",
+          "squares": "e5-f7",
           "startMove": 31,
           "endMove": 46
         },
@@ -3722,7 +3722,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "a6-c5",
+          "squares": "c5-d7",
           "startMove": 42,
           "endMove": 48
         },
@@ -4272,7 +4272,7 @@
         },
         "longestTension": {
           "moves": 3,
-          "squares": "b2-c3",
+          "squares": "b2-f2",
           "startMove": 31,
           "endMove": 34
         },
@@ -4422,7 +4422,7 @@
         },
         "longestTension": {
           "moves": 8,
-          "squares": "c5-c6",
+          "squares": "c5-e5",
           "startMove": 53,
           "endMove": 61
         },
@@ -4722,7 +4722,7 @@
         },
         "longestTension": {
           "moves": 6,
-          "squares": "d5-e6",
+          "squares": "c6-d5",
           "startMove": 49,
           "endMove": 55
         },
